@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: UVMappingLab.ma
-//Last modified: Wed, May 29, 2024 09:16:42 PM
+//Name: UVMappingSignDiceCan.ma
+//Last modified: Wed, May 29, 2024 09:19:10 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "A9426EB9-4684-9422-F4FD-9196B300C3EE";
+fileInfo "UUID" "D86B2C88-4848-980A-C324-2180FCB4FBDA";
 createNode transform -s -n "persp";
 	rename -uid "63855D6D-44FA-499D-D27E-7ABD4E0E7D36";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 36.680041749937153 11.402923831043205 23.098655054502494 ;
-	setAttr ".r" -type "double3" -14.73835273018045 57.799999999972435 0 ;
+	setAttr ".t" -type "double3" 39.237496268624547 15.871465883822024 14.748405244952405 ;
+	setAttr ".r" -type "double3" -20.738352730230094 69.399999999950722 -4.5198666728019689e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "EBD3F0E5-4886-EE4E-D2AB-D6836008CB44";
 	setAttr -k off ".v" no;
@@ -125,20 +125,20 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 		-3.5920942 -0.16533126 -8.9464703 5.0031929 6.6689768 8.1514359 -3.5577433 6.6692171 
 		-0.3973957;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9D38312B-4BAA-7737-D9C2-E1BCA3CD881A";
+	rename -uid "5C7F25E8-46B2-0195-7D39-6E8DF3AFEE91";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "EE4B0FC6-45A3-1DE2-1753-1BAB281E7682";
+	rename -uid "0F1D9941-498B-19D2-E9A4-C09879AE35FF";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "71E121BC-42E7-0172-BFAF-4FBFE99D639F";
+	rename -uid "7527085C-4AE3-01FA-799C-FE95D2FD4F85";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "386A9050-481A-3721-9EED-8AB729E98309";
+	rename -uid "048917B8-4CD1-9AF4-D14F-AB97E06E3C69";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "390C2405-4C50-F18A-6BA8-A09219E00762";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5C410291-41E3-C98B-8788-7484AC918C89";
+	rename -uid "06B6077A-4984-8113-3578-84B009924F34";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "F0AB27A8-4E07-E56C-A2D8-B7AACF38CC97";
 	setAttr ".g" yes;
@@ -322,7 +322,7 @@ createNode file -n "file3";
 createNode place2dTexture -n "place2dTexture3";
 	rename -uid "6D85A230-4AC9-36F9-7507-C384B06A3015";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "512EF748-4271-F5E4-9A8E-86A4499FEE25";
+	rename -uid "C7CD4823-4FF7-DDD4-F23B-199B2BF1AF6B";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -353,7 +353,6 @@ select -ne :initialShadingGroup;
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
-select -ne :initialMaterialInfo;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
@@ -372,6 +371,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "groupId1.id" "pCubeShape1.iog.og[0].gid";
 connectAttr "lambert2SG.mwc" "pCubeShape1.iog.og[0].gco";
 connectAttr "polyTweakUV3.out" "pCubeShape1.i";
@@ -503,4 +504,4 @@ connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file3.msg" ":defaultTextureList1.tx" -na;
 connectAttr "pCubeShape1.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId2.msg" ":initialShadingGroup.gn" -na;
-// End of UVMappingLab.ma
+// End of UVMappingSignDiceCan.ma
