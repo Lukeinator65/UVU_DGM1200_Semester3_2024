@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: LampTableCustomUVMapped.ma
-//Last modified: Sun, Jun 02, 2024 03:53:47 PM
+//Last modified: Sun, Jun 02, 2024 04:03:37 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "29409CAD-4752-38C9-A745-0DA6B22BB9AD";
+fileInfo "UUID" "095630C7-4168-EE10-6860-DE91FB4910E4";
 createNode transform -s -n "persp";
 	rename -uid "0E47DA63-47B2-D635-B14E-CC879A300B6D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.5922605075087306 2.7590000510898842 0.87482692092389647 ;
-	setAttr ".r" -type "double3" -8.1383525032615243 -4032.199999978362 0 ;
+	setAttr ".t" -type "double3" -5.5872141583326549 2.1899810679926945 0.31859192170294481 ;
+	setAttr ".r" -type "double3" 3.8616474970604484 -3673.3999999639022 1.3916189096322472e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1DA64D78-426D-3AAF-5ADF-28B9174A13D8";
 	setAttr -k off ".v" no;
@@ -26,7 +26,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 3.8426511255291373;
+	setAttr ".coi" 3.6062745707608661;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -812,7 +812,7 @@ createNode mesh -n "pCylinderShape5" -p "pCylinder8";
 	setAttr ".gtag[8].gtagcmp" -type "componentList" 1 "f[21]";
 	setAttr ".gtag[9].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[9].gtagcmp" -type "componentList" 1 "e[20:39]";
-	setAttr ".pv" -type "double2" 0.44613507390022278 0.91749754548072815 ;
+	setAttr ".pv" -type "double2" 0.44534514844417572 0.80725711584091187 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 202 ".uvst[0].uvsp[0:201]" -type "float2" 0.43984503 0.82477254
 		 0.44123867 0.82457376 0.44165707 0.91751772 0.44026956 0.91752648 0.44269773 0.82439053
@@ -1274,6 +1274,103 @@ createNode mesh -n "pCubeShape8" -p "pCube9";
 	setAttr -s 2 ".iog";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.61169692873954773 0.79893368482589722 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "pCylinder9" -p "Table";
+	rename -uid "365451A8-4C50-289A-494A-D3AF50660BEA";
+	setAttr ".t" -type "double3" 2.5995268742343502 1.0499999999999758 1.585066250408246 ;
+	setAttr ".s" -type "double3" 0.16238419999000595 2.1494993823188682 0.1416916784775106 ;
+	setAttr ".rp" -type "double3" 3.0283704384544373e-16 2.5054317119873592e-16 0 ;
+	setAttr ".sp" -type "double3" 1.8649415636748036e-15 1.1655884772967523e-16 0 ;
+	setAttr ".spt" -type "double3" -1.5621045198293598e-15 1.3398432346906069e-16 0 ;
+createNode transform -n "pCylinder10" -p "Table";
+	rename -uid "12E18F30-4434-B22B-1480-FA8DBC1EC1CD";
+	setAttr ".t" -type "double3" 2.5995268742343502 1.0499999999999758 2.085066250408246 ;
+	setAttr ".r" -type "double3" 0 179.99999999999997 0 ;
+	setAttr ".s" -type "double3" 0.16238419999000595 2.1494993823188682 0.1416916784775106 ;
+	setAttr ".rp" -type "double3" -3.0283704384544373e-16 2.5054317119873592e-16 2.6424670041955612e-16 ;
+	setAttr ".rpt" -type "double3" 6.0567408769088767e-16 0 -5.2849340083911205e-16 ;
+	setAttr ".sp" -type "double3" -1.8649415636748036e-15 1.1655884772967523e-16 1.8649415636748036e-15 ;
+	setAttr ".spt" -type "double3" 1.5621045198293598e-15 1.3398432346906069e-16 -1.6006948632552474e-15 ;
+createNode transform -n "pCube2" -p "Table";
+	rename -uid "92EF869D-4169-0414-7E9A-659AFBE2D7EA";
+	setAttr ".t" -type "double3" -2.6276675786457222 0.76858063543559629 1.8303542129327006 ;
+	setAttr ".s" -type "double3" 0.020000000000000004 0.19918399756243368 2.1399514783077267 ;
+	setAttr ".rp" -type "double3" 0 -0.76858063543559951 0 ;
+	setAttr ".sp" -type "double3" 0 -3.8586465019345688 0 ;
+	setAttr ".spt" -type "double3" 0 3.0900658664989402 0 ;
+createNode mesh -n "pCubeShape2" -p "pCube2";
+	rename -uid "17F01267-4BA6-97F6-AAA1-76846A5E51AC";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr -s 6 ".gtag";
+	setAttr ".gtag[0].gtagnm" -type "string" "back";
+	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "f[2]";
+	setAttr ".gtag[1].gtagnm" -type "string" "bottom";
+	setAttr ".gtag[1].gtagcmp" -type "componentList" 1 "f[3]";
+	setAttr ".gtag[2].gtagnm" -type "string" "front";
+	setAttr ".gtag[2].gtagcmp" -type "componentList" 1 "f[0]";
+	setAttr ".gtag[3].gtagnm" -type "string" "left";
+	setAttr ".gtag[3].gtagcmp" -type "componentList" 1 "f[5]";
+	setAttr ".gtag[4].gtagnm" -type "string" "right";
+	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
+	setAttr ".gtag[5].gtagnm" -type "string" "top";
+	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+	setAttr ".pv" -type "double2" 0.62731447815895081 0.944367796221387 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.49435264 0.97050542
+		 0.49437803 0.9729932 0.49407357 0.94324213 0.49409908 0.94572997 0.76025081 0.9405179
+		 0.76027632 0.94300586 0.75999725 0.91574246 0.76052988 0.96778125 0.76301777 0.96775573
+		 0.76055539 0.97026902 0.49186474 0.97053081 0.49382001 0.91846663 0.7627641 0.94298023
+		 0.49161118 0.94575542;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 8 ".vt[0:7]"  -0.11411652 -0.11411051 0.11411057 0.11411652 -0.11411051 0.11411057
+		 -0.11411652 0.11411051 0.11411057 0.11411652 0.11411051 0.11411057 -0.11411652 0.11411051 -0.11411051
+		 0.11411652 0.11411051 -0.11411051 -0.11411652 -0.11411051 -0.11411051 0.11411652 -0.11411051 -0.11411051;
+	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
+		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
+	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
+		f 4 0 5 -2 -5
+		mu 0 4 0 10 13 3
+		f 4 1 7 -3 -7
+		mu 0 4 3 2 4 5
+		f 4 2 9 -4 -9
+		mu 0 4 5 12 8 7
+		f 4 3 11 -1 -11
+		mu 0 4 7 9 1 0
+		f 4 -12 -10 -8 -6
+		mu 0 4 11 6 4 2
+		f 4 10 4 6 8
+		mu 0 4 7 0 3 5;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "pCube8" -p "Table";
+	rename -uid "100DAC09-4597-6443-184F-DE851D5A21FF";
+	setAttr ".t" -type "double3" -1.9572774243355444 1.2406834205995592 1.8315296867610706 ;
+	setAttr ".r" -type "double3" 0 0 17.388394037188792 ;
+	setAttr ".s" -type "double3" 4.2493897688194044 0.21568951457860655 0.1556808382614564 ;
+	setAttr ".rp" -type "double3" 0 -4.0224834058648587e-16 2.9033566594152471e-16 ;
+	setAttr ".rpt" -type "double3" 1.2021090816421353e-16 1.8382393851279174e-17 0 ;
+	setAttr ".sp" -type "double3" 0 -1.8649415636748036e-15 1.8649415636748036e-15 ;
+	setAttr ".spt" -type "double3" 0 1.4626932230883178e-15 -1.5746058977332789e-15 ;
+createNode mesh -n "polySurfaceShape3" -p "pCube8";
+	rename -uid "ADD66B31-443E-3A99-2A34-209E8DE1232C";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
 	setAttr -s 6 ".gtag";
 	setAttr ".gtag[0].gtagnm" -type "string" "back";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 27 "f[2]" "f[7]" "f[11]" "f[15]" "f[19]" "f[23]" "f[27]" "f[31]" "f[35]" "f[39]" "f[43]" "f[47]" "f[51]" "f[55]" "f[59]" "f[63]" "f[67]" "f[71]" "f[75]" "f[79]" "f[83]" "f[91:111]" "f[135:155]" "f[179:199]" "f[223:243]" "f[475:479]" "f[495:499]";
@@ -1287,7 +1384,7 @@ createNode mesh -n "pCubeShape8" -p "pCube9";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 9 "f[4]" "f[112]" "f[156]" "f[200]" "f[244]" "f[289:293]" "f[341:345]" "f[393:397]" "f[445:449]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 27 "f[1]" "f[6]" "f[10]" "f[14]" "f[18]" "f[22]" "f[26]" "f[30]" "f[34]" "f[38]" "f[42]" "f[46]" "f[50]" "f[54]" "f[58]" "f[62]" "f[66]" "f[70]" "f[74]" "f[78]" "f[82]" "f[262]" "f[294:314]" "f[346:366]" "f[398:418]" "f[450:474]" "f[490:494]";
-	setAttr ".pv" -type "double2" 0.61169692873954773 0.79893370141288567 ;
+	setAttr ".pv" -type "double2" 0.6117057204246521 0.79982274770736694 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 568 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.51745033 0.80205476 0.52256674
@@ -2756,90 +2853,6 @@ createNode mesh -n "pCubeShape8" -p "pCube9";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pCylinder9" -p "Table";
-	rename -uid "365451A8-4C50-289A-494A-D3AF50660BEA";
-	setAttr ".t" -type "double3" 2.5995268742343502 1.0499999999999758 1.585066250408246 ;
-	setAttr ".s" -type "double3" 0.16238419999000595 2.1494993823188682 0.1416916784775106 ;
-	setAttr ".rp" -type "double3" 3.0283704384544373e-16 2.5054317119873592e-16 0 ;
-	setAttr ".sp" -type "double3" 1.8649415636748036e-15 1.1655884772967523e-16 0 ;
-	setAttr ".spt" -type "double3" -1.5621045198293598e-15 1.3398432346906069e-16 0 ;
-createNode transform -n "pCylinder10" -p "Table";
-	rename -uid "12E18F30-4434-B22B-1480-FA8DBC1EC1CD";
-	setAttr ".t" -type "double3" 2.5995268742343502 1.0499999999999758 2.085066250408246 ;
-	setAttr ".r" -type "double3" 0 179.99999999999997 0 ;
-	setAttr ".s" -type "double3" 0.16238419999000595 2.1494993823188682 0.1416916784775106 ;
-	setAttr ".rp" -type "double3" -3.0283704384544373e-16 2.5054317119873592e-16 2.6424670041955612e-16 ;
-	setAttr ".rpt" -type "double3" 6.0567408769088767e-16 0 -5.2849340083911205e-16 ;
-	setAttr ".sp" -type "double3" -1.8649415636748036e-15 1.1655884772967523e-16 1.8649415636748036e-15 ;
-	setAttr ".spt" -type "double3" 1.5621045198293598e-15 1.3398432346906069e-16 -1.6006948632552474e-15 ;
-createNode transform -n "pCube2" -p "Table";
-	rename -uid "92EF869D-4169-0414-7E9A-659AFBE2D7EA";
-	setAttr ".t" -type "double3" -2.6276675786457222 0.76858063543559629 1.8303542129327006 ;
-	setAttr ".s" -type "double3" 0.020000000000000004 0.19918399756243368 2.1399514783077267 ;
-	setAttr ".rp" -type "double3" 0 -0.76858063543559951 0 ;
-	setAttr ".sp" -type "double3" 0 -3.8586465019345688 0 ;
-	setAttr ".spt" -type "double3" 0 3.0900658664989402 0 ;
-createNode mesh -n "pCubeShape2" -p "pCube2";
-	rename -uid "17F01267-4BA6-97F6-AAA1-76846A5E51AC";
-	setAttr -k off ".v";
-	setAttr -s 2 ".iog";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr -s 6 ".gtag";
-	setAttr ".gtag[0].gtagnm" -type "string" "back";
-	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "f[2]";
-	setAttr ".gtag[1].gtagnm" -type "string" "bottom";
-	setAttr ".gtag[1].gtagcmp" -type "componentList" 1 "f[3]";
-	setAttr ".gtag[2].gtagnm" -type "string" "front";
-	setAttr ".gtag[2].gtagcmp" -type "componentList" 1 "f[0]";
-	setAttr ".gtag[3].gtagnm" -type "string" "left";
-	setAttr ".gtag[3].gtagcmp" -type "componentList" 1 "f[5]";
-	setAttr ".gtag[4].gtagnm" -type "string" "right";
-	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
-	setAttr ".gtag[5].gtagnm" -type "string" "top";
-	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".pv" -type "double2" 0.62731447815895081 0.944367796221387 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.49435264 0.97050542
-		 0.49437803 0.9729932 0.49407357 0.94324213 0.49409908 0.94572997 0.76025081 0.9405179
-		 0.76027632 0.94300586 0.75999725 0.91574246 0.76052988 0.96778125 0.76301777 0.96775573
-		 0.76055539 0.97026902 0.49186474 0.97053081 0.49382001 0.91846663 0.7627641 0.94298023
-		 0.49161118 0.94575542;
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".vt[0:7]"  -0.11411652 -0.11411051 0.11411057 0.11411652 -0.11411051 0.11411057
-		 -0.11411652 0.11411051 0.11411057 0.11411652 0.11411051 0.11411057 -0.11411652 0.11411051 -0.11411051
-		 0.11411652 0.11411051 -0.11411051 -0.11411652 -0.11411051 -0.11411051 0.11411652 -0.11411051 -0.11411051;
-	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
-		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
-	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
-		f 4 0 5 -2 -5
-		mu 0 4 0 10 13 3
-		f 4 1 7 -3 -7
-		mu 0 4 3 2 4 5
-		f 4 2 9 -4 -9
-		mu 0 4 5 12 8 7
-		f 4 3 11 -1 -11
-		mu 0 4 7 9 1 0
-		f 4 -12 -10 -8 -6
-		mu 0 4 11 6 4 2
-		f 4 10 4 6 8
-		mu 0 4 7 0 3 5;
-	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
-	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
-	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
-	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pCube8" -p "Table";
-	rename -uid "100DAC09-4597-6443-184F-DE851D5A21FF";
-	setAttr ".t" -type "double3" -1.9572774243355444 1.2406834205995592 1.8315296867610706 ;
-	setAttr ".r" -type "double3" 0 0 17.388394037188792 ;
-	setAttr ".s" -type "double3" 4.2493897688194044 0.21568951457860655 0.1556808382614564 ;
-	setAttr ".rp" -type "double3" 0 -4.0224834058648587e-16 2.9033566594152471e-16 ;
-	setAttr ".rpt" -type "double3" 1.2021090816421353e-16 1.8382393851279174e-17 0 ;
-	setAttr ".sp" -type "double3" 0 -1.8649415636748036e-15 1.8649415636748036e-15 ;
-	setAttr ".spt" -type "double3" 0 1.4626932230883178e-15 -1.5746058977332789e-15 ;
 createNode transform -n "pCube3" -p "Table";
 	rename -uid "CB35F58A-40BB-BA7D-94B2-E2830A43AE30";
 	setAttr ".t" -type "double3" 2.6337747631746504 0.76858063543560362 1.8303542129327006 ;
@@ -2877,18 +2890,18 @@ createNode mesh -n "pCubeShape3" -p "pCube10";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 5 "f[1]" "f[6]" "f[10]" "f[14]" "f[18]";
-	setAttr ".pv" -type "double2" 0.62354403222671184 0.86435914043487294 ;
+	setAttr ".pv" -type "double2" 0.62350434064865112 0.86425718665122986 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.72952503 0.8667469
-		 0.70106131 0.85993373 0.70111954 0.84328312 0.72457808 0.88389885 0.70330203 0.88056707
-		 0.72414166 0.87875438 0.70331872 0.86424953 0.72439808 0.86648929 0.52034271 0.85961401
-		 0.52284366 0.86503774 0.52274054 0.88078892 0.52215075 0.8854022 0.53313828 0.88576865
-		 0.53553736 0.88130808 0.53529966 0.86419684 0.53277171 0.85977763 0.57698828 0.88489234
-		 0.57999325 0.88072658 0.58000731 0.86415958 0.57698184 0.86001289 0.61934662 0.88498187
-		 0.6223312 0.88078785 0.62228203 0.86407518 0.61928809 0.85988396 0.70102298 0.88488472
-		 0.61927438 0.84322929 0.57704133 0.84335542 0.53282011 0.8431313 0.52044034 0.84294957
-		 0.51772058 0.8648439 0.72273904 0.85749364 0.72489452 0.86134744 0.72284043 0.84586656
-		 0.72931343 0.87873304 0.52204478 0.86045176 0.51756305 0.88086474;
+	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.72947085 0.86687219
+		 0.70103317 0.86005145 0.70109123 0.84339947 0.7245338 0.88404107 0.70325094 0.88069254
+		 0.72410262 0.87889618 0.7032885 0.8643713 0.72434974 0.86663318 0.52032733 0.85953009
+		 0.5227918 0.86491221 0.52271098 0.88068157 0.52213502 0.88529533 0.53310055 0.88564271
+		 0.53549743 0.88118333 0.53526676 0.8640781 0.53274345 0.85965806 0.57691914 0.88480246
+		 0.57993245 0.88064122 0.57997102 0.86407429 0.57695138 0.85992324 0.61926746 0.88497752
+		 0.62226176 0.88078862 0.62224847 0.86407822 0.61926126 0.85988206 0.70095932 0.88500702
+		 0.61927438 0.84322929 0.5770337 0.84326726 0.53277671 0.84300882 0.5203833 0.84287167
+		 0.51766384 0.86474258 0.7227273 0.85756004 0.72485858 0.86149347 0.72279626 0.84592658
+		 0.72928095 0.87885213 0.52201211 0.86032349 0.51753783 0.88077128;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -4671,6 +4684,19 @@ createNode transform -n "Lamp1";
 createNode mesh -n "LampShape1" -p "Lamp1";
 	rename -uid "295DEFDB-4EA0-8A76-1596-DA867282E8D9";
 	setAttr -k off ".v";
+	setAttr -s 4 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.76513074775680479 0.18151433442286913 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode mesh -n "polySurfaceShape2" -p "Lamp1";
+	rename -uid "EB0AFFDF-4157-97FF-8689-FFA3004CE1D9";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 2 "f[21]" "f[182:441]";
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 2 "f[0:20]" "f[22:181]";
@@ -4697,7 +4723,7 @@ createNode mesh -n "LampShape1" -p "Lamp1";
 	setAttr ".gtag[8].gtagcmp" -type "componentList" 1 "f[21:441]";
 	setAttr ".gtag[9].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[9].gtagcmp" -type "componentList" 1 "e[20:39]";
-	setAttr ".pv" -type "double2" 0.49999998509883881 0.49999996274709702 ;
+	setAttr ".pv" -type "double2" 0.49999997019767761 0.49999996274709702 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 502 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.64860266 0.10796607 0.62640899
@@ -4825,7 +4851,7 @@ createNode mesh -n "LampShape1" -p "Lamp1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 428 ".pt";
+	setAttr -s 429 ".pt";
 	setAttr ".pt[0]" -type "float3" 0.00090832345 0 0 ;
 	setAttr ".pt[1]" -type "float3" 0.00090832345 0 0 ;
 	setAttr ".pt[2]" -type "float3" 0.00090832345 0 0 ;
@@ -4974,1126 +5000,8 @@ createNode mesh -n "LampShape1" -p "Lamp1";
 	setAttr ".pt[170]" -type "float3" -0.00090832345 0 0 ;
 	setAttr ".pt[178]" -type "float3" 0.00090832345 0 0 ;
 	setAttr ".pt[179]" -type "float3" 0.00090832345 0 0 ;
-	setAttr ".pt[180]" -type "float3" -9.7776653e-10 0.0022642552 1.2222082e-10 ;
-	setAttr -av ".pt[180].px";
-	setAttr -av ".pt[180].py";
-	setAttr -av ".pt[180].pz";
-	setAttr ".pt[181]" -type "float3" 9.7776653e-10 0.0022642552 0 ;
-	setAttr -av ".pt[181].px";
-	setAttr -av ".pt[181].py";
-	setAttr -av ".pt[181].pz";
-	setAttr ".pt[182]" -type "float3" -4.8888327e-10 0.0022642552 4.8888327e-10 ;
-	setAttr -av ".pt[182].px";
-	setAttr -av ".pt[182].py";
-	setAttr -av ".pt[182].pz";
-	setAttr ".pt[183]" -type "float3" 2.4444163e-10 0.0022642552 0 ;
-	setAttr -av ".pt[183].px";
-	setAttr -av ".pt[183].py";
-	setAttr -av ".pt[183].pz";
-	setAttr ".pt[184]" -type "float3" -1.1655885e-16 0.0022642552 4.8888327e-10 ;
-	setAttr -av ".pt[184].px";
-	setAttr -av ".pt[184].py";
-	setAttr -av ".pt[184].pz";
-	setAttr ".pt[185]" -type "float3" -2.4444163e-10 0.0022642552 0 ;
-	setAttr -av ".pt[185].px";
-	setAttr -av ".pt[185].py";
-	setAttr -av ".pt[185].pz";
-	setAttr ".pt[186]" -type "float3" 4.8888327e-10 0.0022642552 4.8888327e-10 ;
-	setAttr -av ".pt[186].px";
-	setAttr -av ".pt[186].py";
-	setAttr -av ".pt[186].pz";
-	setAttr ".pt[187]" -type "float3" 0 0.0022642552 0 ;
-	setAttr -av ".pt[187].px";
-	setAttr -av ".pt[187].py";
-	setAttr -av ".pt[187].pz";
-	setAttr ".pt[188]" -type "float3" -9.7776653e-10 0.0022642552 -1.2222082e-10 ;
-	setAttr -av ".pt[188].px";
-	setAttr -av ".pt[188].py";
-	setAttr -av ".pt[188].pz";
-	setAttr ".pt[189]" -type "float3" -9.7776653e-10 0.0022642552 4.6623542e-16 ;
-	setAttr -av ".pt[189].px";
-	setAttr -av ".pt[189].py";
-	setAttr -av ".pt[189].pz";
-	setAttr ".pt[190]" -type "float3" -9.7776653e-10 0.0022642552 0 ;
-	setAttr -av ".pt[190].px";
-	setAttr -av ".pt[190].py";
-	setAttr -av ".pt[190].pz";
-	setAttr ".pt[191]" -type "float3" 9.7776653e-10 0.0022642552 0 ;
-	setAttr -av ".pt[191].px";
-	setAttr -av ".pt[191].py";
-	setAttr -av ".pt[191].pz";
-	setAttr ".pt[192]" -type "float3" -9.7776653e-10 0.0022642552 2.4444163e-10 ;
-	setAttr -av ".pt[192].px";
-	setAttr -av ".pt[192].py";
-	setAttr -av ".pt[192].pz";
-	setAttr ".pt[193]" -type "float3" -4.8888327e-10 0.0022642552 0 ;
-	setAttr -av ".pt[193].px";
-	setAttr -av ".pt[193].py";
-	setAttr -av ".pt[193].pz";
-	setAttr ".pt[194]" -type "float3" 0 0.0022642552 2.4444163e-10 ;
-	setAttr -av ".pt[194].px";
-	setAttr -av ".pt[194].py";
-	setAttr -av ".pt[194].pz";
-	setAttr ".pt[195]" -type "float3" 0 0.0022642552 0 ;
-	setAttr -av ".pt[195].px";
-	setAttr -av ".pt[195].py";
-	setAttr -av ".pt[195].pz";
-	setAttr ".pt[196]" -type "float3" -4.8888327e-10 0.0022642552 2.4444163e-10 ;
-	setAttr -av ".pt[196].px";
-	setAttr -av ".pt[196].py";
-	setAttr -av ".pt[196].pz";
-	setAttr ".pt[197]" -type "float3" 9.7776653e-10 0.0022642552 0 ;
-	setAttr -av ".pt[197].px";
-	setAttr -av ".pt[197].py";
-	setAttr -av ".pt[197].pz";
-	setAttr ".pt[198]" -type "float3" 9.7776653e-10 0.0022642552 0 ;
-	setAttr -av ".pt[198].px";
-	setAttr -av ".pt[198].py";
-	setAttr -av ".pt[198].pz";
-	setAttr ".pt[199]" -type "float3" 9.7776653e-10 0.0022642552 4.6623542e-16 ;
-	setAttr -av ".pt[199].px";
-	setAttr -av ".pt[199].py";
-	setAttr -av ".pt[199].pz";
-	setAttr ".pt[200]" -type "float3" 6.1110408e-11 0.033142678 0 ;
-	setAttr -av ".pt[200].px";
-	setAttr -av ".pt[200].py";
-	setAttr -av ".pt[200].pz";
-	setAttr ".pt[201]" -type "float3" 6.1110408e-11 0.033142678 1.5277602e-11 ;
-	setAttr -av ".pt[201].px";
-	setAttr -av ".pt[201].py";
-	setAttr -av ".pt[201].pz";
-	setAttr ".pt[202]" -type "float3" -1.2222082e-10 0.033142678 -3.0555204e-11 ;
-	setAttr -av ".pt[202].px";
-	setAttr -av ".pt[202].py";
-	setAttr -av ".pt[202].pz";
-	setAttr ".pt[203]" -type "float3" 0 0.033142678 0 ;
-	setAttr -av ".pt[203].px";
-	setAttr -av ".pt[203].py";
-	setAttr -av ".pt[203].pz";
-	setAttr ".pt[204]" -type "float3" 5.8279427e-17 0.033142678 3.0555204e-11 ;
-	setAttr -av ".pt[204].px";
-	setAttr -av ".pt[204].py";
-	setAttr -av ".pt[204].pz";
-	setAttr ".pt[205]" -type "float3" 0 0.033142678 0 ;
-	setAttr -av ".pt[205].px";
-	setAttr -av ".pt[205].py";
-	setAttr -av ".pt[205].pz";
-	setAttr ".pt[206]" -type "float3" -6.1110408e-11 0.033142678 -3.0555204e-11 ;
-	setAttr -av ".pt[206].px";
-	setAttr -av ".pt[206].py";
-	setAttr -av ".pt[206].pz";
-	setAttr ".pt[207]" -type "float3" 1.2222082e-10 0.033142678 1.5277602e-11 ;
-	setAttr -av ".pt[207].px";
-	setAttr -av ".pt[207].py";
-	setAttr -av ".pt[207].pz";
-	setAttr ".pt[208]" -type "float3" 1.2222082e-10 0.033142678 0 ;
-	setAttr -av ".pt[208].px";
-	setAttr -av ".pt[208].py";
-	setAttr -av ".pt[208].pz";
-	setAttr ".pt[209]" -type "float3" 6.1110408e-11 0.033142678 0 ;
-	setAttr -av ".pt[209].px";
-	setAttr -av ".pt[209].py";
-	setAttr -av ".pt[209].pz";
-	setAttr ".pt[210]" -type "float3" 1.2222082e-10 0.033142678 -7.6388011e-12 ;
-	setAttr -av ".pt[210].px";
-	setAttr -av ".pt[210].py";
-	setAttr -av ".pt[210].pz";
-	setAttr ".pt[211]" -type "float3" 1.2222082e-10 0.033142678 -1.5277602e-11 ;
-	setAttr -av ".pt[211].px";
-	setAttr -av ".pt[211].py";
-	setAttr -av ".pt[211].pz";
-	setAttr ".pt[212]" -type "float3" -6.1110408e-11 0.033142678 -3.0555204e-11 ;
-	setAttr -av ".pt[212].px";
-	setAttr -av ".pt[212].py";
-	setAttr -av ".pt[212].pz";
-	setAttr ".pt[213]" -type "float3" 0 0.033142678 -3.0555204e-11 ;
-	setAttr -av ".pt[213].px";
-	setAttr -av ".pt[213].py";
-	setAttr -av ".pt[213].pz";
-	setAttr ".pt[214]" -type "float3" -2.9139713e-17 0.033142678 3.0555204e-11 ;
-	setAttr -av ".pt[214].px";
-	setAttr -av ".pt[214].py";
-	setAttr -av ".pt[214].pz";
-	setAttr ".pt[215]" -type "float3" 0 0.033142678 -3.0555204e-11 ;
-	setAttr -av ".pt[215].px";
-	setAttr -av ".pt[215].py";
-	setAttr -av ".pt[215].pz";
-	setAttr ".pt[216]" -type "float3" -1.2222082e-10 0.033142678 -3.0555204e-11 ;
-	setAttr -av ".pt[216].px";
-	setAttr -av ".pt[216].py";
-	setAttr -av ".pt[216].pz";
-	setAttr ".pt[217]" -type "float3" 6.1110408e-11 0.033142678 -1.5277602e-11 ;
-	setAttr -av ".pt[217].px";
-	setAttr -av ".pt[217].py";
-	setAttr -av ".pt[217].pz";
-	setAttr ".pt[218]" -type "float3" 6.1110408e-11 0.033142678 -7.6388011e-12 ;
-	setAttr -av ".pt[218].px";
-	setAttr -av ".pt[218].py";
-	setAttr -av ".pt[218].pz";
-	setAttr ".pt[219]" -type "float3" 6.1110408e-11 0.033142678 0 ;
-	setAttr -av ".pt[219].px";
-	setAttr -av ".pt[219].py";
-	setAttr -av ".pt[219].pz";
-	setAttr ".pt[220]" -type "float3" -9.7776653e-10 0.031121356 0 ;
-	setAttr -av ".pt[220].px";
-	setAttr -av ".pt[220].py";
-	setAttr -av ".pt[220].pz";
-	setAttr ".pt[221]" -type "float3" 0 0.031121356 0 ;
-	setAttr -av ".pt[221].px";
-	setAttr -av ".pt[221].py";
-	setAttr -av ".pt[221].pz";
-	setAttr ".pt[222]" -type "float3" 0 0.031121356 0 ;
-	setAttr -av ".pt[222].px";
-	setAttr -av ".pt[222].py";
-	setAttr -av ".pt[222].pz";
-	setAttr ".pt[223]" -type "float3" 0 0.031121356 2.4444163e-10 ;
-	setAttr -av ".pt[223].px";
-	setAttr -av ".pt[223].py";
-	setAttr -av ".pt[223].pz";
-	setAttr ".pt[224]" -type "float3" -9.7776653e-10 0.031121356 0 ;
-	setAttr -av ".pt[224].px";
-	setAttr -av ".pt[224].py";
-	setAttr -av ".pt[224].pz";
-	setAttr ".pt[225]" -type "float3" -9.7776653e-10 0.031121356 0 ;
-	setAttr -av ".pt[225].px";
-	setAttr -av ".pt[225].py";
-	setAttr -av ".pt[225].pz";
-	setAttr ".pt[226]" -type "float3" 0 0.031121356 0 ;
-	setAttr -av ".pt[226].px";
-	setAttr -av ".pt[226].py";
-	setAttr -av ".pt[226].pz";
-	setAttr ".pt[227]" -type "float3" 0 0.031121356 4.8888327e-10 ;
-	setAttr -av ".pt[227].px";
-	setAttr -av ".pt[227].py";
-	setAttr -av ".pt[227].pz";
-	setAttr ".pt[228]" -type "float3" 2.4444163e-10 0.031121356 0 ;
-	setAttr -av ".pt[228].px";
-	setAttr -av ".pt[228].py";
-	setAttr -av ".pt[228].pz";
-	setAttr ".pt[229]" -type "float3" -4.8888327e-10 0.031121356 0 ;
-	setAttr -av ".pt[229].px";
-	setAttr -av ".pt[229].py";
-	setAttr -av ".pt[229].pz";
-	setAttr ".pt[230]" -type "float3" -9.7776653e-10 0.031121356 0 ;
-	setAttr -av ".pt[230].px";
-	setAttr -av ".pt[230].py";
-	setAttr -av ".pt[230].pz";
-	setAttr ".pt[231]" -type "float3" 9.7776653e-10 0.031121356 1.2222082e-10 ;
-	setAttr -av ".pt[231].px";
-	setAttr -av ".pt[231].py";
-	setAttr -av ".pt[231].pz";
-	setAttr ".pt[232]" -type "float3" 1.9555331e-09 0.031121356 0 ;
-	setAttr -av ".pt[232].px";
-	setAttr -av ".pt[232].py";
-	setAttr -av ".pt[232].pz";
-	setAttr ".pt[233]" -type "float3" -9.7776653e-10 0.031121356 -1.2222082e-10 ;
-	setAttr -av ".pt[233].px";
-	setAttr -av ".pt[233].py";
-	setAttr -av ".pt[233].pz";
-	setAttr ".pt[234]" -type "float3" 9.7776653e-10 0.031121356 0 ;
-	setAttr -av ".pt[234].px";
-	setAttr -av ".pt[234].py";
-	setAttr -av ".pt[234].pz";
-	setAttr ".pt[235]" -type "float3" 9.7776653e-10 0.031121356 -4.8888327e-10 ;
-	setAttr -av ".pt[235].px";
-	setAttr -av ".pt[235].py";
-	setAttr -av ".pt[235].pz";
-	setAttr ".pt[236]" -type "float3" 2.4444163e-10 0.031121356 -4.8888327e-10 ;
-	setAttr -av ".pt[236].px";
-	setAttr -av ".pt[236].py";
-	setAttr -av ".pt[236].pz";
-	setAttr ".pt[237]" -type "float3" 0 0.031121356 0 ;
-	setAttr -av ".pt[237].px";
-	setAttr -av ".pt[237].py";
-	setAttr -av ".pt[237].pz";
-	setAttr ".pt[238]" -type "float3" -2.4444163e-10 0.031121356 -4.8888327e-10 ;
-	setAttr -av ".pt[238].px";
-	setAttr -av ".pt[238].py";
-	setAttr -av ".pt[238].pz";
-	setAttr ".pt[239]" -type "float3" -1.4666497e-09 0.031121356 -4.8888327e-10 ;
-	setAttr -av ".pt[239].px";
-	setAttr -av ".pt[239].py";
-	setAttr -av ".pt[239].pz";
-	setAttr ".pt[240]" -type "float3" 0.0018107463 0.027947614 -0.0013155858 ;
-	setAttr -av ".pt[240].px";
-	setAttr -av ".pt[240].py";
-	setAttr -av ".pt[240].pz";
-	setAttr ".pt[241]" -type "float3" 0.0021286602 0.027947614 -0.00069164473 ;
-	setAttr -av ".pt[241].px";
-	setAttr -av ".pt[241].py";
-	setAttr -av ".pt[241].pz";
-	setAttr ".pt[242]" -type "float3" 0.0022382052 0.027947614 -1.4862424e-09 ;
-	setAttr -av ".pt[242].px";
-	setAttr -av ".pt[242].py";
-	setAttr -av ".pt[242].pz";
-	setAttr ".pt[243]" -type "float3" 0.0021286602 0.027947614 0.00069164304 ;
-	setAttr -av ".pt[243].px";
-	setAttr -av ".pt[243].py";
-	setAttr -av ".pt[243].pz";
-	setAttr ".pt[244]" -type "float3" 0.0018107473 0.027947614 0.0013155834 ;
-	setAttr -av ".pt[244].px";
-	setAttr -av ".pt[244].py";
-	setAttr -av ".pt[244].pz";
-	setAttr ".pt[245]" -type "float3" 0.0013155834 0.027947614 0.0018107473 ;
-	setAttr -av ".pt[245].px";
-	setAttr -av ".pt[245].py";
-	setAttr -av ".pt[245].pz";
-	setAttr ".pt[246]" -type "float3" 0.00069164392 0.027947614 0.0021286611 ;
-	setAttr -av ".pt[246].px";
-	setAttr -av ".pt[246].py";
-	setAttr -av ".pt[246].pz";
-	setAttr ".pt[247]" -type "float3" -3.4591491e-10 0.027947614 0.0022382056 ;
-	setAttr -av ".pt[247].px";
-	setAttr -av ".pt[247].py";
-	setAttr -av ".pt[247].pz";
-	setAttr ".pt[248]" -type "float3" -0.00069164415 0.027947614 0.0021286611 ;
-	setAttr -av ".pt[248].px";
-	setAttr -av ".pt[248].py";
-	setAttr -av ".pt[248].pz";
-	setAttr ".pt[249]" -type "float3" -0.0013155858 0.027947614 0.0018107473 ;
-	setAttr -av ".pt[249].px";
-	setAttr -av ".pt[249].py";
-	setAttr -av ".pt[249].pz";
-	setAttr ".pt[250]" -type "float3" -0.0018107473 0.027947614 0.0013155843 ;
-	setAttr -av ".pt[250].px";
-	setAttr -av ".pt[250].py";
-	setAttr -av ".pt[250].pz";
-	setAttr ".pt[251]" -type "float3" -0.0021286632 0.027947614 0.0006916438 ;
-	setAttr -av ".pt[251].px";
-	setAttr -av ".pt[251].py";
-	setAttr -av ".pt[251].pz";
-	setAttr ".pt[252]" -type "float3" -0.0022382052 0.027947614 -1.4862424e-09 ;
-	setAttr -av ".pt[252].px";
-	setAttr -av ".pt[252].py";
-	setAttr -av ".pt[252].pz";
-	setAttr ".pt[253]" -type "float3" -0.0021286632 0.027947614 -0.00069164491 ;
-	setAttr -av ".pt[253].px";
-	setAttr -av ".pt[253].py";
-	setAttr -av ".pt[253].pz";
-	setAttr ".pt[254]" -type "float3" -0.0018107473 0.027947614 -0.0013155858 ;
-	setAttr -av ".pt[254].px";
-	setAttr -av ".pt[254].py";
-	setAttr -av ".pt[254].pz";
-	setAttr ".pt[255]" -type "float3" -0.0013155834 0.027947614 -0.0018107467 ;
-	setAttr -av ".pt[255].px";
-	setAttr -av ".pt[255].py";
-	setAttr -av ".pt[255].pz";
-	setAttr ".pt[256]" -type "float3" -0.00069164438 0.027947614 -0.0021286625 ;
-	setAttr -av ".pt[256].px";
-	setAttr -av ".pt[256].py";
-	setAttr -av ".pt[256].pz";
-	setAttr ".pt[257]" -type "float3" -5.188722e-11 0.027947614 -0.0022382082 ;
-	setAttr -av ".pt[257].px";
-	setAttr -av ".pt[257].py";
-	setAttr -av ".pt[257].pz";
-	setAttr ".pt[258]" -type "float3" 0.00069164269 0.027947614 -0.0021286625 ;
-	setAttr -av ".pt[258].px";
-	setAttr -av ".pt[258].py";
-	setAttr -av ".pt[258].pz";
-	setAttr ".pt[259]" -type "float3" 0.0013155838 0.027947614 -0.0018107467 ;
-	setAttr -av ".pt[259].px";
-	setAttr -av ".pt[259].py";
-	setAttr -av ".pt[259].pz";
-	setAttr ".pt[260]" -type "float3" 0.001428993 0.025093909 -0.0010382247 ;
-	setAttr -av ".pt[260].px";
-	setAttr -av ".pt[260].py";
-	setAttr -av ".pt[260].pz";
-	setAttr ".pt[261]" -type "float3" 0.001679881 0.025093909 -0.00054582785 ;
-	setAttr -av ".pt[261].px";
-	setAttr -av ".pt[261].py";
-	setAttr -av ".pt[261].pz";
-	setAttr ".pt[262]" -type "float3" 0.0017663332 0.025093909 -1.1553952e-09 ;
-	setAttr -av ".pt[262].px";
-	setAttr -av ".pt[262].py";
-	setAttr -av ".pt[262].pz";
-	setAttr ".pt[263]" -type "float3" 0.001679881 0.025093909 0.00054582616 ;
-	setAttr -av ".pt[263].px";
-	setAttr -av ".pt[263].py";
-	setAttr -av ".pt[263].pz";
-	setAttr ".pt[264]" -type "float3" 0.001428993 0.025093909 0.0010382244 ;
-	setAttr -av ".pt[264].px";
-	setAttr -av ".pt[264].py";
-	setAttr -av ".pt[264].pz";
-	setAttr ".pt[265]" -type "float3" 0.0010382228 0.025093909 0.001428993 ;
-	setAttr -av ".pt[265].px";
-	setAttr -av ".pt[265].py";
-	setAttr -av ".pt[265].pz";
-	setAttr ".pt[266]" -type "float3" 0.00054582692 0.025093909 0.0016798825 ;
-	setAttr -av ".pt[266].px";
-	setAttr -av ".pt[266].py";
-	setAttr -av ".pt[266].pz";
-	setAttr ".pt[267]" -type "float3" -1.7153465e-10 0.025093909 0.0017663308 ;
-	setAttr -av ".pt[267].px";
-	setAttr -av ".pt[267].py";
-	setAttr -av ".pt[267].pz";
-	setAttr ".pt[268]" -type "float3" -0.00054582738 0.025093909 0.0016798825 ;
-	setAttr -av ".pt[268].px";
-	setAttr -av ".pt[268].py";
-	setAttr -av ".pt[268].pz";
-	setAttr ".pt[269]" -type "float3" -0.0010382257 0.025093909 0.001428993 ;
-	setAttr -av ".pt[269].px";
-	setAttr -av ".pt[269].py";
-	setAttr -av ".pt[269].pz";
-	setAttr ".pt[270]" -type "float3" -0.001428992 0.025093909 0.001038224 ;
-	setAttr -av ".pt[270].px";
-	setAttr -av ".pt[270].py";
-	setAttr -av ".pt[270].pz";
-	setAttr ".pt[271]" -type "float3" -0.001679881 0.025093909 0.00054582639 ;
-	setAttr -av ".pt[271].px";
-	setAttr -av ".pt[271].py";
-	setAttr -av ".pt[271].pz";
-	setAttr ".pt[272]" -type "float3" -0.0017663332 0.025093909 -1.1553952e-09 ;
-	setAttr -av ".pt[272].px";
-	setAttr -av ".pt[272].py";
-	setAttr -av ".pt[272].pz";
-	setAttr ".pt[273]" -type "float3" -0.0016798821 0.025093909 -0.0005458275 ;
-	setAttr -av ".pt[273].px";
-	setAttr -av ".pt[273].py";
-	setAttr -av ".pt[273].pz";
-	setAttr ".pt[274]" -type "float3" -0.001428994 0.025093909 -0.0010382247 ;
-	setAttr -av ".pt[274].px";
-	setAttr -av ".pt[274].py";
-	setAttr -av ".pt[274].pz";
-	setAttr ".pt[275]" -type "float3" -0.0010382228 0.025093909 -0.0014289925 ;
-	setAttr -av ".pt[275].px";
-	setAttr -av ".pt[275].py";
-	setAttr -av ".pt[275].pz";
-	setAttr ".pt[276]" -type "float3" -0.00054582738 0.025093909 -0.0016798825 ;
-	setAttr -av ".pt[276].px";
-	setAttr -av ".pt[276].py";
-	setAttr -av ".pt[276].pz";
-	setAttr ".pt[277]" -type "float3" 7.1472835e-11 0.025093909 -0.0017663308 ;
-	setAttr -av ".pt[277].px";
-	setAttr -av ".pt[277].py";
-	setAttr -av ".pt[277].pz";
-	setAttr ".pt[278]" -type "float3" 0.00054582639 0.025093909 -0.0016798825 ;
-	setAttr -av ".pt[278].px";
-	setAttr -av ".pt[278].py";
-	setAttr -av ".pt[278].pz";
-	setAttr ".pt[279]" -type "float3" 0.0010382237 0.025093909 -0.0014289925 ;
-	setAttr -av ".pt[279].px";
-	setAttr -av ".pt[279].py";
-	setAttr -av ".pt[279].pz";
-	setAttr ".pt[280]" -type "float3" 9.7776653e-10 0.02224021 0 ;
-	setAttr -av ".pt[280].px";
-	setAttr -av ".pt[280].py";
-	setAttr -av ".pt[280].pz";
-	setAttr ".pt[281]" -type "float3" 9.7776653e-10 0.02224021 1.2222082e-10 ;
-	setAttr -av ".pt[281].px";
-	setAttr -av ".pt[281].py";
-	setAttr -av ".pt[281].pz";
-	setAttr ".pt[282]" -type "float3" 0 0.02224021 -2.3311771e-16 ;
-	setAttr -av ".pt[282].px";
-	setAttr -av ".pt[282].py";
-	setAttr -av ".pt[282].pz";
-	setAttr ".pt[283]" -type "float3" 9.7776653e-10 0.02224021 0 ;
-	setAttr -av ".pt[283].px";
-	setAttr -av ".pt[283].py";
-	setAttr -av ".pt[283].pz";
-	setAttr ".pt[284]" -type "float3" 9.7776653e-10 0.02224021 0 ;
-	setAttr -av ".pt[284].px";
-	setAttr -av ".pt[284].py";
-	setAttr -av ".pt[284].pz";
-	setAttr ".pt[285]" -type "float3" 0 0.02224021 0 ;
-	setAttr -av ".pt[285].px";
-	setAttr -av ".pt[285].py";
-	setAttr -av ".pt[285].pz";
-	setAttr ".pt[286]" -type "float3" 9.7776653e-10 0.02224021 -4.8888327e-10 ;
-	setAttr -av ".pt[286].px";
-	setAttr -av ".pt[286].py";
-	setAttr -av ".pt[286].pz";
-	setAttr ".pt[287]" -type "float3" -2.3311771e-16 0.02224021 4.8888327e-10 ;
-	setAttr -av ".pt[287].px";
-	setAttr -av ".pt[287].py";
-	setAttr -av ".pt[287].pz";
-	setAttr ".pt[288]" -type "float3" 4.8888327e-10 0.02224021 -4.8888327e-10 ;
-	setAttr -av ".pt[288].px";
-	setAttr -av ".pt[288].py";
-	setAttr -av ".pt[288].pz";
-	setAttr ".pt[289]" -type "float3" 0 0.02224021 0 ;
-	setAttr -av ".pt[289].px";
-	setAttr -av ".pt[289].py";
-	setAttr -av ".pt[289].pz";
-	setAttr ".pt[290]" -type "float3" -9.7776653e-10 0.02224021 -2.4444163e-10 ;
-	setAttr -av ".pt[290].px";
-	setAttr -av ".pt[290].py";
-	setAttr -av ".pt[290].pz";
-	setAttr ".pt[291]" -type "float3" -9.7776653e-10 0.02224021 2.4444163e-10 ;
-	setAttr -av ".pt[291].px";
-	setAttr -av ".pt[291].py";
-	setAttr -av ".pt[291].pz";
-	setAttr ".pt[292]" -type "float3" -1.9555331e-09 0.02224021 -2.3311771e-16 ;
-	setAttr -av ".pt[292].px";
-	setAttr -av ".pt[292].py";
-	setAttr -av ".pt[292].pz";
-	setAttr ".pt[293]" -type "float3" 2.9332994e-09 0.02224021 -1.2222082e-10 ;
-	setAttr -av ".pt[293].px";
-	setAttr -av ".pt[293].py";
-	setAttr -av ".pt[293].pz";
-	setAttr ".pt[294]" -type "float3" -9.7776653e-10 0.02224021 0 ;
-	setAttr -av ".pt[294].px";
-	setAttr -av ".pt[294].py";
-	setAttr -av ".pt[294].pz";
-	setAttr ".pt[295]" -type "float3" 0 0.02224021 4.8888327e-10 ;
-	setAttr -av ".pt[295].px";
-	setAttr -av ".pt[295].py";
-	setAttr -av ".pt[295].pz";
-	setAttr ".pt[296]" -type "float3" -4.8888327e-10 0.02224021 -4.8888327e-10 ;
-	setAttr -av ".pt[296].px";
-	setAttr -av ".pt[296].py";
-	setAttr -av ".pt[296].pz";
-	setAttr ".pt[297]" -type "float3" 0 0.02224021 4.8888327e-10 ;
-	setAttr -av ".pt[297].px";
-	setAttr -av ".pt[297].py";
-	setAttr -av ".pt[297].pz";
-	setAttr ".pt[298]" -type "float3" -4.8888327e-10 0.02224021 -4.8888327e-10 ;
-	setAttr -av ".pt[298].px";
-	setAttr -av ".pt[298].py";
-	setAttr -av ".pt[298].pz";
-	setAttr ".pt[299]" -type "float3" 9.7776653e-10 0.02224021 4.8888327e-10 ;
-	setAttr -av ".pt[299].px";
-	setAttr -av ".pt[299].py";
-	setAttr -av ".pt[299].pz";
-	setAttr ".pt[300]" -type "float3" -0.00042713826 0.019386508 0.00031033356 ;
-	setAttr -av ".pt[300].px";
-	setAttr -av ".pt[300].py";
-	setAttr -av ".pt[300].pz";
-	setAttr ".pt[301]" -type "float3" -0.00050213101 0.019386508 0.00016315244 ;
-	setAttr -av ".pt[301].px";
-	setAttr -av ".pt[301].py";
-	setAttr -av ".pt[301].pz";
-	setAttr ".pt[302]" -type "float3" -0.00052796945 0.019386508 3.521273e-10 ;
-	setAttr -av ".pt[302].px";
-	setAttr -av ".pt[302].py";
-	setAttr -av ".pt[302].pz";
-	setAttr ".pt[303]" -type "float3" -0.00050213101 0.019386508 -0.00016315182 ;
-	setAttr -av ".pt[303].px";
-	setAttr -av ".pt[303].py";
-	setAttr -av ".pt[303].pz";
-	setAttr ".pt[304]" -type "float3" -0.00042713826 0.019386508 -0.00031033379 ;
-	setAttr -av ".pt[304].px";
-	setAttr -av ".pt[304].py";
-	setAttr -av ".pt[304].pz";
-	setAttr ".pt[305]" -type "float3" -0.00031033525 0.019386508 -0.00042713777 ;
-	setAttr -av ".pt[305].px";
-	setAttr -av ".pt[305].py";
-	setAttr -av ".pt[305].pz";
-	setAttr ".pt[306]" -type "float3" -0.0001631511 0.019386508 -0.00050213101 ;
-	setAttr -av ".pt[306].px";
-	setAttr -av ".pt[306].py";
-	setAttr -av ".pt[306].pz";
-	setAttr ".pt[307]" -type "float3" 3.7751195e-11 0.019386508 -0.00052797142 ;
-	setAttr -av ".pt[307].px";
-	setAttr -av ".pt[307].py";
-	setAttr -av ".pt[307].pz";
-	setAttr ".pt[308]" -type "float3" 0.00016315305 0.019386508 -0.00050213101 ;
-	setAttr -av ".pt[308].px";
-	setAttr -av ".pt[308].py";
-	setAttr -av ".pt[308].pz";
-	setAttr ".pt[309]" -type "float3" 0.00031033429 0.019386508 -0.00042713777 ;
-	setAttr -av ".pt[309].px";
-	setAttr -av ".pt[309].py";
-	setAttr -av ".pt[309].pz";
-	setAttr ".pt[310]" -type "float3" 0.00042713631 0.019386508 -0.00031033356 ;
-	setAttr -av ".pt[310].px";
-	setAttr -av ".pt[310].py";
-	setAttr -av ".pt[310].pz";
-	setAttr ".pt[311]" -type "float3" 0.00050213293 0.019386508 -0.00016315182 ;
-	setAttr -av ".pt[311].px";
-	setAttr -av ".pt[311].py";
-	setAttr -av ".pt[311].pz";
-	setAttr ".pt[312]" -type "float3" 0.00052796945 0.019386508 3.521273e-10 ;
-	setAttr -av ".pt[312].px";
-	setAttr -av ".pt[312].py";
-	setAttr -av ".pt[312].pz";
-	setAttr ".pt[313]" -type "float3" 0.00050213002 0.019386508 0.00016315244 ;
-	setAttr -av ".pt[313].px";
-	setAttr -av ".pt[313].py";
-	setAttr -av ".pt[313].pz";
-	setAttr ".pt[314]" -type "float3" 0.00042713826 0.019386508 0.00031033356 ;
-	setAttr -av ".pt[314].px";
-	setAttr -av ".pt[314].py";
-	setAttr -av ".pt[314].pz";
-	setAttr ".pt[315]" -type "float3" 0.00031033429 0.019386508 0.00042713777 ;
-	setAttr -av ".pt[315].px";
-	setAttr -av ".pt[315].py";
-	setAttr -av ".pt[315].pz";
-	setAttr ".pt[316]" -type "float3" 0.00016315158 0.019386508 0.00050213101 ;
-	setAttr -av ".pt[316].px";
-	setAttr -av ".pt[316].py";
-	setAttr -av ".pt[316].pz";
-	setAttr ".pt[317]" -type "float3" -4.2470139e-11 0.019386508 0.00052797043 ;
-	setAttr -av ".pt[317].px";
-	setAttr -av ".pt[317].py";
-	setAttr -av ".pt[317].pz";
-	setAttr ".pt[318]" -type "float3" -0.00016315257 0.019386508 0.00050213101 ;
-	setAttr -av ".pt[318].px";
-	setAttr -av ".pt[318].py";
-	setAttr -av ".pt[318].pz";
-	setAttr ".pt[319]" -type "float3" -0.00031033429 0.019386508 0.00042713777 ;
-	setAttr -av ".pt[319].px";
-	setAttr -av ".pt[319].py";
-	setAttr -av ".pt[319].pz";
-	setAttr ".pt[320]" -type "float3" -9.7776653e-10 0.016532784 -2.4444163e-10 ;
-	setAttr -av ".pt[320].px";
-	setAttr -av ".pt[320].py";
-	setAttr -av ".pt[320].pz";
-	setAttr ".pt[321]" -type "float3" -1.9555331e-09 0.016532784 0 ;
-	setAttr -av ".pt[321].px";
-	setAttr -av ".pt[321].py";
-	setAttr -av ".pt[321].pz";
-	setAttr ".pt[322]" -type "float3" 0 0.016532784 -2.3311771e-16 ;
-	setAttr -av ".pt[322].px";
-	setAttr -av ".pt[322].py";
-	setAttr -av ".pt[322].pz";
-	setAttr ".pt[323]" -type "float3" -1.9555331e-09 0.016532784 0 ;
-	setAttr -av ".pt[323].px";
-	setAttr -av ".pt[323].py";
-	setAttr -av ".pt[323].pz";
-	setAttr ".pt[324]" -type "float3" -1.9555331e-09 0.016532784 0 ;
-	setAttr -av ".pt[324].px";
-	setAttr -av ".pt[324].py";
-	setAttr -av ".pt[324].pz";
-	setAttr ".pt[325]" -type "float3" 0 0.016532784 0 ;
-	setAttr -av ".pt[325].px";
-	setAttr -av ".pt[325].py";
-	setAttr -av ".pt[325].pz";
-	setAttr ".pt[326]" -type "float3" 0 0.016532784 4.8888327e-10 ;
-	setAttr -av ".pt[326].px";
-	setAttr -av ".pt[326].py";
-	setAttr -av ".pt[326].pz";
-	setAttr ".pt[327]" -type "float3" -1.1655885e-16 0.016532784 4.8888327e-10 ;
-	setAttr -av ".pt[327].px";
-	setAttr -av ".pt[327].py";
-	setAttr -av ".pt[327].pz";
-	setAttr ".pt[328]" -type "float3" 0 0.016532784 4.8888327e-10 ;
-	setAttr -av ".pt[328].px";
-	setAttr -av ".pt[328].py";
-	setAttr -av ".pt[328].pz";
-	setAttr ".pt[329]" -type "float3" 0 0.016532784 0 ;
-	setAttr -av ".pt[329].px";
-	setAttr -av ".pt[329].py";
-	setAttr -av ".pt[329].pz";
-	setAttr ".pt[330]" -type "float3" 1.9555331e-09 0.016532784 4.8888327e-10 ;
-	setAttr -av ".pt[330].px";
-	setAttr -av ".pt[330].py";
-	setAttr -av ".pt[330].pz";
-	setAttr ".pt[331]" -type "float3" -1.9555331e-09 0.016532784 0 ;
-	setAttr -av ".pt[331].px";
-	setAttr -av ".pt[331].py";
-	setAttr -av ".pt[331].pz";
-	setAttr ".pt[332]" -type "float3" -9.7776653e-10 0.016532784 -2.3311771e-16 ;
-	setAttr -av ".pt[332].px";
-	setAttr -av ".pt[332].py";
-	setAttr -av ".pt[332].pz";
-	setAttr ".pt[333]" -type "float3" 0 0.016532784 0 ;
-	setAttr -av ".pt[333].px";
-	setAttr -av ".pt[333].py";
-	setAttr -av ".pt[333].pz";
-	setAttr ".pt[334]" -type "float3" 9.7776653e-10 0.016532784 -2.4444163e-10 ;
-	setAttr -av ".pt[334].px";
-	setAttr -av ".pt[334].py";
-	setAttr -av ".pt[334].pz";
-	setAttr ".pt[335]" -type "float3" 0 0.016532784 0 ;
-	setAttr -av ".pt[335].px";
-	setAttr -av ".pt[335].py";
-	setAttr -av ".pt[335].pz";
-	setAttr ".pt[336]" -type "float3" -4.8888327e-10 0.016532784 0 ;
-	setAttr -av ".pt[336].px";
-	setAttr -av ".pt[336].py";
-	setAttr -av ".pt[336].pz";
-	setAttr ".pt[337]" -type "float3" -1.7483827e-16 0.016532784 -9.7776653e-10 ;
-	setAttr -av ".pt[337].px";
-	setAttr -av ".pt[337].py";
-	setAttr -av ".pt[337].pz";
-	setAttr ".pt[338]" -type "float3" 9.7776653e-10 0.016532784 0 ;
-	setAttr -av ".pt[338].px";
-	setAttr -av ".pt[338].py";
-	setAttr -av ".pt[338].pz";
-	setAttr ".pt[339]" -type "float3" 9.7776653e-10 0.016532784 0 ;
-	setAttr -av ".pt[339].px";
-	setAttr -av ".pt[339].py";
-	setAttr -av ".pt[339].pz";
-	setAttr ".pt[340]" -type "float3" -9.7776653e-10 0.013679084 -4.8888327e-10 ;
-	setAttr -av ".pt[340].px";
-	setAttr -av ".pt[340].py";
-	setAttr -av ".pt[340].pz";
-	setAttr ".pt[341]" -type "float3" -9.7776653e-10 0.013679084 0 ;
-	setAttr -av ".pt[341].px";
-	setAttr -av ".pt[341].py";
-	setAttr -av ".pt[341].pz";
-	setAttr ".pt[342]" -type "float3" -9.7776653e-10 0.013679084 4.6623542e-16 ;
-	setAttr -av ".pt[342].px";
-	setAttr -av ".pt[342].py";
-	setAttr -av ".pt[342].pz";
-	setAttr ".pt[343]" -type "float3" -9.7776653e-10 0.013679084 -3.6666242e-10 ;
-	setAttr -av ".pt[343].px";
-	setAttr -av ".pt[343].py";
-	setAttr -av ".pt[343].pz";
-	setAttr ".pt[344]" -type "float3" -1.9555331e-09 0.013679084 0 ;
-	setAttr -av ".pt[344].px";
-	setAttr -av ".pt[344].py";
-	setAttr -av ".pt[344].pz";
-	setAttr ".pt[345]" -type "float3" 4.8888327e-10 0.013679084 0 ;
-	setAttr -av ".pt[345].px";
-	setAttr -av ".pt[345].py";
-	setAttr -av ".pt[345].pz";
-	setAttr ".pt[346]" -type "float3" 9.7776653e-10 0.013679084 0 ;
-	setAttr -av ".pt[346].px";
-	setAttr -av ".pt[346].py";
-	setAttr -av ".pt[346].pz";
-	setAttr ".pt[347]" -type "float3" -1.1655885e-16 0.013679084 -4.8888327e-10 ;
-	setAttr -av ".pt[347].px";
-	setAttr -av ".pt[347].py";
-	setAttr -av ".pt[347].pz";
-	setAttr ".pt[348]" -type "float3" -4.8888327e-10 0.013679084 0 ;
-	setAttr -av ".pt[348].px";
-	setAttr -av ".pt[348].py";
-	setAttr -av ".pt[348].pz";
-	setAttr ".pt[349]" -type "float3" -4.8888327e-10 0.013679084 0 ;
-	setAttr -av ".pt[349].px";
-	setAttr -av ".pt[349].py";
-	setAttr -av ".pt[349].pz";
-	setAttr ".pt[350]" -type "float3" 0 0.013679084 -2.4444163e-10 ;
-	setAttr -av ".pt[350].px";
-	setAttr -av ".pt[350].py";
-	setAttr -av ".pt[350].pz";
-	setAttr ".pt[351]" -type "float3" 2.9332994e-09 0.013679084 0 ;
-	setAttr -av ".pt[351].px";
-	setAttr -av ".pt[351].py";
-	setAttr -av ".pt[351].pz";
-	setAttr ".pt[352]" -type "float3" 0 0.013679084 4.6623542e-16 ;
-	setAttr -av ".pt[352].px";
-	setAttr -av ".pt[352].py";
-	setAttr -av ".pt[352].pz";
-	setAttr ".pt[353]" -type "float3" -9.7776653e-10 0.013679084 -1.2222082e-10 ;
-	setAttr -av ".pt[353].px";
-	setAttr -av ".pt[353].py";
-	setAttr -av ".pt[353].pz";
-	setAttr ".pt[354]" -type "float3" 9.7776653e-10 0.013679084 -4.8888327e-10 ;
-	setAttr -av ".pt[354].px";
-	setAttr -av ".pt[354].py";
-	setAttr -av ".pt[354].pz";
-	setAttr ".pt[355]" -type "float3" -1.4666497e-09 0.013679084 0 ;
-	setAttr -av ".pt[355].px";
-	setAttr -av ".pt[355].py";
-	setAttr -av ".pt[355].pz";
-	setAttr ".pt[356]" -type "float3" 4.8888327e-10 0.013679084 0 ;
-	setAttr -av ".pt[356].px";
-	setAttr -av ".pt[356].py";
-	setAttr -av ".pt[356].pz";
-	setAttr ".pt[357]" -type "float3" 0 0.013679084 0 ;
-	setAttr -av ".pt[357].px";
-	setAttr -av ".pt[357].py";
-	setAttr -av ".pt[357].pz";
-	setAttr ".pt[358]" -type "float3" -4.8888327e-10 0.013679084 0 ;
-	setAttr -av ".pt[358].px";
-	setAttr -av ".pt[358].py";
-	setAttr -av ".pt[358].pz";
-	setAttr ".pt[359]" -type "float3" -9.7776653e-10 0.013679084 0 ;
-	setAttr -av ".pt[359].px";
-	setAttr -av ".pt[359].py";
-	setAttr -av ".pt[359].pz";
-	setAttr ".pt[360]" -type "float3" 0 0.01082537 0 ;
-	setAttr -av ".pt[360].px";
-	setAttr -av ".pt[360].py";
-	setAttr -av ".pt[360].pz";
-	setAttr ".pt[361]" -type "float3" -9.7776653e-10 0.01082537 1.2222082e-10 ;
-	setAttr -av ".pt[361].px";
-	setAttr -av ".pt[361].py";
-	setAttr -av ".pt[361].pz";
-	setAttr ".pt[362]" -type "float3" 0 0.01082537 1.1655885e-16 ;
-	setAttr -av ".pt[362].px";
-	setAttr -av ".pt[362].py";
-	setAttr -av ".pt[362].pz";
-	setAttr ".pt[363]" -type "float3" -9.7776653e-10 0.01082537 -3.6666242e-10 ;
-	setAttr -av ".pt[363].px";
-	setAttr -av ".pt[363].py";
-	setAttr -av ".pt[363].pz";
-	setAttr ".pt[364]" -type "float3" -9.7776653e-10 0.01082537 -4.8888327e-10 ;
-	setAttr -av ".pt[364].px";
-	setAttr -av ".pt[364].py";
-	setAttr -av ".pt[364].pz";
-	setAttr ".pt[365]" -type "float3" 0 0.01082537 -2.4444163e-10 ;
-	setAttr -av ".pt[365].px";
-	setAttr -av ".pt[365].py";
-	setAttr -av ".pt[365].pz";
-	setAttr ".pt[366]" -type "float3" 0 0.01082537 0 ;
-	setAttr -av ".pt[366].px";
-	setAttr -av ".pt[366].py";
-	setAttr -av ".pt[366].pz";
-	setAttr ".pt[367]" -type "float3" -1.1655885e-16 0.01082537 -4.8888327e-10 ;
-	setAttr -av ".pt[367].px";
-	setAttr -av ".pt[367].py";
-	setAttr -av ".pt[367].pz";
-	setAttr ".pt[368]" -type "float3" 2.4444163e-10 0.01082537 0 ;
-	setAttr -av ".pt[368].px";
-	setAttr -av ".pt[368].py";
-	setAttr -av ".pt[368].pz";
-	setAttr ".pt[369]" -type "float3" -9.7776653e-10 0.01082537 -2.4444163e-10 ;
-	setAttr -av ".pt[369].px";
-	setAttr -av ".pt[369].py";
-	setAttr -av ".pt[369].pz";
-	setAttr ".pt[370]" -type "float3" 0 0.01082537 0 ;
-	setAttr -av ".pt[370].px";
-	setAttr -av ".pt[370].py";
-	setAttr -av ".pt[370].pz";
-	setAttr ".pt[371]" -type "float3" 0 0.01082537 -2.4444163e-10 ;
-	setAttr -av ".pt[371].px";
-	setAttr -av ".pt[371].py";
-	setAttr -av ".pt[371].pz";
-	setAttr ".pt[372]" -type "float3" 0 0.01082537 1.1655885e-16 ;
-	setAttr -av ".pt[372].px";
-	setAttr -av ".pt[372].py";
-	setAttr -av ".pt[372].pz";
-	setAttr ".pt[373]" -type "float3" -9.7776653e-10 0.01082537 0 ;
-	setAttr -av ".pt[373].px";
-	setAttr -av ".pt[373].py";
-	setAttr -av ".pt[373].pz";
-	setAttr ".pt[374]" -type "float3" 1.9555331e-09 0.01082537 0 ;
-	setAttr -av ".pt[374].px";
-	setAttr -av ".pt[374].py";
-	setAttr -av ".pt[374].pz";
-	setAttr ".pt[375]" -type "float3" 4.8888327e-10 0.01082537 7.3332485e-10 ;
-	setAttr -av ".pt[375].px";
-	setAttr -av ".pt[375].py";
-	setAttr -av ".pt[375].pz";
-	setAttr ".pt[376]" -type "float3" -2.4444163e-10 0.01082537 0 ;
-	setAttr -av ".pt[376].px";
-	setAttr -av ".pt[376].py";
-	setAttr -av ".pt[376].pz";
-	setAttr ".pt[377]" -type "float3" -5.8279427e-17 0.01082537 4.8888327e-10 ;
-	setAttr -av ".pt[377].px";
-	setAttr -av ".pt[377].py";
-	setAttr -av ".pt[377].pz";
-	setAttr ".pt[378]" -type "float3" 0 0.01082537 0 ;
-	setAttr -av ".pt[378].px";
-	setAttr -av ".pt[378].py";
-	setAttr -av ".pt[378].pz";
-	setAttr ".pt[379]" -type "float3" 0 0.01082537 7.3332485e-10 ;
-	setAttr -av ".pt[379].px";
-	setAttr -av ".pt[379].py";
-	setAttr -av ".pt[379].pz";
-	setAttr ".pt[380]" -type "float3" 0 0.0079716723 -2.4444163e-10 ;
-	setAttr -av ".pt[380].px";
-	setAttr -av ".pt[380].py";
-	setAttr -av ".pt[380].pz";
-	setAttr ".pt[381]" -type "float3" 1.9555331e-09 0.0079716723 0 ;
-	setAttr -av ".pt[381].px";
-	setAttr -av ".pt[381].py";
-	setAttr -av ".pt[381].pz";
-	setAttr ".pt[382]" -type "float3" 0 0.0079716723 0 ;
-	setAttr -av ".pt[382].px";
-	setAttr -av ".pt[382].py";
-	setAttr -av ".pt[382].pz";
-	setAttr ".pt[383]" -type "float3" 1.9555331e-09 0.0079716723 0 ;
-	setAttr -av ".pt[383].px";
-	setAttr -av ".pt[383].py";
-	setAttr -av ".pt[383].pz";
-	setAttr ".pt[384]" -type "float3" 9.7776653e-10 0.0079716723 -2.4444163e-10 ;
-	setAttr -av ".pt[384].px";
-	setAttr -av ".pt[384].py";
-	setAttr -av ".pt[384].pz";
-	setAttr ".pt[385]" -type "float3" 0 0.0079716723 2.4444163e-10 ;
-	setAttr -av ".pt[385].px";
-	setAttr -av ".pt[385].py";
-	setAttr -av ".pt[385].pz";
-	setAttr ".pt[386]" -type "float3" 0 0.0079716723 -4.8888327e-10 ;
-	setAttr -av ".pt[386].px";
-	setAttr -av ".pt[386].py";
-	setAttr -av ".pt[386].pz";
-	setAttr ".pt[387]" -type "float3" -1.1655885e-16 0.0079716723 0 ;
-	setAttr -av ".pt[387].px";
-	setAttr -av ".pt[387].py";
-	setAttr -av ".pt[387].pz";
-	setAttr ".pt[388]" -type "float3" 4.8888327e-10 0.0079716723 -4.8888327e-10 ;
-	setAttr -av ".pt[388].px";
-	setAttr -av ".pt[388].py";
-	setAttr -av ".pt[388].pz";
-	setAttr ".pt[389]" -type "float3" 0 0.0079716723 2.4444163e-10 ;
-	setAttr -av ".pt[389].px";
-	setAttr -av ".pt[389].py";
-	setAttr -av ".pt[389].pz";
-	setAttr ".pt[390]" -type "float3" 9.7776653e-10 0.0079716723 -2.4444163e-10 ;
-	setAttr -av ".pt[390].px";
-	setAttr -av ".pt[390].py";
-	setAttr -av ".pt[390].pz";
-	setAttr ".pt[391]" -type "float3" 0 0.0079716723 0 ;
-	setAttr -av ".pt[391].px";
-	setAttr -av ".pt[391].py";
-	setAttr -av ".pt[391].pz";
-	setAttr ".pt[392]" -type "float3" 9.7776653e-10 0.0079716723 0 ;
-	setAttr -av ".pt[392].px";
-	setAttr -av ".pt[392].py";
-	setAttr -av ".pt[392].pz";
-	setAttr ".pt[393]" -type "float3" -9.7776653e-10 0.0079716723 -1.2222082e-10 ;
-	setAttr -av ".pt[393].px";
-	setAttr -av ".pt[393].py";
-	setAttr -av ".pt[393].pz";
-	setAttr ".pt[394]" -type "float3" 9.7776653e-10 0.0079716723 -2.4444163e-10 ;
-	setAttr -av ".pt[394].px";
-	setAttr -av ".pt[394].py";
-	setAttr -av ".pt[394].pz";
-	setAttr ".pt[395]" -type "float3" -9.7776653e-10 0.0079716723 0 ;
-	setAttr -av ".pt[395].px";
-	setAttr -av ".pt[395].py";
-	setAttr -av ".pt[395].pz";
-	setAttr ".pt[396]" -type "float3" -4.8888327e-10 0.0079716723 -4.8888327e-10 ;
-	setAttr -av ".pt[396].px";
-	setAttr -av ".pt[396].py";
-	setAttr -av ".pt[396].pz";
-	setAttr ".pt[397]" -type "float3" 0 0.0079716723 0 ;
-	setAttr -av ".pt[397].px";
-	setAttr -av ".pt[397].py";
-	setAttr -av ".pt[397].pz";
-	setAttr ".pt[398]" -type "float3" 2.4444163e-10 0.0079716723 -4.8888327e-10 ;
-	setAttr -av ".pt[398].px";
-	setAttr -av ".pt[398].py";
-	setAttr -av ".pt[398].pz";
-	setAttr ".pt[399]" -type "float3" -4.8888327e-10 0.0079716723 0 ;
-	setAttr -av ".pt[399].px";
-	setAttr -av ".pt[399].py";
-	setAttr -av ".pt[399].pz";
-	setAttr ".pt[400]" -type "float3" 0 0.005117964 9.7776653e-10 ;
-	setAttr -av ".pt[400].px";
-	setAttr -av ".pt[400].py";
-	setAttr -av ".pt[400].pz";
-	setAttr ".pt[401]" -type "float3" 9.7776653e-10 0.005117964 1.2222082e-10 ;
-	setAttr -av ".pt[401].px";
-	setAttr -av ".pt[401].py";
-	setAttr -av ".pt[401].pz";
-	setAttr ".pt[402]" -type "float3" -9.7776653e-10 0.005117964 6.9935307e-16 ;
-	setAttr -av ".pt[402].px";
-	setAttr -av ".pt[402].py";
-	setAttr -av ".pt[402].pz";
-	setAttr ".pt[403]" -type "float3" 9.7776653e-10 0.005117964 1.2222082e-10 ;
-	setAttr -av ".pt[403].px";
-	setAttr -av ".pt[403].py";
-	setAttr -av ".pt[403].pz";
-	setAttr ".pt[404]" -type "float3" 0 0.005117964 4.8888327e-10 ;
-	setAttr -av ".pt[404].px";
-	setAttr -av ".pt[404].py";
-	setAttr -av ".pt[404].pz";
-	setAttr ".pt[405]" -type "float3" 0 0.005117964 -4.8888327e-10 ;
-	setAttr -av ".pt[405].px";
-	setAttr -av ".pt[405].py";
-	setAttr -av ".pt[405].pz";
-	setAttr ".pt[406]" -type "float3" 2.4444163e-10 0.005117964 -7.3332485e-10 ;
-	setAttr -av ".pt[406].px";
-	setAttr -av ".pt[406].py";
-	setAttr -av ".pt[406].pz";
-	setAttr ".pt[407]" -type "float3" -2.3311771e-16 0.005117964 0 ;
-	setAttr -av ".pt[407].px";
-	setAttr -av ".pt[407].py";
-	setAttr -av ".pt[407].pz";
-	setAttr ".pt[408]" -type "float3" 0 0.005117964 -7.3332485e-10 ;
-	setAttr -av ".pt[408].px";
-	setAttr -av ".pt[408].py";
-	setAttr -av ".pt[408].pz";
-	setAttr ".pt[409]" -type "float3" -4.8888327e-10 0.005117964 -4.8888327e-10 ;
-	setAttr -av ".pt[409].px";
-	setAttr -av ".pt[409].py";
-	setAttr -av ".pt[409].pz";
-	setAttr ".pt[410]" -type "float3" 0 0.005117964 -7.3332485e-10 ;
-	setAttr -av ".pt[410].px";
-	setAttr -av ".pt[410].py";
-	setAttr -av ".pt[410].pz";
-	setAttr ".pt[411]" -type "float3" 9.7776653e-10 0.005117964 0 ;
-	setAttr -av ".pt[411].px";
-	setAttr -av ".pt[411].py";
-	setAttr -av ".pt[411].pz";
-	setAttr ".pt[412]" -type "float3" 2.9332994e-09 0.005117964 6.9935307e-16 ;
-	setAttr -av ".pt[412].px";
-	setAttr -av ".pt[412].py";
-	setAttr -av ".pt[412].pz";
-	setAttr ".pt[413]" -type "float3" -1.9555331e-09 0.005117964 1.2222082e-10 ;
-	setAttr -av ".pt[413].px";
-	setAttr -av ".pt[413].py";
-	setAttr -av ".pt[413].pz";
-	setAttr ".pt[414]" -type "float3" 0 0.005117964 9.7776653e-10 ;
-	setAttr -av ".pt[414].px";
-	setAttr -av ".pt[414].py";
-	setAttr -av ".pt[414].pz";
-	setAttr ".pt[415]" -type "float3" 4.8888327e-10 0.005117964 -4.8888327e-10 ;
-	setAttr -av ".pt[415].px";
-	setAttr -av ".pt[415].py";
-	setAttr -av ".pt[415].pz";
-	setAttr ".pt[416]" -type "float3" 4.8888327e-10 0.005117964 4.8888327e-10 ;
-	setAttr -av ".pt[416].px";
-	setAttr -av ".pt[416].py";
-	setAttr -av ".pt[416].pz";
-	setAttr ".pt[417]" -type "float3" -5.8279427e-17 0.005117964 0 ;
-	setAttr -av ".pt[417].px";
-	setAttr -av ".pt[417].py";
-	setAttr -av ".pt[417].pz";
-	setAttr ".pt[418]" -type "float3" -7.3332485e-10 0.005117964 4.8888327e-10 ;
-	setAttr -av ".pt[418].px";
-	setAttr -av ".pt[418].py";
-	setAttr -av ".pt[418].pz";
-	setAttr ".pt[419]" -type "float3" 9.7776653e-10 0.005117964 -4.8888327e-10 ;
-	setAttr -av ".pt[419].px";
-	setAttr -av ".pt[419].py";
-	setAttr -av ".pt[419].pz";
-	setAttr ".pt[420]" -type "float3" -0.0032484366 0.033966437 0.0023601269 ;
-	setAttr -av ".pt[420].px";
-	setAttr -av ".pt[420].py";
-	setAttr -av ".pt[420].pz";
-	setAttr ".pt[421]" -type "float3" -0.0038187676 0.033966437 0.0012407961 ;
-	setAttr -av ".pt[421].px";
-	setAttr -av ".pt[421].py";
-	setAttr -av ".pt[421].pz";
-	setAttr ".pt[422]" -type "float3" -0.0040152823 0.033966437 2.8657734e-09 ;
-	setAttr -av ".pt[422].px";
-	setAttr -av ".pt[422].py";
-	setAttr -av ".pt[422].pz";
-	setAttr ".pt[423]" -type "float3" -0.0038187676 0.033966437 -0.001240792 ;
-	setAttr -av ".pt[423].px";
-	setAttr -av ".pt[423].py";
-	setAttr -av ".pt[423].pz";
-	setAttr ".pt[424]" -type "float3" -0.0032484375 0.033966437 -0.0023601225 ;
-	setAttr -av ".pt[424].px";
-	setAttr -av ".pt[424].py";
-	setAttr -av ".pt[424].pz";
-	setAttr ".pt[425]" -type "float3" -0.002360123 0.033966437 -0.0032484366 ;
-	setAttr -av ".pt[425].px";
-	setAttr -av ".pt[425].py";
-	setAttr -av ".pt[425].pz";
-	setAttr ".pt[426]" -type "float3" -0.0012407957 0.033966437 -0.003818769 ;
-	setAttr -av ".pt[426].px";
-	setAttr -av ".pt[426].py";
-	setAttr -av ".pt[426].pz";
-	setAttr ".pt[427]" -type "float3" -6.5935429e-10 0.033966437 -0.004015292 ;
-	setAttr -av ".pt[427].px";
-	setAttr -av ".pt[427].py";
-	setAttr -av ".pt[427].pz";
-	setAttr ".pt[428]" -type "float3" 0.0012407935 0.033966437 -0.003818769 ;
-	setAttr -av ".pt[428].px";
-	setAttr -av ".pt[428].py";
-	setAttr -av ".pt[428].pz";
-	setAttr ".pt[429]" -type "float3" 0.0023601234 0.033966437 -0.0032484366 ;
-	setAttr -av ".pt[429].px";
-	setAttr -av ".pt[429].py";
-	setAttr -av ".pt[429].pz";
-	setAttr ".pt[430]" -type "float3" 0.0032484385 0.033966437 -0.0023601244 ;
-	setAttr -av ".pt[430].px";
-	setAttr -av ".pt[430].py";
-	setAttr -av ".pt[430].pz";
-	setAttr ".pt[431]" -type "float3" 0.0038187688 0.033966437 -0.0012407929 ;
-	setAttr -av ".pt[431].px";
-	setAttr -av ".pt[431].py";
-	setAttr -av ".pt[431].pz";
-	setAttr ".pt[432]" -type "float3" 0.0040152823 0.033966437 2.8657734e-09 ;
-	setAttr -av ".pt[432].px";
-	setAttr -av ".pt[432].py";
-	setAttr -av ".pt[432].pz";
-	setAttr ".pt[433]" -type "float3" 0.0038187627 0.033966437 0.0012407959 ;
-	setAttr -av ".pt[433].px";
-	setAttr -av ".pt[433].py";
-	setAttr -av ".pt[433].pz";
-	setAttr ".pt[434]" -type "float3" 0.0032484317 0.033966437 0.0023601269 ;
-	setAttr -av ".pt[434].px";
-	setAttr -av ".pt[434].py";
-	setAttr -av ".pt[434].pz";
-	setAttr ".pt[435]" -type "float3" 0.0023601186 0.033966437 0.0032484396 ;
-	setAttr -av ".pt[435].px";
-	setAttr -av ".pt[435].py";
-	setAttr -av ".pt[435].pz";
-	setAttr ".pt[436]" -type "float3" 0.0012407935 0.033966437 0.0038187697 ;
-	setAttr -av ".pt[436].px";
-	setAttr -av ".pt[436].py";
-	setAttr -av ".pt[436].pz";
-	setAttr ".pt[437]" -type "float3" -1.0708278e-09 0.033966437 0.0040152925 ;
-	setAttr -av ".pt[437].px";
-	setAttr -av ".pt[437].py";
-	setAttr -av ".pt[437].pz";
-	setAttr ".pt[438]" -type "float3" -0.0012407957 0.033966437 0.0038187697 ;
-	setAttr -av ".pt[438].px";
-	setAttr -av ".pt[438].py";
-	setAttr -av ".pt[438].pz";
-	setAttr ".pt[439]" -type "float3" -0.0023601234 0.033966437 0.0032484396 ;
-	setAttr -av ".pt[439].px";
-	setAttr -av ".pt[439].py";
-	setAttr -av ".pt[439].pz";
-	setAttr ".pt[440]" -type "float3" -0.0017092521 0.036815852 0.00055537268 ;
-	setAttr -av ".pt[440].px";
-	setAttr -av ".pt[440].py";
-	setAttr -av ".pt[440].pz";
-	setAttr ".pt[441]" -type "float3" -0.0017972125 0.036815852 1.3278191e-09 ;
-	setAttr -av ".pt[441].px";
-	setAttr -av ".pt[441].py";
-	setAttr -av ".pt[441].pz";
-	setAttr ".pt[442]" -type "float3" -0.0017092521 0.036815852 -0.00055537111 ;
-	setAttr -av ".pt[442].px";
-	setAttr -av ".pt[442].py";
-	setAttr -av ".pt[442].pz";
-	setAttr ".pt[443]" -type "float3" -0.0014539817 0.036815852 -0.0010563721 ;
-	setAttr -av ".pt[443].px";
-	setAttr -av ".pt[443].py";
-	setAttr -av ".pt[443].pz";
-	setAttr ".pt[444]" -type "float3" -0.0010563736 0.036815852 -0.0014539824 ;
-	setAttr -av ".pt[444].px";
-	setAttr -av ".pt[444].py";
-	setAttr -av ".pt[444].pz";
-	setAttr ".pt[445]" -type "float3" -0.00055537245 0.036815852 -0.0017092541 ;
-	setAttr -av ".pt[445].px";
-	setAttr -av ".pt[445].py";
-	setAttr -av ".pt[445].pz";
-	setAttr ".pt[446]" -type "float3" -2.7221597e-10 0.036815852 -0.0017972203 ;
-	setAttr -av ".pt[446].px";
-	setAttr -av ".pt[446].py";
-	setAttr -av ".pt[446].pz";
-	setAttr ".pt[447]" -type "float3" 0.00055537198 0.036815852 -0.0017092541 ;
-	setAttr -av ".pt[447].px";
-	setAttr -av ".pt[447].py";
-	setAttr -av ".pt[447].pz";
-	setAttr ".pt[448]" -type "float3" 0.0010563718 0.036815852 -0.0014539824 ;
-	setAttr -av ".pt[448].px";
-	setAttr -av ".pt[448].py";
-	setAttr -av ".pt[448].pz";
-	setAttr ".pt[449]" -type "float3" 0.0014539832 0.036815852 -0.0010563721 ;
-	setAttr -av ".pt[449].px";
-	setAttr -av ".pt[449].py";
-	setAttr -av ".pt[449].pz";
-	setAttr ".pt[450]" -type "float3" 0.0017092546 0.036815852 -0.00055537163 ;
-	setAttr -av ".pt[450].px";
-	setAttr -av ".pt[450].py";
-	setAttr -av ".pt[450].pz";
-	setAttr ".pt[451]" -type "float3" 0.0017972116 0.036815852 1.3278191e-09 ;
-	setAttr -av ".pt[451].px";
-	setAttr -av ".pt[451].py";
-	setAttr -av ".pt[451].pz";
-	setAttr ".pt[452]" -type "float3" 0.0017092521 0.036815852 0.00055537245 ;
-	setAttr -av ".pt[452].px";
-	setAttr -av ".pt[452].py";
-	setAttr -av ".pt[452].pz";
-	setAttr ".pt[453]" -type "float3" 0.0014539799 0.036815852 0.0010563738 ;
-	setAttr -av ".pt[453].px";
-	setAttr -av ".pt[453].py";
-	setAttr -av ".pt[453].pz";
-	setAttr ".pt[454]" -type "float3" 0.0010563703 0.036815852 0.0014539835 ;
-	setAttr -av ".pt[454].px";
-	setAttr -av ".pt[454].py";
-	setAttr -av ".pt[454].pz";
-	setAttr ".pt[455]" -type "float3" 0.00055537198 0.036815852 0.0017092539 ;
-	setAttr -av ".pt[455].px";
-	setAttr -av ".pt[455].py";
-	setAttr -av ".pt[455].pz";
-	setAttr ".pt[456]" -type "float3" -4.8696724e-10 0.036815852 0.0017972203 ;
-	setAttr -av ".pt[456].px";
-	setAttr -av ".pt[456].py";
-	setAttr -av ".pt[456].pz";
-	setAttr ".pt[457]" -type "float3" -0.00055537245 0.036815852 0.0017092539 ;
-	setAttr -av ".pt[457].px";
-	setAttr -av ".pt[457].py";
-	setAttr -av ".pt[457].pz";
-	setAttr ".pt[458]" -type "float3" -0.0010563738 0.036815852 0.0014539835 ;
-	setAttr -av ".pt[458].px";
-	setAttr -av ".pt[458].py";
-	setAttr -av ".pt[458].pz";
-	setAttr ".pt[459]" -type "float3" -0.0014539817 0.036815852 0.0010563738 ;
-	setAttr -av ".pt[459].px";
-	setAttr -av ".pt[459].py";
-	setAttr -av ".pt[459].pz";
+	setAttr ".pt[182]" -type "float3" -4.8888327e-10 0.00252009 4.8888327e-10 ;
+	setAttr ".pt[183]" -type "float3" 2.4444163e-10 0.0022642552 0.0010563738 ;
 	setAttr -s 460 ".vt";
 	setAttr ".vt[0:165]"  0.29438129 -0.21887119 -0.095650271 0.25041568 -0.21887119 -0.18193765
 		 0.18193762 -0.21887119 -0.25041568 0.095650263 -0.21887119 -0.29438126 0 -0.21887119 -0.30953076
@@ -12466,7 +11374,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
 		+ "            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1084\n            -height 710\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1003\n            -height 798\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -autoExpandAllAnimatedShapes 1\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n"
 		+ "            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n"
 		+ "            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n"
@@ -12493,8 +11401,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n"
 		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n"
 		+ "                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1084\\n    -height 710\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1084\\n    -height 710\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1003\\n    -height 798\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1003\\n    -height 798\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -16731,9 +15639,6 @@ createNode animCurveTL -n "Lamp:pCylinderShape2_pnts_183__pntz";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 0.0010563737744577913;
-createNode groupId -n "groupId2";
-	rename -uid "56E41CD0-481F-0EC0-F966-FEB560819907";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId5";
 	rename -uid "A4F353BE-4B6C-6E8D-CDB1-F196BD3E7E9B";
 	setAttr ".ihi" 0;
@@ -16748,12 +15653,6 @@ createNode groupId -n "groupId10";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId11";
 	rename -uid "BA2D2A0C-4FE8-2070-CD1E-7DA31E77C629";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId12";
-	rename -uid "9894E481-4CEB-7B4E-DC42-CE9E32E8D59B";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId13";
-	rename -uid "25F90869-43AB-DD3F-775B-2D99B0E65D9A";
 	setAttr ".ihi" 0;
 createNode lambert -n "GlassMat";
 	rename -uid "59C8F151-4987-381D-E35F-D49D0B138745";
@@ -17338,8 +16237,378 @@ createNode polyTweakUV -n "polyTweakUV3";
 		 -0.50818074 -0.26823664 -0.494095 -0.28598589 -0.48505142 -0.3056609 -0.48193529
 		 -0.32533574 -0.48505142 -0.34308499 -0.494095 -0.35717046 -0.50818074 -0.36621422
 		 -0.52592993 -0.36933029 -0.54560483;
+createNode polyMapDel -n "polyMapDel2";
+	rename -uid "546D5552-4BB6-FA22-1C27-2F92268783CB";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:441]";
+createNode groupId -n "groupId12";
+	rename -uid "7783D8AB-4D32-D3E6-3E6D-40BE118ADC24";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts1";
+	rename -uid "895083FB-4AD7-11CC-B96F-7A875FAE8391";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 2 "f[21]" "f[182:441]";
+createNode groupId -n "groupId13";
+	rename -uid "632BE9D4-47F9-9269-68B7-49B5D5FAB0EE";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts2";
+	rename -uid "80A663B1-4BA7-EF73-B093-148FBCF1F4BA";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 2 "f[0:20]" "f[22:181]";
+createNode polyPlanarProj -n "polyPlanarProj3";
+	rename -uid "96F37D83-4925-E3C6-2F41-8D85BE21E9A6";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:441]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 -65.54429799275033 61.252745731346998 -17.954218563704472 1;
+	setAttr ".ws" yes;
+	setAttr ".pc" -type "double3" -2.1504034207561822 2.2428864256290626 -0.58904920663107718 ;
+	setAttr ".ps" -type "double2" 0.91424352895398553 0.90430627657672547 ;
+	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+createNode polyMapCut -n "polyMapCut2";
+	rename -uid "CEB418E5-4720-108F-ADFD-EE910710835F";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 39 "e[0:2]" "e[5:19]" "e[54]" "e[87]" "e[127]" "e[167]" "e[207]" "e[247]" "e[287]" "e[327]" "e[367]" "e[407]" "e[453]" "e[493]" "e[533]" "e[573]" "e[613]" "e[653]" "e[693]" "e[733]" "e[773]" "e[813]" "e[822]" "e[824]" "e[826]" "e[828]" "e[830]" "e[832]" "e[838]" "e[840]" "e[842]" "e[844]" "e[846]" "e[848]" "e[850]" "e[852]" "e[854]" "e[856]" "e[858:859]";
+createNode polyTweakUV -n "polyTweakUV4";
+	rename -uid "97373442-4163-8217-5D6D-5FA211F65735";
+	setAttr ".uopa" yes;
+	setAttr -s 515 ".uvtk";
+	setAttr ".uvtk[0:249]" -type "float2" -0.10894264 0.23748119 -0.06421978
+		 0.22363974 0.074362509 0.074947461 0.047122046 0.086137667 0.0083509553 0.21027662
+		 0.11910712 0.063628897 0.10126632 0.1978163 0.17676854 0.052107777 0.20926952 0.18027674
+		 0.24250853 0.039798178 0.31347534 0.16305213 0.30930957 0.027590357 0.40893152 0.15057465
+		 0.36871961 0.016153403 0.48600218 0.13731022 0.41685358 0.0049270168 0.53736198 0.12370858
+		 0.44915435 -0.0061727501 0.55838442 0.10997795 0.462724 -0.017138056 0.54759896 0.096244708
+		 0.45660517 -0.027910762 0.50685549 0.082638517 0.43187955 -0.038391732 0.44118783
+		 0.069360107 0.39156076 -0.048432432 0.35837826 0.056770768 0.34029445 -0.057814348
+		 0.26989797 0.31744823 0.28574643 0.14557302 0.14901304 0.30652496 0.21048105 0.13734096
+		 0.042246863 0.29367504 0.14392495 0.12829655 -0.04249306 0.27992117 0.090654247 0.11842506
+		 -0.098332353 0.26579258 0.055187091 0.10798641 -0.12092812 0.25158435 0.040368959
+		 0.097178146 0.43132982 -0.82502598 0.4316943 -0.82511574 0.43241587 -0.82526612 0.43342319
+		 -0.82546246 0.43461791 -0.82568568 0.43588278 -0.82591313 0.43709359 -0.82612246
+		 0.43813303 -0.82629347 0.43889859 -0.82640946 0.43931577 -0.82645923 0.43934384 -0.82643795
+		 0.43897983 -0.82634765 0.43825898 -0.82619733 0.43725231 -0.82600152 0.43605766 -0.82577938
+		 0.43479261 -0.82555264 0.43358108 -0.82534349 0.43254098 -0.82517225 0.43177506 -0.82505572
+		 0.43135777 -0.82500529 0.13735223 -0.097576633 0.11487769 -0.088888869 0.17397451
+		 -0.10642098 0.22102976 -0.11539577 0.27486584 -0.12463231 0.32897314 -0.13391677
+		 0.37753466 -0.14291696 0.41667941 -0.15179531 0.44273624 -0.16052793 0.45333561 -0.16909194
+		 0.44766453 -0.17745987 0.42656329 -0.18560453 0.39246705 -0.19350864 0.34922752 -0.20118155
+		 0.30369696 -0.041755401 0.24345255 -0.048914261 0.19060612 -0.0563717 0.14838564
+		 -0.064105645 0.12038278 -0.07211791 0.10894435 -0.08039026 0.18862331 -0.099908546
+		 0.17322028 -0.091962323 0.21403944 -0.10800217 0.24684608 -0.11620343 0.28469911
+		 -0.12468337 0.32336286 -0.13314806 0.35747233 -0.14136508 0.38512757 -0.14949593
+		 0.4036912 -0.15750709 0.41146943 -0.16536485 0.40785906 -0.17303443 0.39339694 -0.1804789
+		 0.3696849 -0.18765883 0.3392081 -0.19452766 0.30731341 -0.049501486 0.26550052 -0.055947375
+		 0.22827458 -0.062494356 0.19821095 -0.069422171 0.17804003 -0.076675192 0.16950536
+		 -0.084203705 0.23784697 -0.37605605 0.22159564 -0.37077954 0.26387653 -0.38134155
+		 0.29707602 -0.3866401 0.33516082 -0.39208886 0.37328014 -0.39757127 0.40710309 -0.40291271
+		 0.43418196 -0.40825346 0.45191529 -0.41359577 0.45863524 -0.41895095 0.45377573 -0.42434189
+		 0.43793729 -0.4298068 0.41283342 -0.43540362 0.38113514 -0.44121566 0.3486065 -0.33757263
+		 0.30738494 -0.34364554 0.27143183 -0.34932789 0.24281359 -0.35482037 0.22406089 -0.36019275
+		 0.21680391 -0.36549968 0.29775289 -0.37822682 0.28976592 -0.37370029 0.31070593 -0.3828117
+		 0.32730559 -0.38743678 0.34686074 -0.39232385 0.36686489 -0.39721182 0.38388267 -0.40185025
+		 0.3975496 -0.40646735 0.4065285 -0.4110454 0.40995488 -0.41556394 0.40751752 -0.41999808
+		 0.39948902 -0.4243153 0.38669768 -0.42847165 0.37045357 -0.43240309 0.3550193 -0.34923145
+		 0.3339884 -0.35291839 0.3157979 -0.35669222 0.3011879 -0.36071071 0.29149589 -0.36491266
+		 0.2875866 -0.36925361 0.33839872 -0.60583687 0.33009657 -0.60252053 0.35159215 -0.60916936
+		 0.36836049 -0.61251539 0.38803777 -0.61604643 0.40770295 -0.61959314 0.42463967 -0.6229617
+		 0.43812194 -0.62632197 0.4468278 -0.62967116 0.44990858 -0.63300812 0.44706866 -0.63633275
+		 0.43860194 -0.63964885 0.42535946 -0.64296657 0.40867981 -0.6463083 0.39275709 -0.58263004
+		 0.37199673 -0.58611888 0.35429993 -0.58940148 0.34020171 -0.59266871 0.3309994 -0.59593886
+		 0.3275331 -0.59922123 0.35444066 -0.60614938 0.34841493 -0.60292226 0.36406311 -0.60940242
+		 0.37631074 -0.6126743 0.3909348 -0.61618793 0.40575626 -0.619708 0.41813549 -0.62297821
+		 0.42801735 -0.62624818 0.43440768 -0.62950391 0.43667498 -0.63275021 0.43459687 -0.63596314
+		 0.42839512 -0.63912922 0.41867736 -0.6422165 0.40642211 -0.64518583 0.39531335 -0.58469486
+		 0.37973067 -0.58751905 0.36660388 -0.59040439 0.35613325 -0.59342921 0.34926572 -0.59654433
+		 0.34661368 -0.5997135 0.36106077 -0.63763952 0.35503408 -0.63448739 0.3706803 -0.64082009
+		 0.38288268 -0.64400584 0.3966178 -0.64719719 0.41035882 -0.65041506 0.42277214 -0.65364504
+		 0.43265727 -0.65685642 0.43904802 -0.66004431 0.44220105 -0.66318893 0.44012383 -0.66621584
+		 0.43297008 -0.669285 0.42319074 -0.67217904 0.41084257 -0.67492908 0.40043238 -0.61727852
+		 0.38600191 -0.61985642 0.37301406 -0.62256527 0.36263809 -0.62540466 0.35473898 -0.6284005
+		 0.35213658 -0.63137287 0.36493608 -0.64051199 0.35944602 -0.63737786 0.37371406 -0.64369434
+		 0.385003 -0.64648169 0.39748928 -0.65001464 0.41004798 -0.65323645 0.42142132 -0.65645301
+		 0.43048218 -0.65965277 0.43633732 -0.66282874 0.43847188 -0.6659568 0.43655363 -0.66903704
+		 0.4308047 -0.6720286 0.42184052 -0.67490315 0.41050872 -0.67762321 0.4011611 -0.62039167
+		 0.38796243 -0.62284929 0.37604371 -0.62552094 0.36649808 -0.6283403 0.3602697 -0.6312778
+		 0.35786399 -0.63430095 0.36521837 -0.65582246 0.35928711 -0.65272355 0.37471846 -0.65895206
+		 0.38681623 -0.66209614 0.40026721 -0.66525978 0.41378734 -0.66843748 0.42603227 -0.67161757
+		 0.43579194 -0.67478639 0.44210783 -0.67793041 0.44436631 -0.68104452 0.44231388 -0.68410641
+		 0.43615368 -0.68708956 0.42649326 -0.68997097 0.41424999 -0.6927247 0.40054962 -0.69534171
+		 0.38970801 -0.6382544 0.37699422 -0.640948 0.36679432 -0.64375883 0.36009964 -0.64667463
+		 0.35752353 -0.64967251 0.47426763 -0.82078898 0.46728376 -0.82360196 0.4619728 -0.8317523
+		 0.47720399 -0.82100683 0.47659203 -0.81796664 0.47675475 -0.82122844 0.47397879 -0.81514001
+		 0.47224972 -0.82066727 0.46665427 -0.81231117 0.46413025 -0.81938177;
+	setAttr ".uvtk[250:499]" 0.4553189 -0.80948234 0.45319209 -0.81750745 0.44106576
+		 -0.80666465 0.44050714 -0.81525391 0.4252831 -0.80388969 0.42748627 -0.81265885 0.40967765
+		 -0.80113685 0.41487154 -0.81007832 0.39564154 -0.79830617 0.40446445 -0.80798286
+		 0.38459799 -0.79545617 0.39707288 -0.80635637 0.37766799 -0.79259557 0.39342365 -0.8053844
+		 0.37557372 -0.78972542 0.39387408 -0.80517125 0.37857118 -0.78684771 0.39838061 -0.80574131
+		 0.38643423 -0.78396857 0.4065021 -0.8070398 0.39848575 -0.78110391 0.41744348 -0.80894011
+		 0.41369042 -0.77828938 0.43013415 -0.81125677 0.42821369 -0.83171088 0.44333193 -0.81376332
+		 0.44286236 -0.82912427 0.45574519 -0.8162148 0.45641115 -0.82639188 0.46615848 -0.81837147
+		 0.4792504 -0.8044908 0.47104689 -0.80749351 0.48198375 -0.80152076 0.47892663 -0.79857576
+		 0.47034779 -0.79564947 0.45706901 -0.79273778 0.4403846 -0.78983837 0.42194006 -0.78694808
+		 0.4035953 -0.78406614 0.38712254 -0.78116423 0.37415561 -0.77824384 0.36600003 -0.77530462
+		 0.36349764 -0.77234262 0.36694613 -0.76935202 0.3760744 -0.76632488 0.39007601 -0.76325262
+		 0.40770289 -0.76012874 0.42487434 -0.81672686 0.44227669 -0.81361926 0.45826003 -0.81053597
+		 0.47937343 -0.78970802 0.47075048 -0.79281962 0.48224172 -0.78664654 0.47902909 -0.78362268
+		 0.47001991 -0.78062612 0.456081 -0.77764904 0.43857381 -0.77468497 0.4192234 -0.77172834
+		 0.39995298 -0.76877517 0.38265231 -0.76581472 0.36903539 -0.76284105 0.36046836 -0.75984895
+		 0.35783282 -0.75683141 0.36143747 -0.75377876 0.37099037 -0.75067735 0.38562748 -0.74750906
+		 0.40399614 -0.74424899 0.42184803 -0.80262476 0.44039485 -0.79925716 0.45728645 -0.79599673
+		 0.47662261 -0.77483302 0.46800277 -0.77800769 0.47948369 -0.77171117 0.47626933 -0.76862925
+		 0.46726963 -0.76557666 0.45335183 -0.76254469 0.43587694 -0.75952619 0.41656449 -0.75651562
+		 0.39732465 -0.75350845 0.38005355 -0.75049907 0.36646387 -0.74748152 0.35791859 -0.74444956
+		 0.35529432 -0.74139518 0.35889509 -0.73830789 0.36842021 -0.7351737 0.38298926 -0.7319724
+		 0.40121236 -0.72867507 0.41872862 -0.78804594 0.43752852 -0.78458512 0.45451459 -0.78125125
+		 0.47151145 -0.7598688 0.46322629 -0.76306468 0.4742547 -0.75671577 0.471163 -0.75359625
+		 0.46252117 -0.75050199 0.44916472 -0.74742615 0.43240044 -0.74436301 0.41387615 -0.74130785
+		 0.395421 -0.73825735 0.37885842 -0.73520833 0.36583242 -0.73215657 0.35764971 -0.72909695
+		 0.35514924 -0.72602284 0.3586171 -0.72292584 0.36775574 -0.71979433 0.38170245 -0.71661276
+		 0.39909467 -0.71335918 0.41551378 -0.77303565 0.43381134 -0.76963085 0.45023355 -0.76631427
+		 0.46524981 -0.74481142 0.45745227 -0.74799091 0.46782705 -0.74165523 0.46492061 -0.73851883
+		 0.45680389 -0.73539853 0.44426557 -0.73229104 0.42853233 -0.72919333 0.4111518 -0.72610325
+		 0.39383844 -0.723019 0.37830374 -0.71993965 0.36609289 -0.71686381 0.35843155 -0.71378893
+		 0.35610399 -0.71071124 0.3593739 -0.70762616 0.36795279 -0.70452732 0.38101789 -0.701406
+		 0.39727327 -0.69825065 0.41228768 -0.75768191 0.42966726 -0.75442892 0.44520059 -0.75119656
+		 0.45954254 -0.72967124 0.45214805 -0.73280734 0.46198794 -0.72653377 0.45924351 -0.72339791
+		 0.451574 -0.72026575 0.43972728 -0.71713811 0.42486504 -0.7140159 0.40844867 -0.71089965
+		 0.39209756 -0.7077902 0.37742832 -0.70468903 0.36590084 -0.70159811 0.35867378 -0.6985181
+		 0.35648558 -0.69544899 0.35958067 -0.69239092 0.36768028 -0.68934339 0.38000068 -0.68630397
+		 0.39531234 -0.68326598 0.40918013 -0.74215144 0.42574254 -0.73905706 0.44051597 -0.73593813
+		 0.45381668 -0.71447814 0.44682774 -0.71755666 0.4561322 -0.71137148 0.45355293 -0.70824629
+		 0.44633314 -0.70511097 0.4351804 -0.70197064 0.42118976 -0.69883031 0.40573791 -0.69569397
+		 0.39034912 -0.69256479 0.37654236 -0.68944669 0.36569473 -0.68634564 0.35889831 -0.68326551
+		 0.35684708 -0.68020988 0.35976574 -0.67718387 0.36739054 -0.67419392 0.37898329 -0.67124397
+		 0.3933908 -0.66833085 0.40617904 -0.72651935 0.4218584 -0.72358942 0.43583235 -0.72059721
+		 0.44807234 -0.69927275 0.44149551 -0.70229393 0.45025751 -0.69619644 0.44784263 -0.69308239
+		 0.44107428 -0.68994576 0.43061748 -0.68679446 0.41749921 -0.6836372 0.40301308 -0.68048275
+		 0.38858899 -0.67733639 0.37564114 -0.67420298 0.36546895 -0.67109191 0.35910317 -0.66800922
+		 0.35719064 -0.66496301 0.35993573 -0.66196191 0.36709258 -0.65902179 0.37797806 -0.65615469
+		 0.39152053 -0.65336317 0.40329835 -0.71087676 0.41802719 -0.70810872 0.43115792 -0.70524383
+		 0.45696339 -0.82631415 0.4591085 -0.82685202 0.45892599 -0.82697839 0.45643499 -0.82668138
+		 0.45187959 -0.8259902 0.44570765 -0.82497197 0.43852523 -0.82372248 0.4310399 -0.8223508
+		 0.42394391 -0.82099223 0.417963 -0.81982225 0.41369233 -0.81893057 0.41154394 -0.8184002
+		 0.41172609 -0.81828195 0.41421875 -0.81858742 0.41877827 -0.81928694 0.42495784 -0.82031262
+		 0.43215165 -0.82156426 0.43965623 -0.82292002 0.44673702 -0.82424736 0.4527007 -0.82541668
+		 0.4531211 -0.83433867 0.47355255 -0.82002252 0.44209316 -0.83678269 0.43280521 -0.78575772
+		 0.43018374 -0.83895308 0.41868499 -0.78801495 0.40614149 -0.79057264 0.39619061 -0.79327041
+		 0.38967785 -0.79603189 0.38715503 -0.79882061 0.38880673 -0.80161965 0.39442226 -0.80442303
+		 0.40341374 -0.80723429 0.45213267 -0.81808573 0.46139625 -0.82087189 0.46738926 -0.82363445
+		 0.46953723 -0.82637537 0.46765551 -0.82908696 0.40368178 -0.63569182 0.40635249 -0.65063947
+		 0.40914324 -0.66544324 0.41204259 -0.68021798 0.41504171 -0.69504964 0.4181563 -0.71000189
+		 0.42128643 -0.72523415 0.42436793 -0.74086082 0.42740658 -0.75696111 0.430814 -0.77560574
+		 0.39793542 -0.68010497 0.39718434 -0.67754889 0.3919743 -0.64808005 0.38931528 -0.64989036
+		 0.35148361 -0.43618259 0.3452985 -0.44752651 0.30415079 -0.20116533 0.30097744 -0.20882915
+		 0.28301576 -0.066334084 0.086653881 0.17392007 0.2674183 0.045453917 -0.1937691 0.23829995;
+	setAttr ".uvtk[500:514]" -0.15788257 0.23605396 -0.19622397 0.23448671 -0.16501117
+		 0.22500063 -0.10318965 0.21078344 -0.016815558 0.19323993 0.19618285 0.15489151 0.30033877
+		 0.13810666 0.38984242 0.12524314 0.45587483 0.11760516 0.49190506 0.11595888 0.49433866
+		 0.1204527 0.46287671 0.13059941 0.40055844 0.14532125 -0.0027772933 0.21478422 -0.092072494
+		 0.22795545;
+createNode polyMapCut -n "polyMapCut3";
+	rename -uid "8686EE37-43F2-F330-4897-D5A1043EFC56";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 7 "e[2:3]" "e[13]" "e[15]" "e[949]" "e[959]" "e[989]" "e[999]";
+createNode polyTweakUV -n "polyTweakUV5";
+	rename -uid "691BC052-4435-6576-8123-41B483533442";
+	setAttr ".uopa" yes;
+	setAttr -s 576 ".uvtk";
+	setAttr ".uvtk[0:249]" -type "float2" -0.00080180168 0.00031793118 0.00058734417
+		 0.0022286177 0.00092238188 0.0024020672 0.00024628639 0.0046098828 -0.00098824501
+		 0.00072139502 0.00029796362 -0.0017068982 4.3213367e-05 -0.0016111732 -0.00035977364
+		 -0.0037757158 -0.00082564354 0.00022155046 -0.00083881617 0.0005081892 -0.00097572803
+		 0.0018374324 -0.00080615282 0.0002681613 -0.00020396709 0.0044224858 0.00030511618
+		 0.0021193624 5.787611e-05 0.0040965676 0.00025057793 0.0040345192 0.00087434053 -0.00012069941
+		 0.0008738637 -0.00011301041 -0.00081557035 0.00032490492 -0.00038814545 -0.0010438561
+		 -0.00024908781 -0.0021330118 4.6491623e-06 -0.0020388961 -0.00016266108 -0.0009675622
+		 0.00063180923 9.3102455e-05 0.00066536665 -9.1195107e-06 0.00087600946 5.6803226e-05
+		 0.0010131598 0.0014118552 -0.00065588951 0.00056749582 -0.00041437149 0.00049638748
+		 -0.0002771616 0.0017011762 -0.00056254864 0.0018129945 -0.00090789795 0.00064480305
+		 -0.00090348721 0.0019904375 -0.0002579689 -0.00027137995 -0.00014686584 -0.00026118755
+		 0.00020682812 -0.00031602383 0.0002732873 -0.00030648708 -0.00034373999 -0.00031751394
+		 -0.00022947788 -0.00032657385 -0.00046288967 -0.00030738115 -0.00015693903 -0.00013387203
+		 -0.00010973215 -0.00014227629 5.6266785e-05 -0.00035226345 8.1598759e-05 -0.00033211708
+		 -0.00014948845 -0.00042432547 -0.0001065135 -0.00041753054 -0.00019401312 -0.00042885542
+		 -0.00010532141 -0.00013881922 -8.4996223e-05 -0.00014716387 3.9339066e-06 -0.00030791759
+		 1.1265278e-05 -0.00029283762 -6.1810017e-05 -0.00036478043 -4.774332e-05 -0.00035822392
+		 -7.6234341e-05 -0.00036978722 -7.8618526e-05 -0.0001526475 -6.8724155e-05 -0.00015836954
+		 -9.1791153e-06 -0.00025737286 -8.8810921e-06 -0.00024813414 -2.1219254e-05 -0.00029307604
+		 -1.8298626e-05 -0.00028860569 -2.4199486e-05 -0.00029677153 -6.2227249e-05 -0.00015181303
+		 -5.6147575e-05 -0.00015562773 -7.390976e-06 -0.00021409988 -9.7155571e-06 -0.00020879507
+		 8.3446503e-07 -0.000236094 -3.5762787e-07 -0.00023311377 2.2053719e-06 -0.00023877621
+		 -4.9591064e-05 -0.00013852119 -4.5001507e-05 -0.00014096498 -5.9604645e-08 -0.00017750263
+		 -3.3974648e-06 -0.00017410517 1.5854836e-05 -0.00019210577 1.3053417e-05 -0.00018996
+		 1.8835068e-05 -0.00019413233 -3.8325787e-05 -0.00011748075 -3.4272671e-05 -0.0001193881
+		 9.3579292e-06 -0.0001449585 5.6624413e-06 -0.00014257431 2.8133392e-05 -0.00015592575
+		 2.4795532e-05 -0.00015407801 3.1769276e-05 -0.00015753508 -2.7596951e-05 -9.2446804e-05
+		 -2.3722649e-05 -9.3996525e-05 1.9490719e-05 -0.00011461973 1.5616417e-05 -0.00011271238
+		 3.9458275e-05 -0.00012385845 3.5762787e-05 -0.00012224913 4.3272972e-05 -0.00012546778
+		 -1.6927719e-05 -6.5147877e-05 -1.3113022e-05 -6.6816807e-05 2.9802322e-05 -8.5413456e-05
+		 2.592802e-05 -8.3804131e-05 5.0246716e-05 -9.4175339e-05 4.6551228e-05 -9.2625618e-05
+		 5.4240227e-05 -9.560585e-05 -6.2584877e-06 -3.6776066e-05 -2.5629997e-06 -3.8325787e-05
+		 4.0233135e-05 -5.7041645e-05 3.6239624e-05 -5.531311e-05 6.0856342e-05 -6.5565109e-05
+		 5.710125e-05 -6.4194202e-05 6.4849854e-05 -6.7234039e-05 4.6491623e-06 -7.212162e-06
+		 8.225441e-06 -8.8214874e-06 5.0425529e-05 -2.9444695e-05 4.6491623e-05 -2.7596951e-05
+		 7.1465969e-05 -3.862381e-05 6.7651272e-05 -3.7133694e-05 7.557869e-05 -4.029274e-05
+		 1.5974045e-05 2.43783e-05 1.9311905e-05 2.2470951e-05 6.0200691e-05 -3.2186508e-06
+		 5.6147575e-05 -7.7486038e-07 8.2135201e-05 -1.4007092e-05 7.802248e-05 -1.2278557e-05
+		 8.6426735e-05 -1.5854836e-05 2.8252602e-05 5.9664249e-05 3.0994415e-05 5.710125e-05
+		 6.9141388e-05 2.0503998e-05 6.4790249e-05 2.3901463e-05 9.3281269e-05 6.0200691e-06
+		 8.8691711e-05 8.2850456e-06 9.7990036e-05 4.0531158e-06 4.2617321e-05 0.00010156631
+		 4.3690205e-05 9.7811222e-05 7.545948e-05 3.9100647e-05 7.0571899e-05 4.4465065e-05
+		 0.00010597706 1.758337e-05 0.00010019541 2.0623207e-05 0.00011217594 1.4901161e-05
+		 6.210804e-05 0.00015377998 5.877018e-05 0.00014793873 7.5817108e-05 4.8756599e-05
+		 6.8902969e-05 5.7995319e-05 0.00012409687 1.424551e-05 0.00011467934 1.8835068e-05
+		 0.00013422966 1.0788441e-05 9.3221664e-05 0.00021749735 7.879734e-05 0.00020837784
+		 6.0737133e-05 4.6849251e-05 4.8339367e-05 6.1810017e-05 0.00015819073 -6.6161156e-06
+		 0.00013881922 5.9604645e-08 0.00017857552 -1.2338161e-05 0.00015181303 0.00026619434
+		 0.00010919571 0.00025612116 5.9008598e-06 4.2676926e-05 -2.1457672e-05 6.28829e-05
+		 0.00023496151 -2.1100044e-05 0.00018882751 -1.3649464e-05 0.00028347969 -2.6643276e-05
+		 0.00026780367 0.00016367435 0.00015771389 0.0001706481 -0.00014966726 0.00010442734
+		 -0.00021135807 0.00011342764 0.00040829182 0.00011968613 0.00029486418 0.00011366606
+		 0.00052797794 0.00012713671 0.00043290854 -0.00062656403 0.00020998716 -0.00054436922
+		 -0.0005890727 0.00054466724 -0.00064057112 0.00044107437 0.00068742037 0.00098913908
+		 0.00044631958 0.00091034174 0.00093448162 0.0010733008 0.00019836426 0.00027316809
+		 0.0001090765 0.00022488832 0.00038653612 0.00015151501 0.00066697598 -0.00071024895
+		 6.2406063e-05 -0.0038782954 0.00059592724 -0.0018573403 -0.00095027685 0.0007019043
+		 -0.00099045038 0.0006852746 -0.0010910034 3.516674e-06 -0.00094735622 9.2923641e-05
+		 -0.00095719099 0.00072693825 -0.00027090311 0.00014907122 -0.00072598457 -2.8431416e-05
+		 -0.00072437525 -0.00013357401 -0.00022721291 0.00015842915 -5.3703785e-05 0.00016242266
+		 -3.6895275e-05 0.00018417835 2.6941299e-05 0.00013566017 3.1411648e-05 0.00015175343
+		 5.0842762e-05 0.00010287762 5.0365925e-05 0.00011271238 5.3048134e-05 7.0869923e-05
+		 5.0544739e-05 7.6532364e-05 4.7147274e-05 4.0113926e-05 4.3809414e-05 4.36306e-05
+		 3.8325787e-05 1.0430813e-05 3.4630299e-05 1.2874603e-05 2.8431416e-05 -1.8656254e-05
+		 2.4497509e-05 -1.6748905e-05 1.8119812e-05 -4.7326088e-05 1.4185905e-05 -4.5537949e-05
+		 7.8082085e-06 -7.5757504e-05 3.8146973e-06 -7.3969364e-05 -2.4437904e-06 -0.0001038909
+		 -6.4969063e-06 -0.00010192394 -1.2278557e-05 -0.00013142824 -1.6331673e-05 -0.00012904406
+		 -2.092123e-05 -0.00015795231 -2.5212765e-05 -0.00015437603 -2.6464462e-05 -0.0001822114
+		 -3.1411648e-05 -0.00017648935 -2.3782253e-05 -0.00020265579 -3.0338764e-05 -0.00019294024
+		 8.9406967e-07 -0.00021755695 -1.0192394e-05 -0.00020164251 8.2612038e-05 -0.00022941828
+		 5.9843063e-05 -0.00020807981 0.00030273199 -0.0002682209 0.00025361776 -0.00025641918
+		 0.00077539682 -0.00048351288 0.00077366829 -0.00059044361 0.0009932518 -0.00036299229
+		 0.0011350513 -0.00045353174 0.0009714365 0.00026237965 0.00097191334 0.00025373697
+		 0.00039380789 -0.0041761398 0.00021678209 -0.0042016506 -0.00062352419 -0.0011361837
+		 -0.0005453825 -0.0022816062 -0.00037783384 -0.00028067827 -0.00020760298 -0.0001257658
+		 -0.0001270771 -0.00013101101 -8.9287758e-05 -0.00014728308 -6.8724155e-05 -0.00014847517
+		 -5.4478645e-05 -0.0001360774 -4.273653e-05 -0.0001154542 -3.1709671e-05 -9.0658665e-05
+		 -2.0980835e-05 -6.3657761e-05 -1.0192394e-05 -3.516674e-05 8.3446503e-07 -5.4240227e-06
+		 1.2397766e-05 2.6345253e-05 2.5331974e-05 6.2048435e-05 4.1604042e-05 0.00010484457
+		 6.5803528e-05 0.00015896559 0.00026655197 0.00027871132 0.0001322031 0.00023174286
+		 0.00055980682 0.00013172626 0.0010322332 -0.00082272291 0.00043928623 -0.0040342212
+		 0.0010462403 -0.0021135807 -0.00088274479 0.0005863905 -0.00080478191 0.00024312735
+		 -0.00087940693 0.0005517602 -0.00029462576 0.00013738871;
+	setAttr ".uvtk[250:499]" -0.0007070303 0.0001270175 -6.2465668e-05 0.00012856722
+		 2.6583672e-05 0.00011056662 5.4121017e-05 8.7678432e-05 5.787611e-05 6.1929226e-05
+		 5.2630901e-05 3.4630299e-05 4.4167042e-05 6.6757202e-06 3.4332275e-05 -2.1576881e-05
+		 2.4139881e-05 -5.0008297e-05 1.3828278e-05 -7.8380108e-05 3.5762787e-06 -0.00010681152
+		 -6.1988831e-06 -0.00013518333 -1.4722347e-05 -0.00016343594 -1.9848347e-05 -0.00019109249
+		 -1.5974045e-05 -0.00021791458 1.1920929e-05 -0.0002425313 0.00010210276 -0.00026345253
+		 0.00033724308 -0.00028312206 0.00074958801 -0.0003246665 0.00085777044 -0.00021082163
+		 0.00091224909 0.00014698505 0.00091201067 0.00013798475 -0.00098192692 -0.0012663603
+		 -0.00098961592 -0.0025321841 -0.00055640936 -0.00029444695 -0.00028282404 -0.00011754036
+		 -0.00015950203 -0.00012236834 -0.0001052618 -0.0001412034 -7.8380108e-05 -0.00014412403
+		 -6.1988831e-05 -0.00013273954 -4.9293041e-05 -0.00011283159 -3.7968159e-05 -8.8274479e-05
+		 -2.7060509e-05 -6.121397e-05 -1.6212463e-05 -3.2842159e-05 -4.9471855e-06 -3.0398369e-06
+		 6.9141388e-06 2.9027462e-05 2.0861626e-05 6.5147877e-05 3.9815903e-05 0.0001090765
+		 7.0810318e-05 0.00016528368 0.00035232306 -3.1352043e-05 0.00020772219 -1.7702579e-05
+		 0.00069928169 0.00013512373 0.0013020039 0.0011782646 0.00065779686 0.004878521 0.0015475154
+		 -0.0023261309 -0.00083273649 0.00044232607 -0.00078099966 0.00037163496 -0.00082117319
+		 0.0003939867 -0.00027507544 0.00012642145 -0.00067591667 0.00028711557 -5.1558018e-05
+		 9.483099e-05 3.3736229e-05 8.559227e-05 6.0141087e-05 7.2538853e-05 6.3657761e-05
+		 5.3107738e-05 5.8531761e-05 2.9206276e-05 5.0127506e-05 2.9206276e-06 4.0352345e-05
+		 -2.4676323e-05 3.015995e-05 -5.2690506e-05 1.9848347e-05 -8.1062317e-05 9.5963478e-06
+		 -0.00010973215 -1.7881393e-07 -0.00013893843 -8.8214874e-06 -0.00016880035 -1.424551e-05
+		 -0.00020009279 -1.1026859e-05 -0.00023323298 1.5318394e-05 -0.00026804209 0.00010162592
+		 -0.00029820204 0.00032633543 -0.0002951622 0.00071132183 -0.0001630187 0.00081008673
+		 -8.0287457e-05 0.00088387728 1.4901161e-06 0.00088393688 -5.4836273e-06 -0.0012947321
+		 0.00073629618 -0.0014622808 -0.0027527809 -0.00062823296 -0.00029313564 -0.00025522709
+		 -0.00043058395 -9.572506e-05 -0.0003734231 -2.7775764e-05 -0.00030004978 4.6491623e-06
+		 -0.00024157763 2.3543835e-05 -0.00019669533 3.7372112e-05 -0.00015997887 4.9114227e-05
+		 -0.00012779236 6.0200691e-05 -9.7930431e-05 7.0989132e-05 -6.955862e-05 8.1777573e-05
+		 -4.2617321e-05 9.2864037e-05 -1.8179417e-05 0.0001052618 1.3709068e-06 0.00012147427
+		 1.1920929e-05 0.0001488328 7.6889992e-06 -0.00071018934 -0.0039007664 -0.00082707405
+		 -0.0014051795 -0.00095397234 0.00070399046 -0.00088059902 0.00055980682 -0.00082606077
+		 0.00040686131 -0.00082111359 0.00026351213 -0.00058192015 0.0045059323 -0.00062638521
+		 0.0018768907 -6.9379807e-05 9.9360943e-05 -0.00038731098 0.00063222647 3.9339066e-05
+		 2.604723e-05 7.5399876e-05 3.4093857e-05 8.3386898e-05 4.0829182e-05 8.058548e-05
+		 3.439188e-05 7.3313713e-05 1.7404556e-05 6.4134598e-05 -5.4240227e-06 5.4240227e-05
+		 -3.1292439e-05 4.3928623e-05 -5.8591366e-05 3.3557415e-05 -8.7082386e-05 2.3126602e-05
+		 -0.00011634827 1.2874603e-05 -0.00014722347 2.9802322e-06 -0.00018060207 -5.4836273e-06
+		 -0.00021904707 -1.0192394e-05 -0.0002655983 -4.7683716e-06 -0.00032126904 2.7537346e-05
+		 -0.00037044287 0.00013017654 -0.00032514334 0.00042581558 0.00018811226 0.00066256523
+		 0.0014525652 0.00087952614 -0.00017631054 0.00062984228 0.0041140318 0.00086688995
+		 0.0042756796 0.00088346004 -0.00021630526 0.000882864 -3.4451485e-05 0.00088220835
+		 -4.5239925e-05 0.0009046793 0.00011771917 0.00089937449 0.0001116991 0.00097620487
+		 0.00026088953 0.00098007917 0.00028532743 0.0007404089 -0.0043027997 0.0011225343
+		 0.00043910742 0.0005967021 -0.00067824125 0.00087326765 -0.0018373728 0.0001873374
+		 -0.00024974346 3.1352043e-05 -0.00018972158 -2.3245811e-05 -0.00018763542 -3.7491322e-05
+		 -0.00018417835 -3.6358833e-05 -0.00017136335 -2.9444695e-05 -0.00015115738 -2.0265579e-05
+		 -0.00012683868 -1.0251999e-05 -0.0001001358 5.9604645e-08 -7.2360039e-05 1.0430813e-05
+		 -4.3988228e-05 2.092123e-05 -1.4841557e-05 3.1113625e-05 1.513958e-05 4.0769577e-05
+		 4.6849251e-05 4.8577785e-05 8.1777573e-05 5.0961971e-05 0.00012153387 3.8444996e-05
+		 0.00016611814 -1.3768673e-05 0.00020331144 -0.00016593933 0.00016856194 -0.00054723024
+		 -0.000228405 -0.00058913231 -0.0038576722 -0.00052368641 -0.0015003681 -0.0009521246
+		 0.00069659948 -0.0008816123 0.00056773424 -0.00082939863 0.0004196167 -0.00081849098
+		 0.00029033422 -0.00045394897 0.0044764876 -0.0003053546 0.0019810796 4.1484833e-05
+		 9.9360943e-05 -0.0001232028 0.00073283911 8.4936619e-05 9.6559525e-06 9.4890594e-05
+		 2.0742416e-05 9.316206e-05 3.2544136e-05 8.6843967e-05 2.9206276e-05 7.8260899e-05
+		 1.4185905e-05 6.8724155e-05 -7.8082085e-06 5.8710575e-05 -3.3259392e-05 4.8339367e-05
+		 -6.0498714e-05 3.7908554e-05 -8.8989735e-05 2.7358532e-05 -0.00011849403 1.6868114e-05
+		 -0.00014960766 6.4373016e-06 -0.00018393993 -3.516674e-06 -0.00022423267 -1.2218952e-05
+		 -0.00027424097 -1.7344952e-05 -0.00033551455 -1.2457371e-05 -0.00038921833 2.259016e-05
+		 -0.00033050776 0.0001578927 0.00029873848 0.00033980608 0.0015591979 0.00087720156
+		 -0.0001514554 0.00049966574 0.0040860772 0.00088340044 -2.3901463e-05 0.00090837479
+		 0.00012367964 0.0009740591 0.00025200844 0.00062066317 -0.0042591691 0.0003592968
+		 -0.00077843666 0.00056993961 -0.0019309521 9.0181828e-05 -0.00024819374 -9.6559525e-06
+		 -0.00017076731 -4.1425228e-05 -0.00017243624 -4.7028065e-05 -0.00017470121 -4.2617321e-05
+		 -0.0001655817 -3.4451485e-05 -0.0001475215 -2.4855137e-05 -0.00012421608 -1.4722347e-05
+		 -9.8109245e-05 -4.3511391e-06 -7.045269e-05 6.1392784e-06 -4.2080879e-05 1.6629696e-05
+		 -1.2755394e-05 2.7120113e-05 1.7642975e-05 3.7372112e-05 5.0485134e-05 4.6610832e-05
+		 8.7618828e-05 5.2630901e-05 0.00013118982 4.9412251e-05 0.00018185377 2.092123e-05
+		 0.00022363663 -7.3671341e-05 0.00017482042 -0.00030976534 -0.00033777952 -0.00047427416
+		 -0.0038163066 -0.00023388863 -0.0015636683 -0.0009509325 0.00069630146 -0.00088232756
+		 0.00057649612 -0.0008315444 0.00043141842 -0.00081670284 0.00031048059 -0.00032645464
+		 0.0044490099 1.7881393e-06 0.0020642877 0.00016462803 0.00010448694 0.00016009808
+		 0.00082361698 0.00013542175 -3.6358833e-06 0.00011622906 9.3579292e-06 0.00010371208
+		 2.5033951e-05 9.3400478e-05 2.4616718e-05 8.3446503e-05 1.1026859e-05 7.3373318e-05
+		 -1.001358e-05 6.3180923e-05 -3.5226345e-05 5.2750111e-05 -6.2346458e-05 4.2259693e-05
+		 -9.0837479e-05 3.1590462e-05 -0.00012040138 2.0861626e-05 -0.00015199184 9.7751617e-06
+		 -0.00018709898 -1.847744e-06 -0.00022894144 -1.5079975e-05 -0.00028204918 -3.2007694e-05
+		 -0.00034791231 -5.787611e-05 -0.00040501356 -9.9360943e-05 -0.00033050776 -0.00012719631
+		 0.00039952993 2.8967857e-05 0.0016444325 0.00087547302 -0.00013315678 0.00037509203
+		 0.0040596724 0.00088375807 -1.4066696e-05 0.00091069937 0.00013023615 0.0009726882
+		 0.00025004148 0.00050705671 -0.0042172074 0.00010192394 -0.0008777976 0.00028073788
+		 -0.0019927621 -2.2947788e-05 -0.00025224686 -5.7280064e-05 -0.00015503168 -6.2286854e-05
+		 -0.00015884638 -5.7518482e-05 -0.00016599894 -4.9233437e-05 -0.00016027689 -3.9696693e-05
+		 -0.00014412403 -2.9563904e-05 -0.00012177229;
+	setAttr ".uvtk[500:575]" -1.9192696e-05 -9.6082687e-05 -8.7618828e-06 -6.8604946e-05
+		 1.7881393e-06 -4.0113926e-05 1.2457371e-05 -1.0728836e-05 2.3186207e-05 2.0086765e-05
+		 3.4034252e-05 5.3942204e-05 4.5001507e-05 9.2923641e-05 5.5372715e-05 0.00014007092
+		 6.3121319e-05 0.00019603968 6.2525272e-05 0.00024133921 3.606081e-05 0.00017517805
+		 -5.2988529e-05 -0.00044596195 -0.0014356375 0.0023072958 -0.0013213158 -0.0013571382
+		 0.0014395118 0.002707839 -0.00083291531 0.000451684 0.00082314014 -0.0042281151 0.001026392
+		 0.00027120113 0.0010267496 0.00026112795 0.00085955858 -0.00013917685 0.000864923
+		 -0.00012868643 -0.00079375505 0.00030612946 -1.4305115e-05 0.00448066 -0.0010120869
+		 0.00071924925 -0.0010122657 0.00070726871 0.0010271668 0.00025218725 0.00086015463
+		 -0.00014531612 -0.00079441071 0.00029826164 -0.0010125637 0.00069659948 0.0010276437
+		 0.00024318695 0.00086092949 -0.0001527071 -0.00079524517 0.00028914213 -0.0010129213
+		 0.00068587065 0.001008153 0.00024360418 0.00086164474 -0.00016003847 -0.00079602003
+		 0.00028020144 -0.0010942221 0.00088244677 -0.00020766258 0.0042325854 -0.00062900782
+		 0.0045124888 -0.00076603889 -0.0046035051 0.00086897612 -0.0001706481 -0.00081449747
+		 0.0046687722 -0.0008148551 0.00033444166 7.4744225e-05 0.0001693368 0.00015175343
+		 0.00023460388 3.7372112e-05 0.00011193752 1.6272068e-05 6.7710876e-05 1.3709068e-06
+		 3.1352043e-05 -1.090765e-05 -7.1525574e-07 -2.2292137e-05 -3.0517578e-05 -3.3199787e-05
+		 -5.8948994e-05 -4.4226646e-05 -8.5949898e-05 -5.5849552e-05 -0.0001103878 -6.9320202e-05
+		 -0.00013023615 -8.7857246e-05 -0.0001412034 -0.00012022257 -0.00013762712 -0.00018924475
+		 -0.00011783838 -0.00035148859 -0.00011360645 -0.00072264671 -0.00030440092 -0.00039279461
+		 -0.0044198036 0.0013695359 -0.00090867281 -0.000882864 0.00059783459 0.0007172823
+		 0.00011730194 0.00032633543 0.00027990341 -2.3245811e-05 -0.0042719841 -0.00095003843
+		 0.00071233511 0.0010053515 0.0002720356 -0.0001809001 -0.0038035512 0.00096935034
+		 0.00013798475 0.00097078085 -0.00036728382 0.0012066364 -0.0018058419 0.00095582008
+		 -0.0044824481 -0.00092899799 0.00058889389 -0.0011603832 -0.0013730526 -0.00091856718
+		 6.9081783e-05 -0.00092881918 -0.004080832;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "0E497728-4060-714A-276B-B6A3FD992575";
+	rename -uid "8F44DB78-466E-B02E-4139-7AB692C33C5B";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -17363,9 +16632,7 @@ select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 2 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -17386,847 +16653,1686 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "Lamp:pCylinderShape2_pnts_180__pntx.o" "LampShape1.pt[180].px";
-connectAttr "Lamp:pCylinderShape2_pnts_180__pnty.o" "LampShape1.pt[180].py";
-connectAttr "Lamp:pCylinderShape2_pnts_180__pntz.o" "LampShape1.pt[180].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_181__pntx.o" "LampShape1.pt[181].px";
-connectAttr "Lamp:pCylinderShape2_pnts_181__pnty.o" "LampShape1.pt[181].py";
-connectAttr "Lamp:pCylinderShape2_pnts_181__pntz.o" "LampShape1.pt[181].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_182__pntx.o" "LampShape1.pt[182].px";
-connectAttr "Lamp:pCylinderShape2_pnts_182__pnty.o" "LampShape1.pt[182].py";
-connectAttr "Lamp:pCylinderShape2_pnts_183__pntz.o" "LampShape1.pt[183].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_184__pntx.o" "LampShape1.pt[184].px";
-connectAttr "Lamp:pCylinderShape2_pnts_184__pnty.o" "LampShape1.pt[184].py";
-connectAttr "Lamp:pCylinderShape2_pnts_184__pntz.o" "LampShape1.pt[184].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_185__pntx.o" "LampShape1.pt[185].px";
-connectAttr "Lamp:pCylinderShape2_pnts_185__pnty.o" "LampShape1.pt[185].py";
-connectAttr "Lamp:pCylinderShape2_pnts_185__pntz.o" "LampShape1.pt[185].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_186__pntx.o" "LampShape1.pt[186].px";
-connectAttr "Lamp:pCylinderShape2_pnts_186__pnty.o" "LampShape1.pt[186].py";
-connectAttr "Lamp:pCylinderShape2_pnts_186__pntz.o" "LampShape1.pt[186].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_187__pntx.o" "LampShape1.pt[187].px";
-connectAttr "Lamp:pCylinderShape2_pnts_187__pnty.o" "LampShape1.pt[187].py";
-connectAttr "Lamp:pCylinderShape2_pnts_187__pntz.o" "LampShape1.pt[187].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_188__pntx.o" "LampShape1.pt[188].px";
-connectAttr "Lamp:pCylinderShape2_pnts_188__pnty.o" "LampShape1.pt[188].py";
-connectAttr "Lamp:pCylinderShape2_pnts_188__pntz.o" "LampShape1.pt[188].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_189__pntx.o" "LampShape1.pt[189].px";
-connectAttr "Lamp:pCylinderShape2_pnts_189__pnty.o" "LampShape1.pt[189].py";
-connectAttr "Lamp:pCylinderShape2_pnts_189__pntz.o" "LampShape1.pt[189].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_190__pntx.o" "LampShape1.pt[190].px";
-connectAttr "Lamp:pCylinderShape2_pnts_190__pnty.o" "LampShape1.pt[190].py";
-connectAttr "Lamp:pCylinderShape2_pnts_190__pntz.o" "LampShape1.pt[190].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_191__pntx.o" "LampShape1.pt[191].px";
-connectAttr "Lamp:pCylinderShape2_pnts_191__pnty.o" "LampShape1.pt[191].py";
-connectAttr "Lamp:pCylinderShape2_pnts_191__pntz.o" "LampShape1.pt[191].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_192__pntx.o" "LampShape1.pt[192].px";
-connectAttr "Lamp:pCylinderShape2_pnts_192__pnty.o" "LampShape1.pt[192].py";
-connectAttr "Lamp:pCylinderShape2_pnts_192__pntz.o" "LampShape1.pt[192].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_193__pntx.o" "LampShape1.pt[193].px";
-connectAttr "Lamp:pCylinderShape2_pnts_193__pnty.o" "LampShape1.pt[193].py";
-connectAttr "Lamp:pCylinderShape2_pnts_193__pntz.o" "LampShape1.pt[193].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_194__pntx.o" "LampShape1.pt[194].px";
-connectAttr "Lamp:pCylinderShape2_pnts_194__pnty.o" "LampShape1.pt[194].py";
-connectAttr "Lamp:pCylinderShape2_pnts_194__pntz.o" "LampShape1.pt[194].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_195__pntx.o" "LampShape1.pt[195].px";
-connectAttr "Lamp:pCylinderShape2_pnts_195__pnty.o" "LampShape1.pt[195].py";
-connectAttr "Lamp:pCylinderShape2_pnts_195__pntz.o" "LampShape1.pt[195].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_196__pntx.o" "LampShape1.pt[196].px";
-connectAttr "Lamp:pCylinderShape2_pnts_196__pnty.o" "LampShape1.pt[196].py";
-connectAttr "Lamp:pCylinderShape2_pnts_196__pntz.o" "LampShape1.pt[196].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_197__pntx.o" "LampShape1.pt[197].px";
-connectAttr "Lamp:pCylinderShape2_pnts_197__pnty.o" "LampShape1.pt[197].py";
-connectAttr "Lamp:pCylinderShape2_pnts_197__pntz.o" "LampShape1.pt[197].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_198__pntx.o" "LampShape1.pt[198].px";
-connectAttr "Lamp:pCylinderShape2_pnts_198__pnty.o" "LampShape1.pt[198].py";
-connectAttr "Lamp:pCylinderShape2_pnts_198__pntz.o" "LampShape1.pt[198].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_199__pntx.o" "LampShape1.pt[199].px";
-connectAttr "Lamp:pCylinderShape2_pnts_199__pnty.o" "LampShape1.pt[199].py";
-connectAttr "Lamp:pCylinderShape2_pnts_199__pntz.o" "LampShape1.pt[199].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_200__pntx.o" "LampShape1.pt[200].px";
-connectAttr "Lamp:pCylinderShape2_pnts_200__pnty.o" "LampShape1.pt[200].py";
-connectAttr "Lamp:pCylinderShape2_pnts_200__pntz.o" "LampShape1.pt[200].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_201__pntx.o" "LampShape1.pt[201].px";
-connectAttr "Lamp:pCylinderShape2_pnts_201__pnty.o" "LampShape1.pt[201].py";
-connectAttr "Lamp:pCylinderShape2_pnts_201__pntz.o" "LampShape1.pt[201].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_202__pntx.o" "LampShape1.pt[202].px";
-connectAttr "Lamp:pCylinderShape2_pnts_202__pnty.o" "LampShape1.pt[202].py";
-connectAttr "Lamp:pCylinderShape2_pnts_202__pntz.o" "LampShape1.pt[202].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_203__pntx.o" "LampShape1.pt[203].px";
-connectAttr "Lamp:pCylinderShape2_pnts_203__pnty.o" "LampShape1.pt[203].py";
-connectAttr "Lamp:pCylinderShape2_pnts_203__pntz.o" "LampShape1.pt[203].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_204__pntx.o" "LampShape1.pt[204].px";
-connectAttr "Lamp:pCylinderShape2_pnts_204__pnty.o" "LampShape1.pt[204].py";
-connectAttr "Lamp:pCylinderShape2_pnts_204__pntz.o" "LampShape1.pt[204].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_205__pntx.o" "LampShape1.pt[205].px";
-connectAttr "Lamp:pCylinderShape2_pnts_205__pnty.o" "LampShape1.pt[205].py";
-connectAttr "Lamp:pCylinderShape2_pnts_205__pntz.o" "LampShape1.pt[205].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_206__pntx.o" "LampShape1.pt[206].px";
-connectAttr "Lamp:pCylinderShape2_pnts_206__pnty.o" "LampShape1.pt[206].py";
-connectAttr "Lamp:pCylinderShape2_pnts_206__pntz.o" "LampShape1.pt[206].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_207__pntx.o" "LampShape1.pt[207].px";
-connectAttr "Lamp:pCylinderShape2_pnts_207__pnty.o" "LampShape1.pt[207].py";
-connectAttr "Lamp:pCylinderShape2_pnts_207__pntz.o" "LampShape1.pt[207].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_208__pntx.o" "LampShape1.pt[208].px";
-connectAttr "Lamp:pCylinderShape2_pnts_208__pnty.o" "LampShape1.pt[208].py";
-connectAttr "Lamp:pCylinderShape2_pnts_209__pntx.o" "LampShape1.pt[209].px";
-connectAttr "Lamp:pCylinderShape2_pnts_209__pnty.o" "LampShape1.pt[209].py";
-connectAttr "Lamp:pCylinderShape2_pnts_209__pntz.o" "LampShape1.pt[209].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_210__pntx.o" "LampShape1.pt[210].px";
-connectAttr "Lamp:pCylinderShape2_pnts_210__pnty.o" "LampShape1.pt[210].py";
-connectAttr "Lamp:pCylinderShape2_pnts_210__pntz.o" "LampShape1.pt[210].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_211__pntx.o" "LampShape1.pt[211].px";
-connectAttr "Lamp:pCylinderShape2_pnts_211__pnty.o" "LampShape1.pt[211].py";
-connectAttr "Lamp:pCylinderShape2_pnts_211__pntz.o" "LampShape1.pt[211].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_212__pntx.o" "LampShape1.pt[212].px";
-connectAttr "Lamp:pCylinderShape2_pnts_212__pnty.o" "LampShape1.pt[212].py";
-connectAttr "Lamp:pCylinderShape2_pnts_212__pntz.o" "LampShape1.pt[212].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_213__pntx.o" "LampShape1.pt[213].px";
-connectAttr "Lamp:pCylinderShape2_pnts_213__pnty.o" "LampShape1.pt[213].py";
-connectAttr "Lamp:pCylinderShape2_pnts_213__pntz.o" "LampShape1.pt[213].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_214__pntx.o" "LampShape1.pt[214].px";
-connectAttr "Lamp:pCylinderShape2_pnts_214__pnty.o" "LampShape1.pt[214].py";
-connectAttr "Lamp:pCylinderShape2_pnts_214__pntz.o" "LampShape1.pt[214].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_215__pntx.o" "LampShape1.pt[215].px";
-connectAttr "Lamp:pCylinderShape2_pnts_215__pnty.o" "LampShape1.pt[215].py";
-connectAttr "Lamp:pCylinderShape2_pnts_215__pntz.o" "LampShape1.pt[215].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_216__pntx.o" "LampShape1.pt[216].px";
-connectAttr "Lamp:pCylinderShape2_pnts_216__pnty.o" "LampShape1.pt[216].py";
-connectAttr "Lamp:pCylinderShape2_pnts_216__pntz.o" "LampShape1.pt[216].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_217__pntx.o" "LampShape1.pt[217].px";
-connectAttr "Lamp:pCylinderShape2_pnts_217__pnty.o" "LampShape1.pt[217].py";
-connectAttr "Lamp:pCylinderShape2_pnts_217__pntz.o" "LampShape1.pt[217].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_218__pntx.o" "LampShape1.pt[218].px";
-connectAttr "Lamp:pCylinderShape2_pnts_218__pnty.o" "LampShape1.pt[218].py";
-connectAttr "Lamp:pCylinderShape2_pnts_218__pntz.o" "LampShape1.pt[218].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_219__pntx.o" "LampShape1.pt[219].px";
-connectAttr "Lamp:pCylinderShape2_pnts_219__pnty.o" "LampShape1.pt[219].py";
-connectAttr "Lamp:pCylinderShape2_pnts_219__pntz.o" "LampShape1.pt[219].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_220__pntx.o" "LampShape1.pt[220].px";
-connectAttr "Lamp:pCylinderShape2_pnts_220__pnty.o" "LampShape1.pt[220].py";
-connectAttr "Lamp:pCylinderShape2_pnts_220__pntz.o" "LampShape1.pt[220].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_221__pntx.o" "LampShape1.pt[221].px";
-connectAttr "Lamp:pCylinderShape2_pnts_221__pnty.o" "LampShape1.pt[221].py";
-connectAttr "Lamp:pCylinderShape2_pnts_221__pntz.o" "LampShape1.pt[221].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_222__pntx.o" "LampShape1.pt[222].px";
-connectAttr "Lamp:pCylinderShape2_pnts_222__pnty.o" "LampShape1.pt[222].py";
-connectAttr "Lamp:pCylinderShape2_pnts_222__pntz.o" "LampShape1.pt[222].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_223__pntx.o" "LampShape1.pt[223].px";
-connectAttr "Lamp:pCylinderShape2_pnts_223__pnty.o" "LampShape1.pt[223].py";
-connectAttr "Lamp:pCylinderShape2_pnts_223__pntz.o" "LampShape1.pt[223].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_224__pntx.o" "LampShape1.pt[224].px";
-connectAttr "Lamp:pCylinderShape2_pnts_224__pnty.o" "LampShape1.pt[224].py";
-connectAttr "Lamp:pCylinderShape2_pnts_224__pntz.o" "LampShape1.pt[224].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_225__pntx.o" "LampShape1.pt[225].px";
-connectAttr "Lamp:pCylinderShape2_pnts_225__pnty.o" "LampShape1.pt[225].py";
-connectAttr "Lamp:pCylinderShape2_pnts_225__pntz.o" "LampShape1.pt[225].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_226__pntx.o" "LampShape1.pt[226].px";
-connectAttr "Lamp:pCylinderShape2_pnts_226__pnty.o" "LampShape1.pt[226].py";
-connectAttr "Lamp:pCylinderShape2_pnts_226__pntz.o" "LampShape1.pt[226].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_227__pntx.o" "LampShape1.pt[227].px";
-connectAttr "Lamp:pCylinderShape2_pnts_227__pnty.o" "LampShape1.pt[227].py";
-connectAttr "Lamp:pCylinderShape2_pnts_227__pntz.o" "LampShape1.pt[227].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_228__pntx.o" "LampShape1.pt[228].px";
-connectAttr "Lamp:pCylinderShape2_pnts_228__pnty.o" "LampShape1.pt[228].py";
-connectAttr "Lamp:pCylinderShape2_pnts_228__pntz.o" "LampShape1.pt[228].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_229__pntx.o" "LampShape1.pt[229].px";
-connectAttr "Lamp:pCylinderShape2_pnts_229__pnty.o" "LampShape1.pt[229].py";
-connectAttr "Lamp:pCylinderShape2_pnts_229__pntz.o" "LampShape1.pt[229].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_230__pntx.o" "LampShape1.pt[230].px";
-connectAttr "Lamp:pCylinderShape2_pnts_230__pnty.o" "LampShape1.pt[230].py";
-connectAttr "Lamp:pCylinderShape2_pnts_230__pntz.o" "LampShape1.pt[230].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_231__pntx.o" "LampShape1.pt[231].px";
-connectAttr "Lamp:pCylinderShape2_pnts_231__pnty.o" "LampShape1.pt[231].py";
-connectAttr "Lamp:pCylinderShape2_pnts_231__pntz.o" "LampShape1.pt[231].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_232__pntx.o" "LampShape1.pt[232].px";
-connectAttr "Lamp:pCylinderShape2_pnts_232__pnty.o" "LampShape1.pt[232].py";
-connectAttr "Lamp:pCylinderShape2_pnts_232__pntz.o" "LampShape1.pt[232].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_233__pntx.o" "LampShape1.pt[233].px";
-connectAttr "Lamp:pCylinderShape2_pnts_233__pnty.o" "LampShape1.pt[233].py";
-connectAttr "Lamp:pCylinderShape2_pnts_233__pntz.o" "LampShape1.pt[233].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_234__pntx.o" "LampShape1.pt[234].px";
-connectAttr "Lamp:pCylinderShape2_pnts_234__pnty.o" "LampShape1.pt[234].py";
-connectAttr "Lamp:pCylinderShape2_pnts_234__pntz.o" "LampShape1.pt[234].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_235__pntx.o" "LampShape1.pt[235].px";
-connectAttr "Lamp:pCylinderShape2_pnts_235__pnty.o" "LampShape1.pt[235].py";
-connectAttr "Lamp:pCylinderShape2_pnts_235__pntz.o" "LampShape1.pt[235].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_236__pntx.o" "LampShape1.pt[236].px";
-connectAttr "Lamp:pCylinderShape2_pnts_236__pnty.o" "LampShape1.pt[236].py";
-connectAttr "Lamp:pCylinderShape2_pnts_236__pntz.o" "LampShape1.pt[236].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_237__pntx.o" "LampShape1.pt[237].px";
-connectAttr "Lamp:pCylinderShape2_pnts_237__pnty.o" "LampShape1.pt[237].py";
-connectAttr "Lamp:pCylinderShape2_pnts_237__pntz.o" "LampShape1.pt[237].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_238__pntx.o" "LampShape1.pt[238].px";
-connectAttr "Lamp:pCylinderShape2_pnts_238__pnty.o" "LampShape1.pt[238].py";
-connectAttr "Lamp:pCylinderShape2_pnts_238__pntz.o" "LampShape1.pt[238].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_239__pntx.o" "LampShape1.pt[239].px";
-connectAttr "Lamp:pCylinderShape2_pnts_239__pnty.o" "LampShape1.pt[239].py";
-connectAttr "Lamp:pCylinderShape2_pnts_239__pntz.o" "LampShape1.pt[239].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_240__pntx.o" "LampShape1.pt[240].px";
-connectAttr "Lamp:pCylinderShape2_pnts_240__pnty.o" "LampShape1.pt[240].py";
-connectAttr "Lamp:pCylinderShape2_pnts_240__pntz.o" "LampShape1.pt[240].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_241__pntx.o" "LampShape1.pt[241].px";
-connectAttr "Lamp:pCylinderShape2_pnts_241__pnty.o" "LampShape1.pt[241].py";
-connectAttr "Lamp:pCylinderShape2_pnts_241__pntz.o" "LampShape1.pt[241].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_242__pntx.o" "LampShape1.pt[242].px";
-connectAttr "Lamp:pCylinderShape2_pnts_242__pnty.o" "LampShape1.pt[242].py";
-connectAttr "Lamp:pCylinderShape2_pnts_242__pntz.o" "LampShape1.pt[242].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_243__pntx.o" "LampShape1.pt[243].px";
-connectAttr "Lamp:pCylinderShape2_pnts_243__pnty.o" "LampShape1.pt[243].py";
-connectAttr "Lamp:pCylinderShape2_pnts_243__pntz.o" "LampShape1.pt[243].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_244__pntx.o" "LampShape1.pt[244].px";
-connectAttr "Lamp:pCylinderShape2_pnts_244__pnty.o" "LampShape1.pt[244].py";
-connectAttr "Lamp:pCylinderShape2_pnts_244__pntz.o" "LampShape1.pt[244].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_245__pntx.o" "LampShape1.pt[245].px";
-connectAttr "Lamp:pCylinderShape2_pnts_245__pnty.o" "LampShape1.pt[245].py";
-connectAttr "Lamp:pCylinderShape2_pnts_245__pntz.o" "LampShape1.pt[245].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_246__pntx.o" "LampShape1.pt[246].px";
-connectAttr "Lamp:pCylinderShape2_pnts_246__pnty.o" "LampShape1.pt[246].py";
-connectAttr "Lamp:pCylinderShape2_pnts_246__pntz.o" "LampShape1.pt[246].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_247__pntx.o" "LampShape1.pt[247].px";
-connectAttr "Lamp:pCylinderShape2_pnts_247__pnty.o" "LampShape1.pt[247].py";
-connectAttr "Lamp:pCylinderShape2_pnts_247__pntz.o" "LampShape1.pt[247].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_248__pntx.o" "LampShape1.pt[248].px";
-connectAttr "Lamp:pCylinderShape2_pnts_248__pnty.o" "LampShape1.pt[248].py";
-connectAttr "Lamp:pCylinderShape2_pnts_248__pntz.o" "LampShape1.pt[248].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_249__pntx.o" "LampShape1.pt[249].px";
-connectAttr "Lamp:pCylinderShape2_pnts_249__pnty.o" "LampShape1.pt[249].py";
-connectAttr "Lamp:pCylinderShape2_pnts_249__pntz.o" "LampShape1.pt[249].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_250__pntx.o" "LampShape1.pt[250].px";
-connectAttr "Lamp:pCylinderShape2_pnts_250__pnty.o" "LampShape1.pt[250].py";
-connectAttr "Lamp:pCylinderShape2_pnts_250__pntz.o" "LampShape1.pt[250].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_251__pntx.o" "LampShape1.pt[251].px";
-connectAttr "Lamp:pCylinderShape2_pnts_251__pnty.o" "LampShape1.pt[251].py";
-connectAttr "Lamp:pCylinderShape2_pnts_251__pntz.o" "LampShape1.pt[251].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_252__pntx.o" "LampShape1.pt[252].px";
-connectAttr "Lamp:pCylinderShape2_pnts_252__pnty.o" "LampShape1.pt[252].py";
-connectAttr "Lamp:pCylinderShape2_pnts_252__pntz.o" "LampShape1.pt[252].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_253__pntx.o" "LampShape1.pt[253].px";
-connectAttr "Lamp:pCylinderShape2_pnts_253__pnty.o" "LampShape1.pt[253].py";
-connectAttr "Lamp:pCylinderShape2_pnts_253__pntz.o" "LampShape1.pt[253].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_254__pntx.o" "LampShape1.pt[254].px";
-connectAttr "Lamp:pCylinderShape2_pnts_254__pnty.o" "LampShape1.pt[254].py";
-connectAttr "Lamp:pCylinderShape2_pnts_254__pntz.o" "LampShape1.pt[254].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_255__pntx.o" "LampShape1.pt[255].px";
-connectAttr "Lamp:pCylinderShape2_pnts_255__pnty.o" "LampShape1.pt[255].py";
-connectAttr "Lamp:pCylinderShape2_pnts_255__pntz.o" "LampShape1.pt[255].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_256__pntx.o" "LampShape1.pt[256].px";
-connectAttr "Lamp:pCylinderShape2_pnts_256__pnty.o" "LampShape1.pt[256].py";
-connectAttr "Lamp:pCylinderShape2_pnts_256__pntz.o" "LampShape1.pt[256].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_257__pntx.o" "LampShape1.pt[257].px";
-connectAttr "Lamp:pCylinderShape2_pnts_257__pnty.o" "LampShape1.pt[257].py";
-connectAttr "Lamp:pCylinderShape2_pnts_257__pntz.o" "LampShape1.pt[257].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_258__pntx.o" "LampShape1.pt[258].px";
-connectAttr "Lamp:pCylinderShape2_pnts_258__pnty.o" "LampShape1.pt[258].py";
-connectAttr "Lamp:pCylinderShape2_pnts_258__pntz.o" "LampShape1.pt[258].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_259__pntx.o" "LampShape1.pt[259].px";
-connectAttr "Lamp:pCylinderShape2_pnts_259__pnty.o" "LampShape1.pt[259].py";
-connectAttr "Lamp:pCylinderShape2_pnts_259__pntz.o" "LampShape1.pt[259].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_260__pntx.o" "LampShape1.pt[260].px";
-connectAttr "Lamp:pCylinderShape2_pnts_260__pnty.o" "LampShape1.pt[260].py";
-connectAttr "Lamp:pCylinderShape2_pnts_260__pntz.o" "LampShape1.pt[260].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_261__pntx.o" "LampShape1.pt[261].px";
-connectAttr "Lamp:pCylinderShape2_pnts_261__pnty.o" "LampShape1.pt[261].py";
-connectAttr "Lamp:pCylinderShape2_pnts_261__pntz.o" "LampShape1.pt[261].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_262__pntx.o" "LampShape1.pt[262].px";
-connectAttr "Lamp:pCylinderShape2_pnts_262__pnty.o" "LampShape1.pt[262].py";
-connectAttr "Lamp:pCylinderShape2_pnts_262__pntz.o" "LampShape1.pt[262].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_263__pntx.o" "LampShape1.pt[263].px";
-connectAttr "Lamp:pCylinderShape2_pnts_263__pnty.o" "LampShape1.pt[263].py";
-connectAttr "Lamp:pCylinderShape2_pnts_263__pntz.o" "LampShape1.pt[263].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_264__pntx.o" "LampShape1.pt[264].px";
-connectAttr "Lamp:pCylinderShape2_pnts_264__pnty.o" "LampShape1.pt[264].py";
-connectAttr "Lamp:pCylinderShape2_pnts_264__pntz.o" "LampShape1.pt[264].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_265__pntx.o" "LampShape1.pt[265].px";
-connectAttr "Lamp:pCylinderShape2_pnts_265__pnty.o" "LampShape1.pt[265].py";
-connectAttr "Lamp:pCylinderShape2_pnts_265__pntz.o" "LampShape1.pt[265].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_266__pntx.o" "LampShape1.pt[266].px";
-connectAttr "Lamp:pCylinderShape2_pnts_266__pnty.o" "LampShape1.pt[266].py";
-connectAttr "Lamp:pCylinderShape2_pnts_266__pntz.o" "LampShape1.pt[266].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_267__pntx.o" "LampShape1.pt[267].px";
-connectAttr "Lamp:pCylinderShape2_pnts_267__pnty.o" "LampShape1.pt[267].py";
-connectAttr "Lamp:pCylinderShape2_pnts_267__pntz.o" "LampShape1.pt[267].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_268__pntx.o" "LampShape1.pt[268].px";
-connectAttr "Lamp:pCylinderShape2_pnts_268__pnty.o" "LampShape1.pt[268].py";
-connectAttr "Lamp:pCylinderShape2_pnts_268__pntz.o" "LampShape1.pt[268].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_269__pntx.o" "LampShape1.pt[269].px";
-connectAttr "Lamp:pCylinderShape2_pnts_269__pnty.o" "LampShape1.pt[269].py";
-connectAttr "Lamp:pCylinderShape2_pnts_269__pntz.o" "LampShape1.pt[269].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_270__pntx.o" "LampShape1.pt[270].px";
-connectAttr "Lamp:pCylinderShape2_pnts_270__pnty.o" "LampShape1.pt[270].py";
-connectAttr "Lamp:pCylinderShape2_pnts_270__pntz.o" "LampShape1.pt[270].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_271__pntx.o" "LampShape1.pt[271].px";
-connectAttr "Lamp:pCylinderShape2_pnts_271__pnty.o" "LampShape1.pt[271].py";
-connectAttr "Lamp:pCylinderShape2_pnts_271__pntz.o" "LampShape1.pt[271].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_272__pntx.o" "LampShape1.pt[272].px";
-connectAttr "Lamp:pCylinderShape2_pnts_272__pnty.o" "LampShape1.pt[272].py";
-connectAttr "Lamp:pCylinderShape2_pnts_272__pntz.o" "LampShape1.pt[272].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_273__pntx.o" "LampShape1.pt[273].px";
-connectAttr "Lamp:pCylinderShape2_pnts_273__pnty.o" "LampShape1.pt[273].py";
-connectAttr "Lamp:pCylinderShape2_pnts_273__pntz.o" "LampShape1.pt[273].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_274__pntx.o" "LampShape1.pt[274].px";
-connectAttr "Lamp:pCylinderShape2_pnts_274__pnty.o" "LampShape1.pt[274].py";
-connectAttr "Lamp:pCylinderShape2_pnts_274__pntz.o" "LampShape1.pt[274].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_275__pntx.o" "LampShape1.pt[275].px";
-connectAttr "Lamp:pCylinderShape2_pnts_275__pnty.o" "LampShape1.pt[275].py";
-connectAttr "Lamp:pCylinderShape2_pnts_275__pntz.o" "LampShape1.pt[275].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_276__pntx.o" "LampShape1.pt[276].px";
-connectAttr "Lamp:pCylinderShape2_pnts_276__pnty.o" "LampShape1.pt[276].py";
-connectAttr "Lamp:pCylinderShape2_pnts_276__pntz.o" "LampShape1.pt[276].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_277__pntx.o" "LampShape1.pt[277].px";
-connectAttr "Lamp:pCylinderShape2_pnts_277__pnty.o" "LampShape1.pt[277].py";
-connectAttr "Lamp:pCylinderShape2_pnts_277__pntz.o" "LampShape1.pt[277].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_278__pntx.o" "LampShape1.pt[278].px";
-connectAttr "Lamp:pCylinderShape2_pnts_278__pnty.o" "LampShape1.pt[278].py";
-connectAttr "Lamp:pCylinderShape2_pnts_278__pntz.o" "LampShape1.pt[278].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_279__pntx.o" "LampShape1.pt[279].px";
-connectAttr "Lamp:pCylinderShape2_pnts_279__pnty.o" "LampShape1.pt[279].py";
-connectAttr "Lamp:pCylinderShape2_pnts_279__pntz.o" "LampShape1.pt[279].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_280__pntx.o" "LampShape1.pt[280].px";
-connectAttr "Lamp:pCylinderShape2_pnts_280__pnty.o" "LampShape1.pt[280].py";
-connectAttr "Lamp:pCylinderShape2_pnts_280__pntz.o" "LampShape1.pt[280].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_281__pntx.o" "LampShape1.pt[281].px";
-connectAttr "Lamp:pCylinderShape2_pnts_281__pnty.o" "LampShape1.pt[281].py";
-connectAttr "Lamp:pCylinderShape2_pnts_281__pntz.o" "LampShape1.pt[281].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_282__pntx.o" "LampShape1.pt[282].px";
-connectAttr "Lamp:pCylinderShape2_pnts_282__pnty.o" "LampShape1.pt[282].py";
-connectAttr "Lamp:pCylinderShape2_pnts_282__pntz.o" "LampShape1.pt[282].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_283__pntx.o" "LampShape1.pt[283].px";
-connectAttr "Lamp:pCylinderShape2_pnts_283__pnty.o" "LampShape1.pt[283].py";
-connectAttr "Lamp:pCylinderShape2_pnts_283__pntz.o" "LampShape1.pt[283].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_284__pntx.o" "LampShape1.pt[284].px";
-connectAttr "Lamp:pCylinderShape2_pnts_284__pnty.o" "LampShape1.pt[284].py";
-connectAttr "Lamp:pCylinderShape2_pnts_284__pntz.o" "LampShape1.pt[284].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_285__pntx.o" "LampShape1.pt[285].px";
-connectAttr "Lamp:pCylinderShape2_pnts_285__pnty.o" "LampShape1.pt[285].py";
-connectAttr "Lamp:pCylinderShape2_pnts_285__pntz.o" "LampShape1.pt[285].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_286__pntx.o" "LampShape1.pt[286].px";
-connectAttr "Lamp:pCylinderShape2_pnts_286__pnty.o" "LampShape1.pt[286].py";
-connectAttr "Lamp:pCylinderShape2_pnts_286__pntz.o" "LampShape1.pt[286].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_287__pntx.o" "LampShape1.pt[287].px";
-connectAttr "Lamp:pCylinderShape2_pnts_287__pnty.o" "LampShape1.pt[287].py";
-connectAttr "Lamp:pCylinderShape2_pnts_287__pntz.o" "LampShape1.pt[287].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_288__pntx.o" "LampShape1.pt[288].px";
-connectAttr "Lamp:pCylinderShape2_pnts_288__pnty.o" "LampShape1.pt[288].py";
-connectAttr "Lamp:pCylinderShape2_pnts_288__pntz.o" "LampShape1.pt[288].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_289__pntx.o" "LampShape1.pt[289].px";
-connectAttr "Lamp:pCylinderShape2_pnts_289__pnty.o" "LampShape1.pt[289].py";
-connectAttr "Lamp:pCylinderShape2_pnts_289__pntz.o" "LampShape1.pt[289].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_290__pntx.o" "LampShape1.pt[290].px";
-connectAttr "Lamp:pCylinderShape2_pnts_290__pnty.o" "LampShape1.pt[290].py";
-connectAttr "Lamp:pCylinderShape2_pnts_290__pntz.o" "LampShape1.pt[290].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_291__pntx.o" "LampShape1.pt[291].px";
-connectAttr "Lamp:pCylinderShape2_pnts_291__pnty.o" "LampShape1.pt[291].py";
-connectAttr "Lamp:pCylinderShape2_pnts_291__pntz.o" "LampShape1.pt[291].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_292__pntx.o" "LampShape1.pt[292].px";
-connectAttr "Lamp:pCylinderShape2_pnts_292__pnty.o" "LampShape1.pt[292].py";
-connectAttr "Lamp:pCylinderShape2_pnts_292__pntz.o" "LampShape1.pt[292].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_293__pntx.o" "LampShape1.pt[293].px";
-connectAttr "Lamp:pCylinderShape2_pnts_293__pnty.o" "LampShape1.pt[293].py";
-connectAttr "Lamp:pCylinderShape2_pnts_293__pntz.o" "LampShape1.pt[293].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_294__pntx.o" "LampShape1.pt[294].px";
-connectAttr "Lamp:pCylinderShape2_pnts_294__pnty.o" "LampShape1.pt[294].py";
-connectAttr "Lamp:pCylinderShape2_pnts_294__pntz.o" "LampShape1.pt[294].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_295__pntx.o" "LampShape1.pt[295].px";
-connectAttr "Lamp:pCylinderShape2_pnts_295__pnty.o" "LampShape1.pt[295].py";
-connectAttr "Lamp:pCylinderShape2_pnts_295__pntz.o" "LampShape1.pt[295].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_296__pntx.o" "LampShape1.pt[296].px";
-connectAttr "Lamp:pCylinderShape2_pnts_296__pnty.o" "LampShape1.pt[296].py";
-connectAttr "Lamp:pCylinderShape2_pnts_296__pntz.o" "LampShape1.pt[296].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_297__pntx.o" "LampShape1.pt[297].px";
-connectAttr "Lamp:pCylinderShape2_pnts_297__pnty.o" "LampShape1.pt[297].py";
-connectAttr "Lamp:pCylinderShape2_pnts_297__pntz.o" "LampShape1.pt[297].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_298__pntx.o" "LampShape1.pt[298].px";
-connectAttr "Lamp:pCylinderShape2_pnts_298__pnty.o" "LampShape1.pt[298].py";
-connectAttr "Lamp:pCylinderShape2_pnts_298__pntz.o" "LampShape1.pt[298].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_299__pntx.o" "LampShape1.pt[299].px";
-connectAttr "Lamp:pCylinderShape2_pnts_299__pnty.o" "LampShape1.pt[299].py";
-connectAttr "Lamp:pCylinderShape2_pnts_299__pntz.o" "LampShape1.pt[299].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_300__pntx.o" "LampShape1.pt[300].px";
-connectAttr "Lamp:pCylinderShape2_pnts_300__pnty.o" "LampShape1.pt[300].py";
-connectAttr "Lamp:pCylinderShape2_pnts_300__pntz.o" "LampShape1.pt[300].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_301__pntx.o" "LampShape1.pt[301].px";
-connectAttr "Lamp:pCylinderShape2_pnts_301__pnty.o" "LampShape1.pt[301].py";
-connectAttr "Lamp:pCylinderShape2_pnts_301__pntz.o" "LampShape1.pt[301].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_302__pntx.o" "LampShape1.pt[302].px";
-connectAttr "Lamp:pCylinderShape2_pnts_302__pnty.o" "LampShape1.pt[302].py";
-connectAttr "Lamp:pCylinderShape2_pnts_302__pntz.o" "LampShape1.pt[302].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_303__pntx.o" "LampShape1.pt[303].px";
-connectAttr "Lamp:pCylinderShape2_pnts_303__pnty.o" "LampShape1.pt[303].py";
-connectAttr "Lamp:pCylinderShape2_pnts_303__pntz.o" "LampShape1.pt[303].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_304__pntx.o" "LampShape1.pt[304].px";
-connectAttr "Lamp:pCylinderShape2_pnts_304__pnty.o" "LampShape1.pt[304].py";
-connectAttr "Lamp:pCylinderShape2_pnts_304__pntz.o" "LampShape1.pt[304].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_305__pntx.o" "LampShape1.pt[305].px";
-connectAttr "Lamp:pCylinderShape2_pnts_305__pnty.o" "LampShape1.pt[305].py";
-connectAttr "Lamp:pCylinderShape2_pnts_305__pntz.o" "LampShape1.pt[305].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_306__pntx.o" "LampShape1.pt[306].px";
-connectAttr "Lamp:pCylinderShape2_pnts_306__pnty.o" "LampShape1.pt[306].py";
-connectAttr "Lamp:pCylinderShape2_pnts_306__pntz.o" "LampShape1.pt[306].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_307__pntx.o" "LampShape1.pt[307].px";
-connectAttr "Lamp:pCylinderShape2_pnts_307__pnty.o" "LampShape1.pt[307].py";
-connectAttr "Lamp:pCylinderShape2_pnts_307__pntz.o" "LampShape1.pt[307].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_308__pntx.o" "LampShape1.pt[308].px";
-connectAttr "Lamp:pCylinderShape2_pnts_308__pnty.o" "LampShape1.pt[308].py";
-connectAttr "Lamp:pCylinderShape2_pnts_308__pntz.o" "LampShape1.pt[308].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_309__pntx.o" "LampShape1.pt[309].px";
-connectAttr "Lamp:pCylinderShape2_pnts_309__pnty.o" "LampShape1.pt[309].py";
-connectAttr "Lamp:pCylinderShape2_pnts_309__pntz.o" "LampShape1.pt[309].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_310__pntx.o" "LampShape1.pt[310].px";
-connectAttr "Lamp:pCylinderShape2_pnts_310__pnty.o" "LampShape1.pt[310].py";
-connectAttr "Lamp:pCylinderShape2_pnts_310__pntz.o" "LampShape1.pt[310].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_311__pntx.o" "LampShape1.pt[311].px";
-connectAttr "Lamp:pCylinderShape2_pnts_311__pnty.o" "LampShape1.pt[311].py";
-connectAttr "Lamp:pCylinderShape2_pnts_311__pntz.o" "LampShape1.pt[311].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_312__pntx.o" "LampShape1.pt[312].px";
-connectAttr "Lamp:pCylinderShape2_pnts_312__pnty.o" "LampShape1.pt[312].py";
-connectAttr "Lamp:pCylinderShape2_pnts_312__pntz.o" "LampShape1.pt[312].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_313__pntx.o" "LampShape1.pt[313].px";
-connectAttr "Lamp:pCylinderShape2_pnts_313__pnty.o" "LampShape1.pt[313].py";
-connectAttr "Lamp:pCylinderShape2_pnts_313__pntz.o" "LampShape1.pt[313].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_314__pntx.o" "LampShape1.pt[314].px";
-connectAttr "Lamp:pCylinderShape2_pnts_314__pnty.o" "LampShape1.pt[314].py";
-connectAttr "Lamp:pCylinderShape2_pnts_314__pntz.o" "LampShape1.pt[314].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_315__pntx.o" "LampShape1.pt[315].px";
-connectAttr "Lamp:pCylinderShape2_pnts_315__pnty.o" "LampShape1.pt[315].py";
-connectAttr "Lamp:pCylinderShape2_pnts_315__pntz.o" "LampShape1.pt[315].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_316__pntx.o" "LampShape1.pt[316].px";
-connectAttr "Lamp:pCylinderShape2_pnts_316__pnty.o" "LampShape1.pt[316].py";
-connectAttr "Lamp:pCylinderShape2_pnts_316__pntz.o" "LampShape1.pt[316].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_317__pntx.o" "LampShape1.pt[317].px";
-connectAttr "Lamp:pCylinderShape2_pnts_317__pnty.o" "LampShape1.pt[317].py";
-connectAttr "Lamp:pCylinderShape2_pnts_317__pntz.o" "LampShape1.pt[317].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_318__pntx.o" "LampShape1.pt[318].px";
-connectAttr "Lamp:pCylinderShape2_pnts_318__pnty.o" "LampShape1.pt[318].py";
-connectAttr "Lamp:pCylinderShape2_pnts_318__pntz.o" "LampShape1.pt[318].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_319__pntx.o" "LampShape1.pt[319].px";
-connectAttr "Lamp:pCylinderShape2_pnts_319__pnty.o" "LampShape1.pt[319].py";
-connectAttr "Lamp:pCylinderShape2_pnts_319__pntz.o" "LampShape1.pt[319].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_320__pntx.o" "LampShape1.pt[320].px";
-connectAttr "Lamp:pCylinderShape2_pnts_320__pnty.o" "LampShape1.pt[320].py";
-connectAttr "Lamp:pCylinderShape2_pnts_320__pntz.o" "LampShape1.pt[320].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_321__pntx.o" "LampShape1.pt[321].px";
-connectAttr "Lamp:pCylinderShape2_pnts_321__pnty.o" "LampShape1.pt[321].py";
-connectAttr "Lamp:pCylinderShape2_pnts_321__pntz.o" "LampShape1.pt[321].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_322__pntx.o" "LampShape1.pt[322].px";
-connectAttr "Lamp:pCylinderShape2_pnts_322__pnty.o" "LampShape1.pt[322].py";
-connectAttr "Lamp:pCylinderShape2_pnts_322__pntz.o" "LampShape1.pt[322].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_323__pntx.o" "LampShape1.pt[323].px";
-connectAttr "Lamp:pCylinderShape2_pnts_323__pnty.o" "LampShape1.pt[323].py";
-connectAttr "Lamp:pCylinderShape2_pnts_323__pntz.o" "LampShape1.pt[323].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_324__pntx.o" "LampShape1.pt[324].px";
-connectAttr "Lamp:pCylinderShape2_pnts_324__pnty.o" "LampShape1.pt[324].py";
-connectAttr "Lamp:pCylinderShape2_pnts_324__pntz.o" "LampShape1.pt[324].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_325__pntx.o" "LampShape1.pt[325].px";
-connectAttr "Lamp:pCylinderShape2_pnts_325__pnty.o" "LampShape1.pt[325].py";
-connectAttr "Lamp:pCylinderShape2_pnts_325__pntz.o" "LampShape1.pt[325].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_326__pntx.o" "LampShape1.pt[326].px";
-connectAttr "Lamp:pCylinderShape2_pnts_326__pnty.o" "LampShape1.pt[326].py";
-connectAttr "Lamp:pCylinderShape2_pnts_326__pntz.o" "LampShape1.pt[326].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_327__pntx.o" "LampShape1.pt[327].px";
-connectAttr "Lamp:pCylinderShape2_pnts_327__pnty.o" "LampShape1.pt[327].py";
-connectAttr "Lamp:pCylinderShape2_pnts_327__pntz.o" "LampShape1.pt[327].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_328__pntx.o" "LampShape1.pt[328].px";
-connectAttr "Lamp:pCylinderShape2_pnts_328__pnty.o" "LampShape1.pt[328].py";
-connectAttr "Lamp:pCylinderShape2_pnts_328__pntz.o" "LampShape1.pt[328].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_329__pntx.o" "LampShape1.pt[329].px";
-connectAttr "Lamp:pCylinderShape2_pnts_329__pnty.o" "LampShape1.pt[329].py";
-connectAttr "Lamp:pCylinderShape2_pnts_329__pntz.o" "LampShape1.pt[329].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_330__pntx.o" "LampShape1.pt[330].px";
-connectAttr "Lamp:pCylinderShape2_pnts_330__pnty.o" "LampShape1.pt[330].py";
-connectAttr "Lamp:pCylinderShape2_pnts_330__pntz.o" "LampShape1.pt[330].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_331__pntx.o" "LampShape1.pt[331].px";
-connectAttr "Lamp:pCylinderShape2_pnts_331__pnty.o" "LampShape1.pt[331].py";
-connectAttr "Lamp:pCylinderShape2_pnts_331__pntz.o" "LampShape1.pt[331].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_332__pntx.o" "LampShape1.pt[332].px";
-connectAttr "Lamp:pCylinderShape2_pnts_332__pnty.o" "LampShape1.pt[332].py";
-connectAttr "Lamp:pCylinderShape2_pnts_332__pntz.o" "LampShape1.pt[332].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_333__pntx.o" "LampShape1.pt[333].px";
-connectAttr "Lamp:pCylinderShape2_pnts_333__pnty.o" "LampShape1.pt[333].py";
-connectAttr "Lamp:pCylinderShape2_pnts_333__pntz.o" "LampShape1.pt[333].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_334__pntx.o" "LampShape1.pt[334].px";
-connectAttr "Lamp:pCylinderShape2_pnts_334__pnty.o" "LampShape1.pt[334].py";
-connectAttr "Lamp:pCylinderShape2_pnts_334__pntz.o" "LampShape1.pt[334].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_335__pntx.o" "LampShape1.pt[335].px";
-connectAttr "Lamp:pCylinderShape2_pnts_335__pnty.o" "LampShape1.pt[335].py";
-connectAttr "Lamp:pCylinderShape2_pnts_335__pntz.o" "LampShape1.pt[335].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_336__pntx.o" "LampShape1.pt[336].px";
-connectAttr "Lamp:pCylinderShape2_pnts_336__pnty.o" "LampShape1.pt[336].py";
-connectAttr "Lamp:pCylinderShape2_pnts_336__pntz.o" "LampShape1.pt[336].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_337__pntx.o" "LampShape1.pt[337].px";
-connectAttr "Lamp:pCylinderShape2_pnts_337__pnty.o" "LampShape1.pt[337].py";
-connectAttr "Lamp:pCylinderShape2_pnts_337__pntz.o" "LampShape1.pt[337].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_338__pntx.o" "LampShape1.pt[338].px";
-connectAttr "Lamp:pCylinderShape2_pnts_338__pnty.o" "LampShape1.pt[338].py";
-connectAttr "Lamp:pCylinderShape2_pnts_338__pntz.o" "LampShape1.pt[338].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_339__pntx.o" "LampShape1.pt[339].px";
-connectAttr "Lamp:pCylinderShape2_pnts_339__pnty.o" "LampShape1.pt[339].py";
-connectAttr "Lamp:pCylinderShape2_pnts_339__pntz.o" "LampShape1.pt[339].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_340__pntx.o" "LampShape1.pt[340].px";
-connectAttr "Lamp:pCylinderShape2_pnts_340__pnty.o" "LampShape1.pt[340].py";
-connectAttr "Lamp:pCylinderShape2_pnts_340__pntz.o" "LampShape1.pt[340].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_341__pntx.o" "LampShape1.pt[341].px";
-connectAttr "Lamp:pCylinderShape2_pnts_341__pnty.o" "LampShape1.pt[341].py";
-connectAttr "Lamp:pCylinderShape2_pnts_341__pntz.o" "LampShape1.pt[341].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_342__pntx.o" "LampShape1.pt[342].px";
-connectAttr "Lamp:pCylinderShape2_pnts_342__pnty.o" "LampShape1.pt[342].py";
-connectAttr "Lamp:pCylinderShape2_pnts_342__pntz.o" "LampShape1.pt[342].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_343__pntx.o" "LampShape1.pt[343].px";
-connectAttr "Lamp:pCylinderShape2_pnts_343__pnty.o" "LampShape1.pt[343].py";
-connectAttr "Lamp:pCylinderShape2_pnts_343__pntz.o" "LampShape1.pt[343].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_344__pntx.o" "LampShape1.pt[344].px";
-connectAttr "Lamp:pCylinderShape2_pnts_344__pnty.o" "LampShape1.pt[344].py";
-connectAttr "Lamp:pCylinderShape2_pnts_344__pntz.o" "LampShape1.pt[344].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_345__pntx.o" "LampShape1.pt[345].px";
-connectAttr "Lamp:pCylinderShape2_pnts_345__pnty.o" "LampShape1.pt[345].py";
-connectAttr "Lamp:pCylinderShape2_pnts_345__pntz.o" "LampShape1.pt[345].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_346__pntx.o" "LampShape1.pt[346].px";
-connectAttr "Lamp:pCylinderShape2_pnts_346__pnty.o" "LampShape1.pt[346].py";
-connectAttr "Lamp:pCylinderShape2_pnts_346__pntz.o" "LampShape1.pt[346].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_347__pntx.o" "LampShape1.pt[347].px";
-connectAttr "Lamp:pCylinderShape2_pnts_347__pnty.o" "LampShape1.pt[347].py";
-connectAttr "Lamp:pCylinderShape2_pnts_347__pntz.o" "LampShape1.pt[347].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_348__pntx.o" "LampShape1.pt[348].px";
-connectAttr "Lamp:pCylinderShape2_pnts_348__pnty.o" "LampShape1.pt[348].py";
-connectAttr "Lamp:pCylinderShape2_pnts_348__pntz.o" "LampShape1.pt[348].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_349__pntx.o" "LampShape1.pt[349].px";
-connectAttr "Lamp:pCylinderShape2_pnts_349__pnty.o" "LampShape1.pt[349].py";
-connectAttr "Lamp:pCylinderShape2_pnts_349__pntz.o" "LampShape1.pt[349].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_350__pntx.o" "LampShape1.pt[350].px";
-connectAttr "Lamp:pCylinderShape2_pnts_350__pnty.o" "LampShape1.pt[350].py";
-connectAttr "Lamp:pCylinderShape2_pnts_350__pntz.o" "LampShape1.pt[350].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_351__pntx.o" "LampShape1.pt[351].px";
-connectAttr "Lamp:pCylinderShape2_pnts_351__pnty.o" "LampShape1.pt[351].py";
-connectAttr "Lamp:pCylinderShape2_pnts_351__pntz.o" "LampShape1.pt[351].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_352__pntx.o" "LampShape1.pt[352].px";
-connectAttr "Lamp:pCylinderShape2_pnts_352__pnty.o" "LampShape1.pt[352].py";
-connectAttr "Lamp:pCylinderShape2_pnts_352__pntz.o" "LampShape1.pt[352].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_353__pntx.o" "LampShape1.pt[353].px";
-connectAttr "Lamp:pCylinderShape2_pnts_353__pnty.o" "LampShape1.pt[353].py";
-connectAttr "Lamp:pCylinderShape2_pnts_353__pntz.o" "LampShape1.pt[353].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_354__pntx.o" "LampShape1.pt[354].px";
-connectAttr "Lamp:pCylinderShape2_pnts_354__pnty.o" "LampShape1.pt[354].py";
-connectAttr "Lamp:pCylinderShape2_pnts_354__pntz.o" "LampShape1.pt[354].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_355__pntx.o" "LampShape1.pt[355].px";
-connectAttr "Lamp:pCylinderShape2_pnts_355__pnty.o" "LampShape1.pt[355].py";
-connectAttr "Lamp:pCylinderShape2_pnts_355__pntz.o" "LampShape1.pt[355].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_356__pntx.o" "LampShape1.pt[356].px";
-connectAttr "Lamp:pCylinderShape2_pnts_356__pnty.o" "LampShape1.pt[356].py";
-connectAttr "Lamp:pCylinderShape2_pnts_356__pntz.o" "LampShape1.pt[356].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_357__pntx.o" "LampShape1.pt[357].px";
-connectAttr "Lamp:pCylinderShape2_pnts_357__pnty.o" "LampShape1.pt[357].py";
-connectAttr "Lamp:pCylinderShape2_pnts_357__pntz.o" "LampShape1.pt[357].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_358__pntx.o" "LampShape1.pt[358].px";
-connectAttr "Lamp:pCylinderShape2_pnts_358__pnty.o" "LampShape1.pt[358].py";
-connectAttr "Lamp:pCylinderShape2_pnts_358__pntz.o" "LampShape1.pt[358].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_359__pntx.o" "LampShape1.pt[359].px";
-connectAttr "Lamp:pCylinderShape2_pnts_359__pnty.o" "LampShape1.pt[359].py";
-connectAttr "Lamp:pCylinderShape2_pnts_359__pntz.o" "LampShape1.pt[359].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_360__pntx.o" "LampShape1.pt[360].px";
-connectAttr "Lamp:pCylinderShape2_pnts_360__pnty.o" "LampShape1.pt[360].py";
-connectAttr "Lamp:pCylinderShape2_pnts_360__pntz.o" "LampShape1.pt[360].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_361__pntx.o" "LampShape1.pt[361].px";
-connectAttr "Lamp:pCylinderShape2_pnts_361__pnty.o" "LampShape1.pt[361].py";
-connectAttr "Lamp:pCylinderShape2_pnts_361__pntz.o" "LampShape1.pt[361].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_362__pntx.o" "LampShape1.pt[362].px";
-connectAttr "Lamp:pCylinderShape2_pnts_362__pnty.o" "LampShape1.pt[362].py";
-connectAttr "Lamp:pCylinderShape2_pnts_362__pntz.o" "LampShape1.pt[362].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_363__pntx.o" "LampShape1.pt[363].px";
-connectAttr "Lamp:pCylinderShape2_pnts_363__pnty.o" "LampShape1.pt[363].py";
-connectAttr "Lamp:pCylinderShape2_pnts_363__pntz.o" "LampShape1.pt[363].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_364__pntx.o" "LampShape1.pt[364].px";
-connectAttr "Lamp:pCylinderShape2_pnts_364__pnty.o" "LampShape1.pt[364].py";
-connectAttr "Lamp:pCylinderShape2_pnts_364__pntz.o" "LampShape1.pt[364].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_365__pntx.o" "LampShape1.pt[365].px";
-connectAttr "Lamp:pCylinderShape2_pnts_365__pnty.o" "LampShape1.pt[365].py";
-connectAttr "Lamp:pCylinderShape2_pnts_365__pntz.o" "LampShape1.pt[365].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_366__pntx.o" "LampShape1.pt[366].px";
-connectAttr "Lamp:pCylinderShape2_pnts_366__pnty.o" "LampShape1.pt[366].py";
-connectAttr "Lamp:pCylinderShape2_pnts_366__pntz.o" "LampShape1.pt[366].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_367__pntx.o" "LampShape1.pt[367].px";
-connectAttr "Lamp:pCylinderShape2_pnts_367__pnty.o" "LampShape1.pt[367].py";
-connectAttr "Lamp:pCylinderShape2_pnts_367__pntz.o" "LampShape1.pt[367].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_368__pntx.o" "LampShape1.pt[368].px";
-connectAttr "Lamp:pCylinderShape2_pnts_368__pnty.o" "LampShape1.pt[368].py";
-connectAttr "Lamp:pCylinderShape2_pnts_368__pntz.o" "LampShape1.pt[368].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_369__pntx.o" "LampShape1.pt[369].px";
-connectAttr "Lamp:pCylinderShape2_pnts_369__pnty.o" "LampShape1.pt[369].py";
-connectAttr "Lamp:pCylinderShape2_pnts_369__pntz.o" "LampShape1.pt[369].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_370__pntx.o" "LampShape1.pt[370].px";
-connectAttr "Lamp:pCylinderShape2_pnts_370__pnty.o" "LampShape1.pt[370].py";
-connectAttr "Lamp:pCylinderShape2_pnts_370__pntz.o" "LampShape1.pt[370].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_371__pntx.o" "LampShape1.pt[371].px";
-connectAttr "Lamp:pCylinderShape2_pnts_371__pnty.o" "LampShape1.pt[371].py";
-connectAttr "Lamp:pCylinderShape2_pnts_371__pntz.o" "LampShape1.pt[371].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_372__pntx.o" "LampShape1.pt[372].px";
-connectAttr "Lamp:pCylinderShape2_pnts_372__pnty.o" "LampShape1.pt[372].py";
-connectAttr "Lamp:pCylinderShape2_pnts_372__pntz.o" "LampShape1.pt[372].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_373__pntx.o" "LampShape1.pt[373].px";
-connectAttr "Lamp:pCylinderShape2_pnts_373__pnty.o" "LampShape1.pt[373].py";
-connectAttr "Lamp:pCylinderShape2_pnts_373__pntz.o" "LampShape1.pt[373].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_374__pntx.o" "LampShape1.pt[374].px";
-connectAttr "Lamp:pCylinderShape2_pnts_374__pnty.o" "LampShape1.pt[374].py";
-connectAttr "Lamp:pCylinderShape2_pnts_374__pntz.o" "LampShape1.pt[374].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_375__pntx.o" "LampShape1.pt[375].px";
-connectAttr "Lamp:pCylinderShape2_pnts_375__pnty.o" "LampShape1.pt[375].py";
-connectAttr "Lamp:pCylinderShape2_pnts_375__pntz.o" "LampShape1.pt[375].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_376__pntx.o" "LampShape1.pt[376].px";
-connectAttr "Lamp:pCylinderShape2_pnts_376__pnty.o" "LampShape1.pt[376].py";
-connectAttr "Lamp:pCylinderShape2_pnts_376__pntz.o" "LampShape1.pt[376].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_377__pntx.o" "LampShape1.pt[377].px";
-connectAttr "Lamp:pCylinderShape2_pnts_377__pnty.o" "LampShape1.pt[377].py";
-connectAttr "Lamp:pCylinderShape2_pnts_377__pntz.o" "LampShape1.pt[377].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_378__pntx.o" "LampShape1.pt[378].px";
-connectAttr "Lamp:pCylinderShape2_pnts_378__pnty.o" "LampShape1.pt[378].py";
-connectAttr "Lamp:pCylinderShape2_pnts_378__pntz.o" "LampShape1.pt[378].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_379__pntx.o" "LampShape1.pt[379].px";
-connectAttr "Lamp:pCylinderShape2_pnts_379__pnty.o" "LampShape1.pt[379].py";
-connectAttr "Lamp:pCylinderShape2_pnts_379__pntz.o" "LampShape1.pt[379].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_380__pntx.o" "LampShape1.pt[380].px";
-connectAttr "Lamp:pCylinderShape2_pnts_380__pnty.o" "LampShape1.pt[380].py";
-connectAttr "Lamp:pCylinderShape2_pnts_380__pntz.o" "LampShape1.pt[380].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_381__pntx.o" "LampShape1.pt[381].px";
-connectAttr "Lamp:pCylinderShape2_pnts_381__pnty.o" "LampShape1.pt[381].py";
-connectAttr "Lamp:pCylinderShape2_pnts_381__pntz.o" "LampShape1.pt[381].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_382__pntx.o" "LampShape1.pt[382].px";
-connectAttr "Lamp:pCylinderShape2_pnts_382__pnty.o" "LampShape1.pt[382].py";
-connectAttr "Lamp:pCylinderShape2_pnts_382__pntz.o" "LampShape1.pt[382].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_383__pntx.o" "LampShape1.pt[383].px";
-connectAttr "Lamp:pCylinderShape2_pnts_383__pnty.o" "LampShape1.pt[383].py";
-connectAttr "Lamp:pCylinderShape2_pnts_383__pntz.o" "LampShape1.pt[383].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_384__pntx.o" "LampShape1.pt[384].px";
-connectAttr "Lamp:pCylinderShape2_pnts_384__pnty.o" "LampShape1.pt[384].py";
-connectAttr "Lamp:pCylinderShape2_pnts_384__pntz.o" "LampShape1.pt[384].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_385__pntx.o" "LampShape1.pt[385].px";
-connectAttr "Lamp:pCylinderShape2_pnts_385__pnty.o" "LampShape1.pt[385].py";
-connectAttr "Lamp:pCylinderShape2_pnts_385__pntz.o" "LampShape1.pt[385].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_386__pntx.o" "LampShape1.pt[386].px";
-connectAttr "Lamp:pCylinderShape2_pnts_386__pnty.o" "LampShape1.pt[386].py";
-connectAttr "Lamp:pCylinderShape2_pnts_386__pntz.o" "LampShape1.pt[386].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_387__pntx.o" "LampShape1.pt[387].px";
-connectAttr "Lamp:pCylinderShape2_pnts_387__pnty.o" "LampShape1.pt[387].py";
-connectAttr "Lamp:pCylinderShape2_pnts_387__pntz.o" "LampShape1.pt[387].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_388__pntx.o" "LampShape1.pt[388].px";
-connectAttr "Lamp:pCylinderShape2_pnts_388__pnty.o" "LampShape1.pt[388].py";
-connectAttr "Lamp:pCylinderShape2_pnts_388__pntz.o" "LampShape1.pt[388].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_389__pntx.o" "LampShape1.pt[389].px";
-connectAttr "Lamp:pCylinderShape2_pnts_389__pnty.o" "LampShape1.pt[389].py";
-connectAttr "Lamp:pCylinderShape2_pnts_389__pntz.o" "LampShape1.pt[389].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_390__pntx.o" "LampShape1.pt[390].px";
-connectAttr "Lamp:pCylinderShape2_pnts_390__pnty.o" "LampShape1.pt[390].py";
-connectAttr "Lamp:pCylinderShape2_pnts_390__pntz.o" "LampShape1.pt[390].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_391__pntx.o" "LampShape1.pt[391].px";
-connectAttr "Lamp:pCylinderShape2_pnts_391__pnty.o" "LampShape1.pt[391].py";
-connectAttr "Lamp:pCylinderShape2_pnts_391__pntz.o" "LampShape1.pt[391].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_392__pntx.o" "LampShape1.pt[392].px";
-connectAttr "Lamp:pCylinderShape2_pnts_392__pnty.o" "LampShape1.pt[392].py";
-connectAttr "Lamp:pCylinderShape2_pnts_392__pntz.o" "LampShape1.pt[392].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_393__pntx.o" "LampShape1.pt[393].px";
-connectAttr "Lamp:pCylinderShape2_pnts_393__pnty.o" "LampShape1.pt[393].py";
-connectAttr "Lamp:pCylinderShape2_pnts_393__pntz.o" "LampShape1.pt[393].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_394__pntx.o" "LampShape1.pt[394].px";
-connectAttr "Lamp:pCylinderShape2_pnts_394__pnty.o" "LampShape1.pt[394].py";
-connectAttr "Lamp:pCylinderShape2_pnts_394__pntz.o" "LampShape1.pt[394].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_395__pntx.o" "LampShape1.pt[395].px";
-connectAttr "Lamp:pCylinderShape2_pnts_395__pnty.o" "LampShape1.pt[395].py";
-connectAttr "Lamp:pCylinderShape2_pnts_395__pntz.o" "LampShape1.pt[395].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_396__pntx.o" "LampShape1.pt[396].px";
-connectAttr "Lamp:pCylinderShape2_pnts_396__pnty.o" "LampShape1.pt[396].py";
-connectAttr "Lamp:pCylinderShape2_pnts_396__pntz.o" "LampShape1.pt[396].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_397__pntx.o" "LampShape1.pt[397].px";
-connectAttr "Lamp:pCylinderShape2_pnts_397__pnty.o" "LampShape1.pt[397].py";
-connectAttr "Lamp:pCylinderShape2_pnts_397__pntz.o" "LampShape1.pt[397].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_398__pntx.o" "LampShape1.pt[398].px";
-connectAttr "Lamp:pCylinderShape2_pnts_398__pnty.o" "LampShape1.pt[398].py";
-connectAttr "Lamp:pCylinderShape2_pnts_398__pntz.o" "LampShape1.pt[398].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_399__pntx.o" "LampShape1.pt[399].px";
-connectAttr "Lamp:pCylinderShape2_pnts_399__pnty.o" "LampShape1.pt[399].py";
-connectAttr "Lamp:pCylinderShape2_pnts_399__pntz.o" "LampShape1.pt[399].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_400__pntx.o" "LampShape1.pt[400].px";
-connectAttr "Lamp:pCylinderShape2_pnts_400__pnty.o" "LampShape1.pt[400].py";
-connectAttr "Lamp:pCylinderShape2_pnts_400__pntz.o" "LampShape1.pt[400].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_401__pntx.o" "LampShape1.pt[401].px";
-connectAttr "Lamp:pCylinderShape2_pnts_401__pnty.o" "LampShape1.pt[401].py";
-connectAttr "Lamp:pCylinderShape2_pnts_401__pntz.o" "LampShape1.pt[401].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_402__pntx.o" "LampShape1.pt[402].px";
-connectAttr "Lamp:pCylinderShape2_pnts_402__pnty.o" "LampShape1.pt[402].py";
-connectAttr "Lamp:pCylinderShape2_pnts_402__pntz.o" "LampShape1.pt[402].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_403__pntx.o" "LampShape1.pt[403].px";
-connectAttr "Lamp:pCylinderShape2_pnts_403__pnty.o" "LampShape1.pt[403].py";
-connectAttr "Lamp:pCylinderShape2_pnts_403__pntz.o" "LampShape1.pt[403].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_404__pntx.o" "LampShape1.pt[404].px";
-connectAttr "Lamp:pCylinderShape2_pnts_404__pnty.o" "LampShape1.pt[404].py";
-connectAttr "Lamp:pCylinderShape2_pnts_404__pntz.o" "LampShape1.pt[404].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_405__pntx.o" "LampShape1.pt[405].px";
-connectAttr "Lamp:pCylinderShape2_pnts_405__pnty.o" "LampShape1.pt[405].py";
-connectAttr "Lamp:pCylinderShape2_pnts_405__pntz.o" "LampShape1.pt[405].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_406__pntx.o" "LampShape1.pt[406].px";
-connectAttr "Lamp:pCylinderShape2_pnts_406__pnty.o" "LampShape1.pt[406].py";
-connectAttr "Lamp:pCylinderShape2_pnts_406__pntz.o" "LampShape1.pt[406].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_407__pntx.o" "LampShape1.pt[407].px";
-connectAttr "Lamp:pCylinderShape2_pnts_407__pnty.o" "LampShape1.pt[407].py";
-connectAttr "Lamp:pCylinderShape2_pnts_407__pntz.o" "LampShape1.pt[407].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_408__pntx.o" "LampShape1.pt[408].px";
-connectAttr "Lamp:pCylinderShape2_pnts_408__pnty.o" "LampShape1.pt[408].py";
-connectAttr "Lamp:pCylinderShape2_pnts_408__pntz.o" "LampShape1.pt[408].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_409__pntx.o" "LampShape1.pt[409].px";
-connectAttr "Lamp:pCylinderShape2_pnts_409__pnty.o" "LampShape1.pt[409].py";
-connectAttr "Lamp:pCylinderShape2_pnts_409__pntz.o" "LampShape1.pt[409].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_410__pntx.o" "LampShape1.pt[410].px";
-connectAttr "Lamp:pCylinderShape2_pnts_410__pnty.o" "LampShape1.pt[410].py";
-connectAttr "Lamp:pCylinderShape2_pnts_410__pntz.o" "LampShape1.pt[410].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_411__pntx.o" "LampShape1.pt[411].px";
-connectAttr "Lamp:pCylinderShape2_pnts_411__pnty.o" "LampShape1.pt[411].py";
-connectAttr "Lamp:pCylinderShape2_pnts_411__pntz.o" "LampShape1.pt[411].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_412__pntx.o" "LampShape1.pt[412].px";
-connectAttr "Lamp:pCylinderShape2_pnts_412__pnty.o" "LampShape1.pt[412].py";
-connectAttr "Lamp:pCylinderShape2_pnts_412__pntz.o" "LampShape1.pt[412].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_413__pntx.o" "LampShape1.pt[413].px";
-connectAttr "Lamp:pCylinderShape2_pnts_413__pnty.o" "LampShape1.pt[413].py";
-connectAttr "Lamp:pCylinderShape2_pnts_413__pntz.o" "LampShape1.pt[413].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_414__pntx.o" "LampShape1.pt[414].px";
-connectAttr "Lamp:pCylinderShape2_pnts_414__pnty.o" "LampShape1.pt[414].py";
-connectAttr "Lamp:pCylinderShape2_pnts_414__pntz.o" "LampShape1.pt[414].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_415__pntx.o" "LampShape1.pt[415].px";
-connectAttr "Lamp:pCylinderShape2_pnts_415__pnty.o" "LampShape1.pt[415].py";
-connectAttr "Lamp:pCylinderShape2_pnts_415__pntz.o" "LampShape1.pt[415].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_416__pntx.o" "LampShape1.pt[416].px";
-connectAttr "Lamp:pCylinderShape2_pnts_416__pnty.o" "LampShape1.pt[416].py";
-connectAttr "Lamp:pCylinderShape2_pnts_416__pntz.o" "LampShape1.pt[416].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_417__pntx.o" "LampShape1.pt[417].px";
-connectAttr "Lamp:pCylinderShape2_pnts_417__pnty.o" "LampShape1.pt[417].py";
-connectAttr "Lamp:pCylinderShape2_pnts_417__pntz.o" "LampShape1.pt[417].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_418__pntx.o" "LampShape1.pt[418].px";
-connectAttr "Lamp:pCylinderShape2_pnts_418__pnty.o" "LampShape1.pt[418].py";
-connectAttr "Lamp:pCylinderShape2_pnts_418__pntz.o" "LampShape1.pt[418].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_419__pntx.o" "LampShape1.pt[419].px";
-connectAttr "Lamp:pCylinderShape2_pnts_419__pnty.o" "LampShape1.pt[419].py";
-connectAttr "Lamp:pCylinderShape2_pnts_419__pntz.o" "LampShape1.pt[419].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_420__pntx.o" "LampShape1.pt[420].px";
-connectAttr "Lamp:pCylinderShape2_pnts_420__pnty.o" "LampShape1.pt[420].py";
-connectAttr "Lamp:pCylinderShape2_pnts_420__pntz.o" "LampShape1.pt[420].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_421__pntx.o" "LampShape1.pt[421].px";
-connectAttr "Lamp:pCylinderShape2_pnts_421__pnty.o" "LampShape1.pt[421].py";
-connectAttr "Lamp:pCylinderShape2_pnts_421__pntz.o" "LampShape1.pt[421].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_422__pntx.o" "LampShape1.pt[422].px";
-connectAttr "Lamp:pCylinderShape2_pnts_422__pnty.o" "LampShape1.pt[422].py";
-connectAttr "Lamp:pCylinderShape2_pnts_422__pntz.o" "LampShape1.pt[422].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_423__pntx.o" "LampShape1.pt[423].px";
-connectAttr "Lamp:pCylinderShape2_pnts_423__pnty.o" "LampShape1.pt[423].py";
-connectAttr "Lamp:pCylinderShape2_pnts_423__pntz.o" "LampShape1.pt[423].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_424__pntx.o" "LampShape1.pt[424].px";
-connectAttr "Lamp:pCylinderShape2_pnts_424__pnty.o" "LampShape1.pt[424].py";
-connectAttr "Lamp:pCylinderShape2_pnts_424__pntz.o" "LampShape1.pt[424].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_425__pntx.o" "LampShape1.pt[425].px";
-connectAttr "Lamp:pCylinderShape2_pnts_425__pnty.o" "LampShape1.pt[425].py";
-connectAttr "Lamp:pCylinderShape2_pnts_425__pntz.o" "LampShape1.pt[425].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_426__pntx.o" "LampShape1.pt[426].px";
-connectAttr "Lamp:pCylinderShape2_pnts_426__pnty.o" "LampShape1.pt[426].py";
-connectAttr "Lamp:pCylinderShape2_pnts_426__pntz.o" "LampShape1.pt[426].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_427__pntx.o" "LampShape1.pt[427].px";
-connectAttr "Lamp:pCylinderShape2_pnts_427__pnty.o" "LampShape1.pt[427].py";
-connectAttr "Lamp:pCylinderShape2_pnts_427__pntz.o" "LampShape1.pt[427].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_428__pntx.o" "LampShape1.pt[428].px";
-connectAttr "Lamp:pCylinderShape2_pnts_428__pnty.o" "LampShape1.pt[428].py";
-connectAttr "Lamp:pCylinderShape2_pnts_428__pntz.o" "LampShape1.pt[428].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_429__pntx.o" "LampShape1.pt[429].px";
-connectAttr "Lamp:pCylinderShape2_pnts_429__pnty.o" "LampShape1.pt[429].py";
-connectAttr "Lamp:pCylinderShape2_pnts_429__pntz.o" "LampShape1.pt[429].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_430__pntx.o" "LampShape1.pt[430].px";
-connectAttr "Lamp:pCylinderShape2_pnts_430__pnty.o" "LampShape1.pt[430].py";
-connectAttr "Lamp:pCylinderShape2_pnts_430__pntz.o" "LampShape1.pt[430].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_431__pntx.o" "LampShape1.pt[431].px";
-connectAttr "Lamp:pCylinderShape2_pnts_431__pnty.o" "LampShape1.pt[431].py";
-connectAttr "Lamp:pCylinderShape2_pnts_431__pntz.o" "LampShape1.pt[431].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_432__pntx.o" "LampShape1.pt[432].px";
-connectAttr "Lamp:pCylinderShape2_pnts_432__pnty.o" "LampShape1.pt[432].py";
-connectAttr "Lamp:pCylinderShape2_pnts_432__pntz.o" "LampShape1.pt[432].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_433__pntx.o" "LampShape1.pt[433].px";
-connectAttr "Lamp:pCylinderShape2_pnts_433__pnty.o" "LampShape1.pt[433].py";
-connectAttr "Lamp:pCylinderShape2_pnts_433__pntz.o" "LampShape1.pt[433].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_434__pntx.o" "LampShape1.pt[434].px";
-connectAttr "Lamp:pCylinderShape2_pnts_434__pnty.o" "LampShape1.pt[434].py";
-connectAttr "Lamp:pCylinderShape2_pnts_434__pntz.o" "LampShape1.pt[434].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_435__pntx.o" "LampShape1.pt[435].px";
-connectAttr "Lamp:pCylinderShape2_pnts_435__pnty.o" "LampShape1.pt[435].py";
-connectAttr "Lamp:pCylinderShape2_pnts_435__pntz.o" "LampShape1.pt[435].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_436__pntx.o" "LampShape1.pt[436].px";
-connectAttr "Lamp:pCylinderShape2_pnts_436__pnty.o" "LampShape1.pt[436].py";
-connectAttr "Lamp:pCylinderShape2_pnts_436__pntz.o" "LampShape1.pt[436].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_437__pntx.o" "LampShape1.pt[437].px";
-connectAttr "Lamp:pCylinderShape2_pnts_437__pnty.o" "LampShape1.pt[437].py";
-connectAttr "Lamp:pCylinderShape2_pnts_437__pntz.o" "LampShape1.pt[437].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_438__pntx.o" "LampShape1.pt[438].px";
-connectAttr "Lamp:pCylinderShape2_pnts_438__pnty.o" "LampShape1.pt[438].py";
-connectAttr "Lamp:pCylinderShape2_pnts_438__pntz.o" "LampShape1.pt[438].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_439__pntx.o" "LampShape1.pt[439].px";
-connectAttr "Lamp:pCylinderShape2_pnts_439__pnty.o" "LampShape1.pt[439].py";
-connectAttr "Lamp:pCylinderShape2_pnts_439__pntz.o" "LampShape1.pt[439].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_440__pntx.o" "LampShape1.pt[440].px";
-connectAttr "Lamp:pCylinderShape2_pnts_440__pnty.o" "LampShape1.pt[440].py";
-connectAttr "Lamp:pCylinderShape2_pnts_440__pntz.o" "LampShape1.pt[440].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_441__pntx.o" "LampShape1.pt[441].px";
-connectAttr "Lamp:pCylinderShape2_pnts_441__pnty.o" "LampShape1.pt[441].py";
-connectAttr "Lamp:pCylinderShape2_pnts_441__pntz.o" "LampShape1.pt[441].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_442__pntx.o" "LampShape1.pt[442].px";
-connectAttr "Lamp:pCylinderShape2_pnts_442__pnty.o" "LampShape1.pt[442].py";
-connectAttr "Lamp:pCylinderShape2_pnts_442__pntz.o" "LampShape1.pt[442].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_443__pntx.o" "LampShape1.pt[443].px";
-connectAttr "Lamp:pCylinderShape2_pnts_443__pnty.o" "LampShape1.pt[443].py";
-connectAttr "Lamp:pCylinderShape2_pnts_443__pntz.o" "LampShape1.pt[443].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_444__pntx.o" "LampShape1.pt[444].px";
-connectAttr "Lamp:pCylinderShape2_pnts_444__pnty.o" "LampShape1.pt[444].py";
-connectAttr "Lamp:pCylinderShape2_pnts_444__pntz.o" "LampShape1.pt[444].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_445__pntx.o" "LampShape1.pt[445].px";
-connectAttr "Lamp:pCylinderShape2_pnts_445__pnty.o" "LampShape1.pt[445].py";
-connectAttr "Lamp:pCylinderShape2_pnts_445__pntz.o" "LampShape1.pt[445].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_446__pntx.o" "LampShape1.pt[446].px";
-connectAttr "Lamp:pCylinderShape2_pnts_446__pnty.o" "LampShape1.pt[446].py";
-connectAttr "Lamp:pCylinderShape2_pnts_446__pntz.o" "LampShape1.pt[446].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_447__pntx.o" "LampShape1.pt[447].px";
-connectAttr "Lamp:pCylinderShape2_pnts_447__pnty.o" "LampShape1.pt[447].py";
-connectAttr "Lamp:pCylinderShape2_pnts_447__pntz.o" "LampShape1.pt[447].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_448__pntx.o" "LampShape1.pt[448].px";
-connectAttr "Lamp:pCylinderShape2_pnts_448__pnty.o" "LampShape1.pt[448].py";
-connectAttr "Lamp:pCylinderShape2_pnts_448__pntz.o" "LampShape1.pt[448].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_449__pntx.o" "LampShape1.pt[449].px";
-connectAttr "Lamp:pCylinderShape2_pnts_449__pnty.o" "LampShape1.pt[449].py";
-connectAttr "Lamp:pCylinderShape2_pnts_449__pntz.o" "LampShape1.pt[449].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_450__pntx.o" "LampShape1.pt[450].px";
-connectAttr "Lamp:pCylinderShape2_pnts_450__pnty.o" "LampShape1.pt[450].py";
-connectAttr "Lamp:pCylinderShape2_pnts_450__pntz.o" "LampShape1.pt[450].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_451__pntx.o" "LampShape1.pt[451].px";
-connectAttr "Lamp:pCylinderShape2_pnts_451__pnty.o" "LampShape1.pt[451].py";
-connectAttr "Lamp:pCylinderShape2_pnts_451__pntz.o" "LampShape1.pt[451].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_452__pntx.o" "LampShape1.pt[452].px";
-connectAttr "Lamp:pCylinderShape2_pnts_452__pnty.o" "LampShape1.pt[452].py";
-connectAttr "Lamp:pCylinderShape2_pnts_452__pntz.o" "LampShape1.pt[452].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_453__pntx.o" "LampShape1.pt[453].px";
-connectAttr "Lamp:pCylinderShape2_pnts_453__pnty.o" "LampShape1.pt[453].py";
-connectAttr "Lamp:pCylinderShape2_pnts_453__pntz.o" "LampShape1.pt[453].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_454__pntx.o" "LampShape1.pt[454].px";
-connectAttr "Lamp:pCylinderShape2_pnts_454__pnty.o" "LampShape1.pt[454].py";
-connectAttr "Lamp:pCylinderShape2_pnts_454__pntz.o" "LampShape1.pt[454].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_455__pntx.o" "LampShape1.pt[455].px";
-connectAttr "Lamp:pCylinderShape2_pnts_455__pnty.o" "LampShape1.pt[455].py";
-connectAttr "Lamp:pCylinderShape2_pnts_455__pntz.o" "LampShape1.pt[455].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_456__pntx.o" "LampShape1.pt[456].px";
-connectAttr "Lamp:pCylinderShape2_pnts_456__pnty.o" "LampShape1.pt[456].py";
-connectAttr "Lamp:pCylinderShape2_pnts_456__pntz.o" "LampShape1.pt[456].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_457__pntx.o" "LampShape1.pt[457].px";
-connectAttr "Lamp:pCylinderShape2_pnts_457__pnty.o" "LampShape1.pt[457].py";
-connectAttr "Lamp:pCylinderShape2_pnts_457__pntz.o" "LampShape1.pt[457].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_458__pntx.o" "LampShape1.pt[458].px";
-connectAttr "Lamp:pCylinderShape2_pnts_458__pnty.o" "LampShape1.pt[458].py";
-connectAttr "Lamp:pCylinderShape2_pnts_458__pntz.o" "LampShape1.pt[458].pz";
-connectAttr "Lamp:pCylinderShape2_pnts_459__pntx.o" "LampShape1.pt[459].px";
-connectAttr "Lamp:pCylinderShape2_pnts_459__pnty.o" "LampShape1.pt[459].py";
-connectAttr "Lamp:pCylinderShape2_pnts_459__pntz.o" "LampShape1.pt[459].pz";
+connectAttr "polyTweakUV5.out" "|Table|pCube9|pCubeShape8.i";
+connectAttr "polyTweakUV5.uvtk[0]" "|Table|pCube9|pCubeShape8.uvst[0].uvtw";
 connectAttr "groupId12.id" "LampShape1.iog.og[0].gid";
 connectAttr "lambert2SG.mwc" "LampShape1.iog.og[0].gco";
 connectAttr "groupId13.id" "LampShape1.iog.og[1].gid";
 connectAttr "blinn1SG.mwc" "LampShape1.iog.og[1].gco";
-connectAttr "groupId2.id" "LampShape1.ciog.cog[0].cgid";
+connectAttr "polyTweakUV4.out" "LampShape1.i";
+connectAttr "polyTweakUV4.uvtk[0]" "LampShape1.uvst[0].uvtw";
+connectAttr "Lamp:pCylinderShape2_pnts_180__pntx.o" "polySurfaceShape2.pt[180].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_180__pnty.o" "polySurfaceShape2.pt[180].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_180__pntz.o" "polySurfaceShape2.pt[180].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_181__pntx.o" "polySurfaceShape2.pt[181].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_181__pnty.o" "polySurfaceShape2.pt[181].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_181__pntz.o" "polySurfaceShape2.pt[181].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_182__pntx.o" "polySurfaceShape2.pt[182].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_182__pnty.o" "polySurfaceShape2.pt[182].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_183__pntz.o" "polySurfaceShape2.pt[183].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_184__pntx.o" "polySurfaceShape2.pt[184].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_184__pnty.o" "polySurfaceShape2.pt[184].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_184__pntz.o" "polySurfaceShape2.pt[184].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_185__pntx.o" "polySurfaceShape2.pt[185].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_185__pnty.o" "polySurfaceShape2.pt[185].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_185__pntz.o" "polySurfaceShape2.pt[185].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_186__pntx.o" "polySurfaceShape2.pt[186].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_186__pnty.o" "polySurfaceShape2.pt[186].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_186__pntz.o" "polySurfaceShape2.pt[186].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_187__pntx.o" "polySurfaceShape2.pt[187].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_187__pnty.o" "polySurfaceShape2.pt[187].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_187__pntz.o" "polySurfaceShape2.pt[187].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_188__pntx.o" "polySurfaceShape2.pt[188].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_188__pnty.o" "polySurfaceShape2.pt[188].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_188__pntz.o" "polySurfaceShape2.pt[188].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_189__pntx.o" "polySurfaceShape2.pt[189].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_189__pnty.o" "polySurfaceShape2.pt[189].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_189__pntz.o" "polySurfaceShape2.pt[189].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_190__pntx.o" "polySurfaceShape2.pt[190].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_190__pnty.o" "polySurfaceShape2.pt[190].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_190__pntz.o" "polySurfaceShape2.pt[190].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_191__pntx.o" "polySurfaceShape2.pt[191].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_191__pnty.o" "polySurfaceShape2.pt[191].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_191__pntz.o" "polySurfaceShape2.pt[191].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_192__pntx.o" "polySurfaceShape2.pt[192].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_192__pnty.o" "polySurfaceShape2.pt[192].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_192__pntz.o" "polySurfaceShape2.pt[192].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_193__pntx.o" "polySurfaceShape2.pt[193].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_193__pnty.o" "polySurfaceShape2.pt[193].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_193__pntz.o" "polySurfaceShape2.pt[193].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_194__pntx.o" "polySurfaceShape2.pt[194].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_194__pnty.o" "polySurfaceShape2.pt[194].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_194__pntz.o" "polySurfaceShape2.pt[194].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_195__pntx.o" "polySurfaceShape2.pt[195].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_195__pnty.o" "polySurfaceShape2.pt[195].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_195__pntz.o" "polySurfaceShape2.pt[195].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_196__pntx.o" "polySurfaceShape2.pt[196].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_196__pnty.o" "polySurfaceShape2.pt[196].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_196__pntz.o" "polySurfaceShape2.pt[196].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_197__pntx.o" "polySurfaceShape2.pt[197].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_197__pnty.o" "polySurfaceShape2.pt[197].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_197__pntz.o" "polySurfaceShape2.pt[197].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_198__pntx.o" "polySurfaceShape2.pt[198].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_198__pnty.o" "polySurfaceShape2.pt[198].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_198__pntz.o" "polySurfaceShape2.pt[198].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_199__pntx.o" "polySurfaceShape2.pt[199].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_199__pnty.o" "polySurfaceShape2.pt[199].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_199__pntz.o" "polySurfaceShape2.pt[199].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_200__pntx.o" "polySurfaceShape2.pt[200].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_200__pnty.o" "polySurfaceShape2.pt[200].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_200__pntz.o" "polySurfaceShape2.pt[200].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_201__pntx.o" "polySurfaceShape2.pt[201].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_201__pnty.o" "polySurfaceShape2.pt[201].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_201__pntz.o" "polySurfaceShape2.pt[201].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_202__pntx.o" "polySurfaceShape2.pt[202].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_202__pnty.o" "polySurfaceShape2.pt[202].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_202__pntz.o" "polySurfaceShape2.pt[202].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_203__pntx.o" "polySurfaceShape2.pt[203].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_203__pnty.o" "polySurfaceShape2.pt[203].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_203__pntz.o" "polySurfaceShape2.pt[203].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_204__pntx.o" "polySurfaceShape2.pt[204].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_204__pnty.o" "polySurfaceShape2.pt[204].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_204__pntz.o" "polySurfaceShape2.pt[204].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_205__pntx.o" "polySurfaceShape2.pt[205].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_205__pnty.o" "polySurfaceShape2.pt[205].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_205__pntz.o" "polySurfaceShape2.pt[205].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_206__pntx.o" "polySurfaceShape2.pt[206].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_206__pnty.o" "polySurfaceShape2.pt[206].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_206__pntz.o" "polySurfaceShape2.pt[206].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_207__pntx.o" "polySurfaceShape2.pt[207].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_207__pnty.o" "polySurfaceShape2.pt[207].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_207__pntz.o" "polySurfaceShape2.pt[207].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_208__pntx.o" "polySurfaceShape2.pt[208].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_208__pnty.o" "polySurfaceShape2.pt[208].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_209__pntx.o" "polySurfaceShape2.pt[209].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_209__pnty.o" "polySurfaceShape2.pt[209].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_209__pntz.o" "polySurfaceShape2.pt[209].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_210__pntx.o" "polySurfaceShape2.pt[210].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_210__pnty.o" "polySurfaceShape2.pt[210].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_210__pntz.o" "polySurfaceShape2.pt[210].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_211__pntx.o" "polySurfaceShape2.pt[211].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_211__pnty.o" "polySurfaceShape2.pt[211].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_211__pntz.o" "polySurfaceShape2.pt[211].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_212__pntx.o" "polySurfaceShape2.pt[212].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_212__pnty.o" "polySurfaceShape2.pt[212].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_212__pntz.o" "polySurfaceShape2.pt[212].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_213__pntx.o" "polySurfaceShape2.pt[213].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_213__pnty.o" "polySurfaceShape2.pt[213].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_213__pntz.o" "polySurfaceShape2.pt[213].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_214__pntx.o" "polySurfaceShape2.pt[214].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_214__pnty.o" "polySurfaceShape2.pt[214].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_214__pntz.o" "polySurfaceShape2.pt[214].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_215__pntx.o" "polySurfaceShape2.pt[215].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_215__pnty.o" "polySurfaceShape2.pt[215].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_215__pntz.o" "polySurfaceShape2.pt[215].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_216__pntx.o" "polySurfaceShape2.pt[216].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_216__pnty.o" "polySurfaceShape2.pt[216].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_216__pntz.o" "polySurfaceShape2.pt[216].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_217__pntx.o" "polySurfaceShape2.pt[217].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_217__pnty.o" "polySurfaceShape2.pt[217].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_217__pntz.o" "polySurfaceShape2.pt[217].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_218__pntx.o" "polySurfaceShape2.pt[218].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_218__pnty.o" "polySurfaceShape2.pt[218].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_218__pntz.o" "polySurfaceShape2.pt[218].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_219__pntx.o" "polySurfaceShape2.pt[219].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_219__pnty.o" "polySurfaceShape2.pt[219].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_219__pntz.o" "polySurfaceShape2.pt[219].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_220__pntx.o" "polySurfaceShape2.pt[220].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_220__pnty.o" "polySurfaceShape2.pt[220].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_220__pntz.o" "polySurfaceShape2.pt[220].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_221__pntx.o" "polySurfaceShape2.pt[221].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_221__pnty.o" "polySurfaceShape2.pt[221].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_221__pntz.o" "polySurfaceShape2.pt[221].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_222__pntx.o" "polySurfaceShape2.pt[222].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_222__pnty.o" "polySurfaceShape2.pt[222].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_222__pntz.o" "polySurfaceShape2.pt[222].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_223__pntx.o" "polySurfaceShape2.pt[223].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_223__pnty.o" "polySurfaceShape2.pt[223].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_223__pntz.o" "polySurfaceShape2.pt[223].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_224__pntx.o" "polySurfaceShape2.pt[224].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_224__pnty.o" "polySurfaceShape2.pt[224].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_224__pntz.o" "polySurfaceShape2.pt[224].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_225__pntx.o" "polySurfaceShape2.pt[225].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_225__pnty.o" "polySurfaceShape2.pt[225].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_225__pntz.o" "polySurfaceShape2.pt[225].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_226__pntx.o" "polySurfaceShape2.pt[226].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_226__pnty.o" "polySurfaceShape2.pt[226].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_226__pntz.o" "polySurfaceShape2.pt[226].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_227__pntx.o" "polySurfaceShape2.pt[227].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_227__pnty.o" "polySurfaceShape2.pt[227].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_227__pntz.o" "polySurfaceShape2.pt[227].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_228__pntx.o" "polySurfaceShape2.pt[228].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_228__pnty.o" "polySurfaceShape2.pt[228].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_228__pntz.o" "polySurfaceShape2.pt[228].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_229__pntx.o" "polySurfaceShape2.pt[229].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_229__pnty.o" "polySurfaceShape2.pt[229].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_229__pntz.o" "polySurfaceShape2.pt[229].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_230__pntx.o" "polySurfaceShape2.pt[230].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_230__pnty.o" "polySurfaceShape2.pt[230].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_230__pntz.o" "polySurfaceShape2.pt[230].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_231__pntx.o" "polySurfaceShape2.pt[231].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_231__pnty.o" "polySurfaceShape2.pt[231].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_231__pntz.o" "polySurfaceShape2.pt[231].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_232__pntx.o" "polySurfaceShape2.pt[232].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_232__pnty.o" "polySurfaceShape2.pt[232].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_232__pntz.o" "polySurfaceShape2.pt[232].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_233__pntx.o" "polySurfaceShape2.pt[233].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_233__pnty.o" "polySurfaceShape2.pt[233].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_233__pntz.o" "polySurfaceShape2.pt[233].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_234__pntx.o" "polySurfaceShape2.pt[234].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_234__pnty.o" "polySurfaceShape2.pt[234].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_234__pntz.o" "polySurfaceShape2.pt[234].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_235__pntx.o" "polySurfaceShape2.pt[235].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_235__pnty.o" "polySurfaceShape2.pt[235].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_235__pntz.o" "polySurfaceShape2.pt[235].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_236__pntx.o" "polySurfaceShape2.pt[236].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_236__pnty.o" "polySurfaceShape2.pt[236].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_236__pntz.o" "polySurfaceShape2.pt[236].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_237__pntx.o" "polySurfaceShape2.pt[237].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_237__pnty.o" "polySurfaceShape2.pt[237].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_237__pntz.o" "polySurfaceShape2.pt[237].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_238__pntx.o" "polySurfaceShape2.pt[238].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_238__pnty.o" "polySurfaceShape2.pt[238].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_238__pntz.o" "polySurfaceShape2.pt[238].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_239__pntx.o" "polySurfaceShape2.pt[239].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_239__pnty.o" "polySurfaceShape2.pt[239].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_239__pntz.o" "polySurfaceShape2.pt[239].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_240__pntx.o" "polySurfaceShape2.pt[240].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_240__pnty.o" "polySurfaceShape2.pt[240].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_240__pntz.o" "polySurfaceShape2.pt[240].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_241__pntx.o" "polySurfaceShape2.pt[241].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_241__pnty.o" "polySurfaceShape2.pt[241].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_241__pntz.o" "polySurfaceShape2.pt[241].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_242__pntx.o" "polySurfaceShape2.pt[242].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_242__pnty.o" "polySurfaceShape2.pt[242].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_242__pntz.o" "polySurfaceShape2.pt[242].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_243__pntx.o" "polySurfaceShape2.pt[243].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_243__pnty.o" "polySurfaceShape2.pt[243].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_243__pntz.o" "polySurfaceShape2.pt[243].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_244__pntx.o" "polySurfaceShape2.pt[244].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_244__pnty.o" "polySurfaceShape2.pt[244].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_244__pntz.o" "polySurfaceShape2.pt[244].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_245__pntx.o" "polySurfaceShape2.pt[245].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_245__pnty.o" "polySurfaceShape2.pt[245].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_245__pntz.o" "polySurfaceShape2.pt[245].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_246__pntx.o" "polySurfaceShape2.pt[246].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_246__pnty.o" "polySurfaceShape2.pt[246].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_246__pntz.o" "polySurfaceShape2.pt[246].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_247__pntx.o" "polySurfaceShape2.pt[247].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_247__pnty.o" "polySurfaceShape2.pt[247].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_247__pntz.o" "polySurfaceShape2.pt[247].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_248__pntx.o" "polySurfaceShape2.pt[248].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_248__pnty.o" "polySurfaceShape2.pt[248].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_248__pntz.o" "polySurfaceShape2.pt[248].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_249__pntx.o" "polySurfaceShape2.pt[249].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_249__pnty.o" "polySurfaceShape2.pt[249].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_249__pntz.o" "polySurfaceShape2.pt[249].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_250__pntx.o" "polySurfaceShape2.pt[250].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_250__pnty.o" "polySurfaceShape2.pt[250].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_250__pntz.o" "polySurfaceShape2.pt[250].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_251__pntx.o" "polySurfaceShape2.pt[251].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_251__pnty.o" "polySurfaceShape2.pt[251].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_251__pntz.o" "polySurfaceShape2.pt[251].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_252__pntx.o" "polySurfaceShape2.pt[252].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_252__pnty.o" "polySurfaceShape2.pt[252].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_252__pntz.o" "polySurfaceShape2.pt[252].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_253__pntx.o" "polySurfaceShape2.pt[253].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_253__pnty.o" "polySurfaceShape2.pt[253].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_253__pntz.o" "polySurfaceShape2.pt[253].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_254__pntx.o" "polySurfaceShape2.pt[254].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_254__pnty.o" "polySurfaceShape2.pt[254].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_254__pntz.o" "polySurfaceShape2.pt[254].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_255__pntx.o" "polySurfaceShape2.pt[255].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_255__pnty.o" "polySurfaceShape2.pt[255].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_255__pntz.o" "polySurfaceShape2.pt[255].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_256__pntx.o" "polySurfaceShape2.pt[256].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_256__pnty.o" "polySurfaceShape2.pt[256].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_256__pntz.o" "polySurfaceShape2.pt[256].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_257__pntx.o" "polySurfaceShape2.pt[257].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_257__pnty.o" "polySurfaceShape2.pt[257].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_257__pntz.o" "polySurfaceShape2.pt[257].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_258__pntx.o" "polySurfaceShape2.pt[258].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_258__pnty.o" "polySurfaceShape2.pt[258].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_258__pntz.o" "polySurfaceShape2.pt[258].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_259__pntx.o" "polySurfaceShape2.pt[259].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_259__pnty.o" "polySurfaceShape2.pt[259].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_259__pntz.o" "polySurfaceShape2.pt[259].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_260__pntx.o" "polySurfaceShape2.pt[260].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_260__pnty.o" "polySurfaceShape2.pt[260].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_260__pntz.o" "polySurfaceShape2.pt[260].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_261__pntx.o" "polySurfaceShape2.pt[261].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_261__pnty.o" "polySurfaceShape2.pt[261].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_261__pntz.o" "polySurfaceShape2.pt[261].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_262__pntx.o" "polySurfaceShape2.pt[262].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_262__pnty.o" "polySurfaceShape2.pt[262].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_262__pntz.o" "polySurfaceShape2.pt[262].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_263__pntx.o" "polySurfaceShape2.pt[263].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_263__pnty.o" "polySurfaceShape2.pt[263].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_263__pntz.o" "polySurfaceShape2.pt[263].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_264__pntx.o" "polySurfaceShape2.pt[264].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_264__pnty.o" "polySurfaceShape2.pt[264].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_264__pntz.o" "polySurfaceShape2.pt[264].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_265__pntx.o" "polySurfaceShape2.pt[265].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_265__pnty.o" "polySurfaceShape2.pt[265].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_265__pntz.o" "polySurfaceShape2.pt[265].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_266__pntx.o" "polySurfaceShape2.pt[266].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_266__pnty.o" "polySurfaceShape2.pt[266].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_266__pntz.o" "polySurfaceShape2.pt[266].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_267__pntx.o" "polySurfaceShape2.pt[267].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_267__pnty.o" "polySurfaceShape2.pt[267].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_267__pntz.o" "polySurfaceShape2.pt[267].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_268__pntx.o" "polySurfaceShape2.pt[268].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_268__pnty.o" "polySurfaceShape2.pt[268].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_268__pntz.o" "polySurfaceShape2.pt[268].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_269__pntx.o" "polySurfaceShape2.pt[269].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_269__pnty.o" "polySurfaceShape2.pt[269].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_269__pntz.o" "polySurfaceShape2.pt[269].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_270__pntx.o" "polySurfaceShape2.pt[270].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_270__pnty.o" "polySurfaceShape2.pt[270].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_270__pntz.o" "polySurfaceShape2.pt[270].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_271__pntx.o" "polySurfaceShape2.pt[271].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_271__pnty.o" "polySurfaceShape2.pt[271].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_271__pntz.o" "polySurfaceShape2.pt[271].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_272__pntx.o" "polySurfaceShape2.pt[272].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_272__pnty.o" "polySurfaceShape2.pt[272].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_272__pntz.o" "polySurfaceShape2.pt[272].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_273__pntx.o" "polySurfaceShape2.pt[273].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_273__pnty.o" "polySurfaceShape2.pt[273].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_273__pntz.o" "polySurfaceShape2.pt[273].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_274__pntx.o" "polySurfaceShape2.pt[274].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_274__pnty.o" "polySurfaceShape2.pt[274].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_274__pntz.o" "polySurfaceShape2.pt[274].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_275__pntx.o" "polySurfaceShape2.pt[275].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_275__pnty.o" "polySurfaceShape2.pt[275].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_275__pntz.o" "polySurfaceShape2.pt[275].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_276__pntx.o" "polySurfaceShape2.pt[276].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_276__pnty.o" "polySurfaceShape2.pt[276].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_276__pntz.o" "polySurfaceShape2.pt[276].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_277__pntx.o" "polySurfaceShape2.pt[277].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_277__pnty.o" "polySurfaceShape2.pt[277].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_277__pntz.o" "polySurfaceShape2.pt[277].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_278__pntx.o" "polySurfaceShape2.pt[278].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_278__pnty.o" "polySurfaceShape2.pt[278].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_278__pntz.o" "polySurfaceShape2.pt[278].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_279__pntx.o" "polySurfaceShape2.pt[279].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_279__pnty.o" "polySurfaceShape2.pt[279].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_279__pntz.o" "polySurfaceShape2.pt[279].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_280__pntx.o" "polySurfaceShape2.pt[280].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_280__pnty.o" "polySurfaceShape2.pt[280].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_280__pntz.o" "polySurfaceShape2.pt[280].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_281__pntx.o" "polySurfaceShape2.pt[281].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_281__pnty.o" "polySurfaceShape2.pt[281].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_281__pntz.o" "polySurfaceShape2.pt[281].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_282__pntx.o" "polySurfaceShape2.pt[282].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_282__pnty.o" "polySurfaceShape2.pt[282].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_282__pntz.o" "polySurfaceShape2.pt[282].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_283__pntx.o" "polySurfaceShape2.pt[283].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_283__pnty.o" "polySurfaceShape2.pt[283].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_283__pntz.o" "polySurfaceShape2.pt[283].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_284__pntx.o" "polySurfaceShape2.pt[284].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_284__pnty.o" "polySurfaceShape2.pt[284].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_284__pntz.o" "polySurfaceShape2.pt[284].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_285__pntx.o" "polySurfaceShape2.pt[285].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_285__pnty.o" "polySurfaceShape2.pt[285].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_285__pntz.o" "polySurfaceShape2.pt[285].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_286__pntx.o" "polySurfaceShape2.pt[286].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_286__pnty.o" "polySurfaceShape2.pt[286].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_286__pntz.o" "polySurfaceShape2.pt[286].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_287__pntx.o" "polySurfaceShape2.pt[287].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_287__pnty.o" "polySurfaceShape2.pt[287].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_287__pntz.o" "polySurfaceShape2.pt[287].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_288__pntx.o" "polySurfaceShape2.pt[288].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_288__pnty.o" "polySurfaceShape2.pt[288].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_288__pntz.o" "polySurfaceShape2.pt[288].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_289__pntx.o" "polySurfaceShape2.pt[289].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_289__pnty.o" "polySurfaceShape2.pt[289].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_289__pntz.o" "polySurfaceShape2.pt[289].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_290__pntx.o" "polySurfaceShape2.pt[290].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_290__pnty.o" "polySurfaceShape2.pt[290].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_290__pntz.o" "polySurfaceShape2.pt[290].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_291__pntx.o" "polySurfaceShape2.pt[291].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_291__pnty.o" "polySurfaceShape2.pt[291].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_291__pntz.o" "polySurfaceShape2.pt[291].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_292__pntx.o" "polySurfaceShape2.pt[292].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_292__pnty.o" "polySurfaceShape2.pt[292].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_292__pntz.o" "polySurfaceShape2.pt[292].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_293__pntx.o" "polySurfaceShape2.pt[293].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_293__pnty.o" "polySurfaceShape2.pt[293].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_293__pntz.o" "polySurfaceShape2.pt[293].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_294__pntx.o" "polySurfaceShape2.pt[294].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_294__pnty.o" "polySurfaceShape2.pt[294].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_294__pntz.o" "polySurfaceShape2.pt[294].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_295__pntx.o" "polySurfaceShape2.pt[295].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_295__pnty.o" "polySurfaceShape2.pt[295].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_295__pntz.o" "polySurfaceShape2.pt[295].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_296__pntx.o" "polySurfaceShape2.pt[296].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_296__pnty.o" "polySurfaceShape2.pt[296].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_296__pntz.o" "polySurfaceShape2.pt[296].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_297__pntx.o" "polySurfaceShape2.pt[297].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_297__pnty.o" "polySurfaceShape2.pt[297].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_297__pntz.o" "polySurfaceShape2.pt[297].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_298__pntx.o" "polySurfaceShape2.pt[298].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_298__pnty.o" "polySurfaceShape2.pt[298].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_298__pntz.o" "polySurfaceShape2.pt[298].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_299__pntx.o" "polySurfaceShape2.pt[299].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_299__pnty.o" "polySurfaceShape2.pt[299].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_299__pntz.o" "polySurfaceShape2.pt[299].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_300__pntx.o" "polySurfaceShape2.pt[300].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_300__pnty.o" "polySurfaceShape2.pt[300].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_300__pntz.o" "polySurfaceShape2.pt[300].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_301__pntx.o" "polySurfaceShape2.pt[301].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_301__pnty.o" "polySurfaceShape2.pt[301].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_301__pntz.o" "polySurfaceShape2.pt[301].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_302__pntx.o" "polySurfaceShape2.pt[302].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_302__pnty.o" "polySurfaceShape2.pt[302].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_302__pntz.o" "polySurfaceShape2.pt[302].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_303__pntx.o" "polySurfaceShape2.pt[303].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_303__pnty.o" "polySurfaceShape2.pt[303].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_303__pntz.o" "polySurfaceShape2.pt[303].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_304__pntx.o" "polySurfaceShape2.pt[304].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_304__pnty.o" "polySurfaceShape2.pt[304].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_304__pntz.o" "polySurfaceShape2.pt[304].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_305__pntx.o" "polySurfaceShape2.pt[305].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_305__pnty.o" "polySurfaceShape2.pt[305].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_305__pntz.o" "polySurfaceShape2.pt[305].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_306__pntx.o" "polySurfaceShape2.pt[306].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_306__pnty.o" "polySurfaceShape2.pt[306].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_306__pntz.o" "polySurfaceShape2.pt[306].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_307__pntx.o" "polySurfaceShape2.pt[307].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_307__pnty.o" "polySurfaceShape2.pt[307].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_307__pntz.o" "polySurfaceShape2.pt[307].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_308__pntx.o" "polySurfaceShape2.pt[308].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_308__pnty.o" "polySurfaceShape2.pt[308].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_308__pntz.o" "polySurfaceShape2.pt[308].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_309__pntx.o" "polySurfaceShape2.pt[309].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_309__pnty.o" "polySurfaceShape2.pt[309].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_309__pntz.o" "polySurfaceShape2.pt[309].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_310__pntx.o" "polySurfaceShape2.pt[310].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_310__pnty.o" "polySurfaceShape2.pt[310].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_310__pntz.o" "polySurfaceShape2.pt[310].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_311__pntx.o" "polySurfaceShape2.pt[311].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_311__pnty.o" "polySurfaceShape2.pt[311].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_311__pntz.o" "polySurfaceShape2.pt[311].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_312__pntx.o" "polySurfaceShape2.pt[312].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_312__pnty.o" "polySurfaceShape2.pt[312].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_312__pntz.o" "polySurfaceShape2.pt[312].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_313__pntx.o" "polySurfaceShape2.pt[313].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_313__pnty.o" "polySurfaceShape2.pt[313].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_313__pntz.o" "polySurfaceShape2.pt[313].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_314__pntx.o" "polySurfaceShape2.pt[314].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_314__pnty.o" "polySurfaceShape2.pt[314].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_314__pntz.o" "polySurfaceShape2.pt[314].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_315__pntx.o" "polySurfaceShape2.pt[315].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_315__pnty.o" "polySurfaceShape2.pt[315].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_315__pntz.o" "polySurfaceShape2.pt[315].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_316__pntx.o" "polySurfaceShape2.pt[316].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_316__pnty.o" "polySurfaceShape2.pt[316].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_316__pntz.o" "polySurfaceShape2.pt[316].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_317__pntx.o" "polySurfaceShape2.pt[317].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_317__pnty.o" "polySurfaceShape2.pt[317].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_317__pntz.o" "polySurfaceShape2.pt[317].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_318__pntx.o" "polySurfaceShape2.pt[318].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_318__pnty.o" "polySurfaceShape2.pt[318].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_318__pntz.o" "polySurfaceShape2.pt[318].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_319__pntx.o" "polySurfaceShape2.pt[319].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_319__pnty.o" "polySurfaceShape2.pt[319].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_319__pntz.o" "polySurfaceShape2.pt[319].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_320__pntx.o" "polySurfaceShape2.pt[320].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_320__pnty.o" "polySurfaceShape2.pt[320].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_320__pntz.o" "polySurfaceShape2.pt[320].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_321__pntx.o" "polySurfaceShape2.pt[321].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_321__pnty.o" "polySurfaceShape2.pt[321].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_321__pntz.o" "polySurfaceShape2.pt[321].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_322__pntx.o" "polySurfaceShape2.pt[322].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_322__pnty.o" "polySurfaceShape2.pt[322].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_322__pntz.o" "polySurfaceShape2.pt[322].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_323__pntx.o" "polySurfaceShape2.pt[323].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_323__pnty.o" "polySurfaceShape2.pt[323].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_323__pntz.o" "polySurfaceShape2.pt[323].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_324__pntx.o" "polySurfaceShape2.pt[324].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_324__pnty.o" "polySurfaceShape2.pt[324].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_324__pntz.o" "polySurfaceShape2.pt[324].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_325__pntx.o" "polySurfaceShape2.pt[325].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_325__pnty.o" "polySurfaceShape2.pt[325].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_325__pntz.o" "polySurfaceShape2.pt[325].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_326__pntx.o" "polySurfaceShape2.pt[326].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_326__pnty.o" "polySurfaceShape2.pt[326].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_326__pntz.o" "polySurfaceShape2.pt[326].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_327__pntx.o" "polySurfaceShape2.pt[327].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_327__pnty.o" "polySurfaceShape2.pt[327].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_327__pntz.o" "polySurfaceShape2.pt[327].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_328__pntx.o" "polySurfaceShape2.pt[328].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_328__pnty.o" "polySurfaceShape2.pt[328].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_328__pntz.o" "polySurfaceShape2.pt[328].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_329__pntx.o" "polySurfaceShape2.pt[329].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_329__pnty.o" "polySurfaceShape2.pt[329].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_329__pntz.o" "polySurfaceShape2.pt[329].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_330__pntx.o" "polySurfaceShape2.pt[330].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_330__pnty.o" "polySurfaceShape2.pt[330].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_330__pntz.o" "polySurfaceShape2.pt[330].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_331__pntx.o" "polySurfaceShape2.pt[331].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_331__pnty.o" "polySurfaceShape2.pt[331].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_331__pntz.o" "polySurfaceShape2.pt[331].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_332__pntx.o" "polySurfaceShape2.pt[332].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_332__pnty.o" "polySurfaceShape2.pt[332].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_332__pntz.o" "polySurfaceShape2.pt[332].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_333__pntx.o" "polySurfaceShape2.pt[333].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_333__pnty.o" "polySurfaceShape2.pt[333].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_333__pntz.o" "polySurfaceShape2.pt[333].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_334__pntx.o" "polySurfaceShape2.pt[334].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_334__pnty.o" "polySurfaceShape2.pt[334].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_334__pntz.o" "polySurfaceShape2.pt[334].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_335__pntx.o" "polySurfaceShape2.pt[335].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_335__pnty.o" "polySurfaceShape2.pt[335].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_335__pntz.o" "polySurfaceShape2.pt[335].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_336__pntx.o" "polySurfaceShape2.pt[336].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_336__pnty.o" "polySurfaceShape2.pt[336].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_336__pntz.o" "polySurfaceShape2.pt[336].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_337__pntx.o" "polySurfaceShape2.pt[337].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_337__pnty.o" "polySurfaceShape2.pt[337].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_337__pntz.o" "polySurfaceShape2.pt[337].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_338__pntx.o" "polySurfaceShape2.pt[338].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_338__pnty.o" "polySurfaceShape2.pt[338].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_338__pntz.o" "polySurfaceShape2.pt[338].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_339__pntx.o" "polySurfaceShape2.pt[339].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_339__pnty.o" "polySurfaceShape2.pt[339].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_339__pntz.o" "polySurfaceShape2.pt[339].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_340__pntx.o" "polySurfaceShape2.pt[340].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_340__pnty.o" "polySurfaceShape2.pt[340].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_340__pntz.o" "polySurfaceShape2.pt[340].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_341__pntx.o" "polySurfaceShape2.pt[341].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_341__pnty.o" "polySurfaceShape2.pt[341].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_341__pntz.o" "polySurfaceShape2.pt[341].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_342__pntx.o" "polySurfaceShape2.pt[342].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_342__pnty.o" "polySurfaceShape2.pt[342].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_342__pntz.o" "polySurfaceShape2.pt[342].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_343__pntx.o" "polySurfaceShape2.pt[343].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_343__pnty.o" "polySurfaceShape2.pt[343].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_343__pntz.o" "polySurfaceShape2.pt[343].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_344__pntx.o" "polySurfaceShape2.pt[344].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_344__pnty.o" "polySurfaceShape2.pt[344].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_344__pntz.o" "polySurfaceShape2.pt[344].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_345__pntx.o" "polySurfaceShape2.pt[345].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_345__pnty.o" "polySurfaceShape2.pt[345].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_345__pntz.o" "polySurfaceShape2.pt[345].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_346__pntx.o" "polySurfaceShape2.pt[346].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_346__pnty.o" "polySurfaceShape2.pt[346].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_346__pntz.o" "polySurfaceShape2.pt[346].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_347__pntx.o" "polySurfaceShape2.pt[347].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_347__pnty.o" "polySurfaceShape2.pt[347].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_347__pntz.o" "polySurfaceShape2.pt[347].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_348__pntx.o" "polySurfaceShape2.pt[348].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_348__pnty.o" "polySurfaceShape2.pt[348].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_348__pntz.o" "polySurfaceShape2.pt[348].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_349__pntx.o" "polySurfaceShape2.pt[349].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_349__pnty.o" "polySurfaceShape2.pt[349].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_349__pntz.o" "polySurfaceShape2.pt[349].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_350__pntx.o" "polySurfaceShape2.pt[350].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_350__pnty.o" "polySurfaceShape2.pt[350].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_350__pntz.o" "polySurfaceShape2.pt[350].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_351__pntx.o" "polySurfaceShape2.pt[351].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_351__pnty.o" "polySurfaceShape2.pt[351].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_351__pntz.o" "polySurfaceShape2.pt[351].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_352__pntx.o" "polySurfaceShape2.pt[352].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_352__pnty.o" "polySurfaceShape2.pt[352].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_352__pntz.o" "polySurfaceShape2.pt[352].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_353__pntx.o" "polySurfaceShape2.pt[353].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_353__pnty.o" "polySurfaceShape2.pt[353].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_353__pntz.o" "polySurfaceShape2.pt[353].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_354__pntx.o" "polySurfaceShape2.pt[354].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_354__pnty.o" "polySurfaceShape2.pt[354].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_354__pntz.o" "polySurfaceShape2.pt[354].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_355__pntx.o" "polySurfaceShape2.pt[355].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_355__pnty.o" "polySurfaceShape2.pt[355].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_355__pntz.o" "polySurfaceShape2.pt[355].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_356__pntx.o" "polySurfaceShape2.pt[356].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_356__pnty.o" "polySurfaceShape2.pt[356].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_356__pntz.o" "polySurfaceShape2.pt[356].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_357__pntx.o" "polySurfaceShape2.pt[357].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_357__pnty.o" "polySurfaceShape2.pt[357].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_357__pntz.o" "polySurfaceShape2.pt[357].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_358__pntx.o" "polySurfaceShape2.pt[358].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_358__pnty.o" "polySurfaceShape2.pt[358].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_358__pntz.o" "polySurfaceShape2.pt[358].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_359__pntx.o" "polySurfaceShape2.pt[359].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_359__pnty.o" "polySurfaceShape2.pt[359].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_359__pntz.o" "polySurfaceShape2.pt[359].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_360__pntx.o" "polySurfaceShape2.pt[360].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_360__pnty.o" "polySurfaceShape2.pt[360].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_360__pntz.o" "polySurfaceShape2.pt[360].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_361__pntx.o" "polySurfaceShape2.pt[361].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_361__pnty.o" "polySurfaceShape2.pt[361].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_361__pntz.o" "polySurfaceShape2.pt[361].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_362__pntx.o" "polySurfaceShape2.pt[362].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_362__pnty.o" "polySurfaceShape2.pt[362].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_362__pntz.o" "polySurfaceShape2.pt[362].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_363__pntx.o" "polySurfaceShape2.pt[363].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_363__pnty.o" "polySurfaceShape2.pt[363].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_363__pntz.o" "polySurfaceShape2.pt[363].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_364__pntx.o" "polySurfaceShape2.pt[364].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_364__pnty.o" "polySurfaceShape2.pt[364].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_364__pntz.o" "polySurfaceShape2.pt[364].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_365__pntx.o" "polySurfaceShape2.pt[365].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_365__pnty.o" "polySurfaceShape2.pt[365].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_365__pntz.o" "polySurfaceShape2.pt[365].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_366__pntx.o" "polySurfaceShape2.pt[366].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_366__pnty.o" "polySurfaceShape2.pt[366].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_366__pntz.o" "polySurfaceShape2.pt[366].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_367__pntx.o" "polySurfaceShape2.pt[367].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_367__pnty.o" "polySurfaceShape2.pt[367].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_367__pntz.o" "polySurfaceShape2.pt[367].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_368__pntx.o" "polySurfaceShape2.pt[368].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_368__pnty.o" "polySurfaceShape2.pt[368].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_368__pntz.o" "polySurfaceShape2.pt[368].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_369__pntx.o" "polySurfaceShape2.pt[369].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_369__pnty.o" "polySurfaceShape2.pt[369].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_369__pntz.o" "polySurfaceShape2.pt[369].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_370__pntx.o" "polySurfaceShape2.pt[370].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_370__pnty.o" "polySurfaceShape2.pt[370].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_370__pntz.o" "polySurfaceShape2.pt[370].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_371__pntx.o" "polySurfaceShape2.pt[371].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_371__pnty.o" "polySurfaceShape2.pt[371].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_371__pntz.o" "polySurfaceShape2.pt[371].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_372__pntx.o" "polySurfaceShape2.pt[372].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_372__pnty.o" "polySurfaceShape2.pt[372].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_372__pntz.o" "polySurfaceShape2.pt[372].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_373__pntx.o" "polySurfaceShape2.pt[373].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_373__pnty.o" "polySurfaceShape2.pt[373].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_373__pntz.o" "polySurfaceShape2.pt[373].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_374__pntx.o" "polySurfaceShape2.pt[374].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_374__pnty.o" "polySurfaceShape2.pt[374].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_374__pntz.o" "polySurfaceShape2.pt[374].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_375__pntx.o" "polySurfaceShape2.pt[375].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_375__pnty.o" "polySurfaceShape2.pt[375].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_375__pntz.o" "polySurfaceShape2.pt[375].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_376__pntx.o" "polySurfaceShape2.pt[376].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_376__pnty.o" "polySurfaceShape2.pt[376].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_376__pntz.o" "polySurfaceShape2.pt[376].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_377__pntx.o" "polySurfaceShape2.pt[377].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_377__pnty.o" "polySurfaceShape2.pt[377].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_377__pntz.o" "polySurfaceShape2.pt[377].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_378__pntx.o" "polySurfaceShape2.pt[378].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_378__pnty.o" "polySurfaceShape2.pt[378].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_378__pntz.o" "polySurfaceShape2.pt[378].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_379__pntx.o" "polySurfaceShape2.pt[379].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_379__pnty.o" "polySurfaceShape2.pt[379].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_379__pntz.o" "polySurfaceShape2.pt[379].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_380__pntx.o" "polySurfaceShape2.pt[380].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_380__pnty.o" "polySurfaceShape2.pt[380].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_380__pntz.o" "polySurfaceShape2.pt[380].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_381__pntx.o" "polySurfaceShape2.pt[381].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_381__pnty.o" "polySurfaceShape2.pt[381].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_381__pntz.o" "polySurfaceShape2.pt[381].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_382__pntx.o" "polySurfaceShape2.pt[382].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_382__pnty.o" "polySurfaceShape2.pt[382].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_382__pntz.o" "polySurfaceShape2.pt[382].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_383__pntx.o" "polySurfaceShape2.pt[383].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_383__pnty.o" "polySurfaceShape2.pt[383].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_383__pntz.o" "polySurfaceShape2.pt[383].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_384__pntx.o" "polySurfaceShape2.pt[384].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_384__pnty.o" "polySurfaceShape2.pt[384].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_384__pntz.o" "polySurfaceShape2.pt[384].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_385__pntx.o" "polySurfaceShape2.pt[385].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_385__pnty.o" "polySurfaceShape2.pt[385].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_385__pntz.o" "polySurfaceShape2.pt[385].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_386__pntx.o" "polySurfaceShape2.pt[386].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_386__pnty.o" "polySurfaceShape2.pt[386].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_386__pntz.o" "polySurfaceShape2.pt[386].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_387__pntx.o" "polySurfaceShape2.pt[387].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_387__pnty.o" "polySurfaceShape2.pt[387].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_387__pntz.o" "polySurfaceShape2.pt[387].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_388__pntx.o" "polySurfaceShape2.pt[388].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_388__pnty.o" "polySurfaceShape2.pt[388].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_388__pntz.o" "polySurfaceShape2.pt[388].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_389__pntx.o" "polySurfaceShape2.pt[389].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_389__pnty.o" "polySurfaceShape2.pt[389].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_389__pntz.o" "polySurfaceShape2.pt[389].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_390__pntx.o" "polySurfaceShape2.pt[390].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_390__pnty.o" "polySurfaceShape2.pt[390].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_390__pntz.o" "polySurfaceShape2.pt[390].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_391__pntx.o" "polySurfaceShape2.pt[391].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_391__pnty.o" "polySurfaceShape2.pt[391].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_391__pntz.o" "polySurfaceShape2.pt[391].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_392__pntx.o" "polySurfaceShape2.pt[392].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_392__pnty.o" "polySurfaceShape2.pt[392].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_392__pntz.o" "polySurfaceShape2.pt[392].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_393__pntx.o" "polySurfaceShape2.pt[393].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_393__pnty.o" "polySurfaceShape2.pt[393].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_393__pntz.o" "polySurfaceShape2.pt[393].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_394__pntx.o" "polySurfaceShape2.pt[394].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_394__pnty.o" "polySurfaceShape2.pt[394].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_394__pntz.o" "polySurfaceShape2.pt[394].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_395__pntx.o" "polySurfaceShape2.pt[395].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_395__pnty.o" "polySurfaceShape2.pt[395].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_395__pntz.o" "polySurfaceShape2.pt[395].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_396__pntx.o" "polySurfaceShape2.pt[396].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_396__pnty.o" "polySurfaceShape2.pt[396].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_396__pntz.o" "polySurfaceShape2.pt[396].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_397__pntx.o" "polySurfaceShape2.pt[397].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_397__pnty.o" "polySurfaceShape2.pt[397].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_397__pntz.o" "polySurfaceShape2.pt[397].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_398__pntx.o" "polySurfaceShape2.pt[398].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_398__pnty.o" "polySurfaceShape2.pt[398].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_398__pntz.o" "polySurfaceShape2.pt[398].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_399__pntx.o" "polySurfaceShape2.pt[399].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_399__pnty.o" "polySurfaceShape2.pt[399].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_399__pntz.o" "polySurfaceShape2.pt[399].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_400__pntx.o" "polySurfaceShape2.pt[400].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_400__pnty.o" "polySurfaceShape2.pt[400].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_400__pntz.o" "polySurfaceShape2.pt[400].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_401__pntx.o" "polySurfaceShape2.pt[401].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_401__pnty.o" "polySurfaceShape2.pt[401].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_401__pntz.o" "polySurfaceShape2.pt[401].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_402__pntx.o" "polySurfaceShape2.pt[402].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_402__pnty.o" "polySurfaceShape2.pt[402].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_402__pntz.o" "polySurfaceShape2.pt[402].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_403__pntx.o" "polySurfaceShape2.pt[403].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_403__pnty.o" "polySurfaceShape2.pt[403].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_403__pntz.o" "polySurfaceShape2.pt[403].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_404__pntx.o" "polySurfaceShape2.pt[404].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_404__pnty.o" "polySurfaceShape2.pt[404].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_404__pntz.o" "polySurfaceShape2.pt[404].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_405__pntx.o" "polySurfaceShape2.pt[405].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_405__pnty.o" "polySurfaceShape2.pt[405].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_405__pntz.o" "polySurfaceShape2.pt[405].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_406__pntx.o" "polySurfaceShape2.pt[406].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_406__pnty.o" "polySurfaceShape2.pt[406].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_406__pntz.o" "polySurfaceShape2.pt[406].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_407__pntx.o" "polySurfaceShape2.pt[407].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_407__pnty.o" "polySurfaceShape2.pt[407].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_407__pntz.o" "polySurfaceShape2.pt[407].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_408__pntx.o" "polySurfaceShape2.pt[408].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_408__pnty.o" "polySurfaceShape2.pt[408].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_408__pntz.o" "polySurfaceShape2.pt[408].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_409__pntx.o" "polySurfaceShape2.pt[409].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_409__pnty.o" "polySurfaceShape2.pt[409].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_409__pntz.o" "polySurfaceShape2.pt[409].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_410__pntx.o" "polySurfaceShape2.pt[410].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_410__pnty.o" "polySurfaceShape2.pt[410].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_410__pntz.o" "polySurfaceShape2.pt[410].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_411__pntx.o" "polySurfaceShape2.pt[411].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_411__pnty.o" "polySurfaceShape2.pt[411].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_411__pntz.o" "polySurfaceShape2.pt[411].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_412__pntx.o" "polySurfaceShape2.pt[412].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_412__pnty.o" "polySurfaceShape2.pt[412].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_412__pntz.o" "polySurfaceShape2.pt[412].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_413__pntx.o" "polySurfaceShape2.pt[413].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_413__pnty.o" "polySurfaceShape2.pt[413].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_413__pntz.o" "polySurfaceShape2.pt[413].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_414__pntx.o" "polySurfaceShape2.pt[414].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_414__pnty.o" "polySurfaceShape2.pt[414].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_414__pntz.o" "polySurfaceShape2.pt[414].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_415__pntx.o" "polySurfaceShape2.pt[415].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_415__pnty.o" "polySurfaceShape2.pt[415].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_415__pntz.o" "polySurfaceShape2.pt[415].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_416__pntx.o" "polySurfaceShape2.pt[416].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_416__pnty.o" "polySurfaceShape2.pt[416].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_416__pntz.o" "polySurfaceShape2.pt[416].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_417__pntx.o" "polySurfaceShape2.pt[417].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_417__pnty.o" "polySurfaceShape2.pt[417].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_417__pntz.o" "polySurfaceShape2.pt[417].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_418__pntx.o" "polySurfaceShape2.pt[418].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_418__pnty.o" "polySurfaceShape2.pt[418].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_418__pntz.o" "polySurfaceShape2.pt[418].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_419__pntx.o" "polySurfaceShape2.pt[419].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_419__pnty.o" "polySurfaceShape2.pt[419].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_419__pntz.o" "polySurfaceShape2.pt[419].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_420__pntx.o" "polySurfaceShape2.pt[420].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_420__pnty.o" "polySurfaceShape2.pt[420].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_420__pntz.o" "polySurfaceShape2.pt[420].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_421__pntx.o" "polySurfaceShape2.pt[421].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_421__pnty.o" "polySurfaceShape2.pt[421].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_421__pntz.o" "polySurfaceShape2.pt[421].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_422__pntx.o" "polySurfaceShape2.pt[422].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_422__pnty.o" "polySurfaceShape2.pt[422].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_422__pntz.o" "polySurfaceShape2.pt[422].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_423__pntx.o" "polySurfaceShape2.pt[423].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_423__pnty.o" "polySurfaceShape2.pt[423].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_423__pntz.o" "polySurfaceShape2.pt[423].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_424__pntx.o" "polySurfaceShape2.pt[424].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_424__pnty.o" "polySurfaceShape2.pt[424].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_424__pntz.o" "polySurfaceShape2.pt[424].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_425__pntx.o" "polySurfaceShape2.pt[425].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_425__pnty.o" "polySurfaceShape2.pt[425].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_425__pntz.o" "polySurfaceShape2.pt[425].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_426__pntx.o" "polySurfaceShape2.pt[426].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_426__pnty.o" "polySurfaceShape2.pt[426].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_426__pntz.o" "polySurfaceShape2.pt[426].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_427__pntx.o" "polySurfaceShape2.pt[427].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_427__pnty.o" "polySurfaceShape2.pt[427].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_427__pntz.o" "polySurfaceShape2.pt[427].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_428__pntx.o" "polySurfaceShape2.pt[428].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_428__pnty.o" "polySurfaceShape2.pt[428].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_428__pntz.o" "polySurfaceShape2.pt[428].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_429__pntx.o" "polySurfaceShape2.pt[429].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_429__pnty.o" "polySurfaceShape2.pt[429].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_429__pntz.o" "polySurfaceShape2.pt[429].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_430__pntx.o" "polySurfaceShape2.pt[430].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_430__pnty.o" "polySurfaceShape2.pt[430].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_430__pntz.o" "polySurfaceShape2.pt[430].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_431__pntx.o" "polySurfaceShape2.pt[431].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_431__pnty.o" "polySurfaceShape2.pt[431].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_431__pntz.o" "polySurfaceShape2.pt[431].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_432__pntx.o" "polySurfaceShape2.pt[432].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_432__pnty.o" "polySurfaceShape2.pt[432].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_432__pntz.o" "polySurfaceShape2.pt[432].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_433__pntx.o" "polySurfaceShape2.pt[433].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_433__pnty.o" "polySurfaceShape2.pt[433].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_433__pntz.o" "polySurfaceShape2.pt[433].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_434__pntx.o" "polySurfaceShape2.pt[434].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_434__pnty.o" "polySurfaceShape2.pt[434].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_434__pntz.o" "polySurfaceShape2.pt[434].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_435__pntx.o" "polySurfaceShape2.pt[435].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_435__pnty.o" "polySurfaceShape2.pt[435].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_435__pntz.o" "polySurfaceShape2.pt[435].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_436__pntx.o" "polySurfaceShape2.pt[436].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_436__pnty.o" "polySurfaceShape2.pt[436].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_436__pntz.o" "polySurfaceShape2.pt[436].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_437__pntx.o" "polySurfaceShape2.pt[437].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_437__pnty.o" "polySurfaceShape2.pt[437].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_437__pntz.o" "polySurfaceShape2.pt[437].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_438__pntx.o" "polySurfaceShape2.pt[438].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_438__pnty.o" "polySurfaceShape2.pt[438].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_438__pntz.o" "polySurfaceShape2.pt[438].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_439__pntx.o" "polySurfaceShape2.pt[439].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_439__pnty.o" "polySurfaceShape2.pt[439].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_439__pntz.o" "polySurfaceShape2.pt[439].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_440__pntx.o" "polySurfaceShape2.pt[440].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_440__pnty.o" "polySurfaceShape2.pt[440].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_440__pntz.o" "polySurfaceShape2.pt[440].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_441__pntx.o" "polySurfaceShape2.pt[441].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_441__pnty.o" "polySurfaceShape2.pt[441].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_441__pntz.o" "polySurfaceShape2.pt[441].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_442__pntx.o" "polySurfaceShape2.pt[442].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_442__pnty.o" "polySurfaceShape2.pt[442].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_442__pntz.o" "polySurfaceShape2.pt[442].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_443__pntx.o" "polySurfaceShape2.pt[443].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_443__pnty.o" "polySurfaceShape2.pt[443].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_443__pntz.o" "polySurfaceShape2.pt[443].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_444__pntx.o" "polySurfaceShape2.pt[444].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_444__pnty.o" "polySurfaceShape2.pt[444].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_444__pntz.o" "polySurfaceShape2.pt[444].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_445__pntx.o" "polySurfaceShape2.pt[445].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_445__pnty.o" "polySurfaceShape2.pt[445].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_445__pntz.o" "polySurfaceShape2.pt[445].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_446__pntx.o" "polySurfaceShape2.pt[446].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_446__pnty.o" "polySurfaceShape2.pt[446].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_446__pntz.o" "polySurfaceShape2.pt[446].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_447__pntx.o" "polySurfaceShape2.pt[447].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_447__pnty.o" "polySurfaceShape2.pt[447].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_447__pntz.o" "polySurfaceShape2.pt[447].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_448__pntx.o" "polySurfaceShape2.pt[448].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_448__pnty.o" "polySurfaceShape2.pt[448].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_448__pntz.o" "polySurfaceShape2.pt[448].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_449__pntx.o" "polySurfaceShape2.pt[449].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_449__pnty.o" "polySurfaceShape2.pt[449].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_449__pntz.o" "polySurfaceShape2.pt[449].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_450__pntx.o" "polySurfaceShape2.pt[450].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_450__pnty.o" "polySurfaceShape2.pt[450].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_450__pntz.o" "polySurfaceShape2.pt[450].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_451__pntx.o" "polySurfaceShape2.pt[451].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_451__pnty.o" "polySurfaceShape2.pt[451].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_451__pntz.o" "polySurfaceShape2.pt[451].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_452__pntx.o" "polySurfaceShape2.pt[452].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_452__pnty.o" "polySurfaceShape2.pt[452].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_452__pntz.o" "polySurfaceShape2.pt[452].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_453__pntx.o" "polySurfaceShape2.pt[453].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_453__pnty.o" "polySurfaceShape2.pt[453].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_453__pntz.o" "polySurfaceShape2.pt[453].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_454__pntx.o" "polySurfaceShape2.pt[454].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_454__pnty.o" "polySurfaceShape2.pt[454].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_454__pntz.o" "polySurfaceShape2.pt[454].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_455__pntx.o" "polySurfaceShape2.pt[455].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_455__pnty.o" "polySurfaceShape2.pt[455].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_455__pntz.o" "polySurfaceShape2.pt[455].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_456__pntx.o" "polySurfaceShape2.pt[456].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_456__pnty.o" "polySurfaceShape2.pt[456].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_456__pntz.o" "polySurfaceShape2.pt[456].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_457__pntx.o" "polySurfaceShape2.pt[457].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_457__pnty.o" "polySurfaceShape2.pt[457].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_457__pntz.o" "polySurfaceShape2.pt[457].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_458__pntx.o" "polySurfaceShape2.pt[458].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_458__pnty.o" "polySurfaceShape2.pt[458].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_458__pntz.o" "polySurfaceShape2.pt[458].pz"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_459__pntx.o" "polySurfaceShape2.pt[459].px"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_459__pnty.o" "polySurfaceShape2.pt[459].py"
+		;
+connectAttr "Lamp:pCylinderShape2_pnts_459__pntz.o" "polySurfaceShape2.pt[459].pz"
+		;
 connectAttr "polyTweakUV3.out" "BottleShape.i";
 connectAttr "polyTweakUV3.uvtk[0]" "BottleShape.uvst[0].uvtw";
 connectAttr "groupId10.id" "Lamp:pCylinderShape1.iog.og[0].gid";
@@ -18311,6 +18417,17 @@ connectAttr "polyPlanarProj2.out" "polyTweakUV2.ip";
 connectAttr "polyTweakUV2.out" "polyFlipUV1.ip";
 connectAttr "BottleShape.wm" "polyFlipUV1.mp";
 connectAttr "polyFlipUV1.out" "polyTweakUV3.ip";
+connectAttr "groupParts2.og" "polyMapDel2.ip";
+connectAttr "polySurfaceShape2.o" "groupParts1.ig";
+connectAttr "groupId12.id" "groupParts1.gi";
+connectAttr "groupParts1.og" "groupParts2.ig";
+connectAttr "groupId13.id" "groupParts2.gi";
+connectAttr "polyMapDel2.out" "polyPlanarProj3.ip";
+connectAttr "LampShape1.wm" "polyPlanarProj3.mp";
+connectAttr "polyPlanarProj3.out" "polyMapCut2.ip";
+connectAttr "polyMapCut2.out" "polyTweakUV4.ip";
+connectAttr "polySurfaceShape3.o" "polyMapCut3.ip";
+connectAttr "polyMapCut3.out" "polyTweakUV5.ip";
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
@@ -18322,8 +18439,6 @@ connectAttr "LampSwitchMat.msg" ":defaultShaderList1.s" -na;
 connectAttr "LampShadeHolderMat.msg" ":defaultShaderList1.s" -na;
 connectAttr "GlassMat.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "LampShape1.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "Lamp:pCylinderShape3.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "groupId2.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId5.msg" ":initialShadingGroup.gn" -na;
 // End of LampTableCustomUVMapped.ma
