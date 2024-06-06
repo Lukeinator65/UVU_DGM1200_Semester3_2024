@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: HammerUVMapped.ma
-//Last modified: Wed, Jun 05, 2024 10:19:29 PM
+//Last modified: Wed, Jun 05, 2024 10:22:50 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "F7FCA305-42A3-5024-40B4-DE8D97245EE5";
+fileInfo "UUID" "94C6630A-46B9-8F27-AECF-6E871DF50ED0";
 createNode transform -s -n "persp";
 	rename -uid "E268180D-4E2C-FA4E-7C4A-22B8259FEFB2";
 	setAttr ".v" no;
@@ -617,7 +617,7 @@ createNode groupId -n "groupId3";
 	setAttr ".ihi" 0;
 createNode blinn -n "HandleMat";
 	rename -uid "C52D7ABF-4456-9E72-7B3D-66B0680DEA05";
-	setAttr ".c" -type "float3" 0.122 0.122 0.122 ;
+	setAttr ".c" -type "float3" 0 0 0 ;
 createNode shadingEngine -n "blinn2SG";
 	rename -uid "A2F6890A-4296-AC43-84E3-B396733E8522";
 	setAttr ".ihi" 0;
@@ -628,7 +628,7 @@ createNode groupId -n "groupId4";
 	rename -uid "9B42BC31-4214-D04C-EE47-19A95D8DC7AF";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "E3A9C52E-4FCF-C512-0545-0E8DAC3E08C7";
+	rename -uid "4F98DCC0-4C06-A51F-2D0D-C493E6F834ED";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
